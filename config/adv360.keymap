@@ -259,6 +259,16 @@
             bindings = <&kp LC(LA(DELETE))>;
             key-positions = <26 25 24 23>;
         };
+
+        bl_alt+f4 {
+            bindings = <&kp LA(F4)>;
+            key-positions = <49 48 50>;
+        };
+
+        br_close-window {
+            bindings = <&kp LC(W)>;
+            key-positions = <57 56 55>;
+        };
     };
 
     keymap {
