@@ -329,6 +329,36 @@
             bindings = <&kp INSERT>;
             key-positions = <44 26>;
         };
+
+        l_save {
+            bindings = <&kp LC(S)>;
+            key-positions = <32 50>;
+        };
+
+        r_save {
+            bindings = <&kp RC(S)>;
+            key-positions = <41 23>;
+        };
+
+        l_redo {
+            bindings = <&kp LC(LS(Z))>;
+            key-positions = <49 31>;
+        };
+
+        r_undo {
+            bindings = <&kp RC(Z)>;
+            key-positions = <56 42>;
+        };
+
+        l_undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <48 30>;
+        };
+
+        r_redo {
+            bindings = <&kp RS(RC(Z))>;
+            key-positions = <57 43>;
+        };
     };
 
     keymap {
