@@ -310,7 +310,7 @@
             key-positions = <42 24>;
         };
 
-        r_capslock {
+        l_capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <30 16>;
         };
