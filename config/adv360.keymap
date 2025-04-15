@@ -122,7 +122,7 @@
 
         bl_bspc {
             bindings = <&kp BACKSPACE>;
-            key-positions = <50 49>;
+            key-positions = <49 48>;
         };
 
         hl_bsl {
@@ -167,7 +167,7 @@
 
         br_bspc {
             bindings = <&kp BACKSPACE>;
-            key-positions = <55 56>;
+            key-positions = <56 57>;
         };
 
         tl_paren {
@@ -232,26 +232,26 @@
 
         bl_del {
             bindings = <&kp DELETE>;
-            key-positions = <49 48>;
+            key-positions = <48 50>;
         };
 
         br_del {
             bindings = <&kp DELETE>;
-            key-positions = <56 57>;
+            key-positions = <57 55>;
         };
 
         bl_tab {
             bindings = <&kp TAB>;
-            key-positions = <48 50>;
+            key-positions = <50 49>;
         };
 
         br_tab {
             bindings = <&kp TAB>;
-            key-positions = <57 55>;
+            key-positions = <55 56>;
         };
 
         tl_bt-clr {
-            bindings = <&bt BT_CLR>;
+            bindings = <&bt BT_CLR_ALL>;
             key-positions = <18 17 16 15>;
         };
 
@@ -269,6 +269,26 @@
             bindings = <&kp LC(W)>;
             key-positions = <57 56 55>;
         };
+
+        l_reset {
+            bindings = <&sys_reset>;
+            key-positions = <18 50>;
+        };
+
+        r_reset {
+            bindings = <&sys_reset>;
+            key-positions = <55 23>;
+        };
+
+        l_bootloader {
+            bindings = <&bootloader>;
+            key-positions = <50 32 18>;
+        };
+
+        r_bootloader {
+            bindings = <&bootloader>;
+            key-positions = <55 41 23>;
+        };
     };
 
     keymap {
@@ -278,9 +298,9 @@
             display-name = "Base";
             bindings = <
 &none   &none            &none            &none               &none             &none  &none                                                     &none    &none  &none              &none                &none            &none            &none
-&none   &kp Q            &kp Y            &kp G               &kp W             &none  &none                                                     &none    &none  &kp P              &kp L                &kp F            &kp P            &none
+&none   &kp Q            &kp Y            &kp G               &lt 11 W          &none  &none                                                     &none    &none  &lt 11 P           &kp L                &kp F            &kp P            &none
 &none   &hm LEFT_META A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &none    &none        &none        &none         &none    &none    &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &none
-&none   &none            &hm RIGHT_ALT J  &kp K               &kp U             &none                        &none        &none                           &none  &kp C              &kp M                &hm RIGHT_ALT B  &none            &none
+&none   &none            &hm RIGHT_ALT J  &lt 10 K            &lt 8 U           &none                        &none        &none                           &none  &lt 8 C            &lt 10 M             &hm RIGHT_ALT B  &none            &none
 &tog 1  &none            &none            &none               &none                    &lt 4 V  &lt 2 SPACE  &lt 6 X      &lt 7 DELETE  &lt 3 T  &lt 5 H         &none              &none                &none            &none            &tog 1
             >;
         };
@@ -389,6 +409,16 @@
 &none   &kp F20  &kp F14  &kp F15  &kp F16  &none  &none   &none   &none       &none   &none   &none   &none  &kp F14  &kp F15  &kp F16  &kp F20  &none
 &none   &none    &kp F11  &kp F12  &kp F13  &none                  &none       &none                   &none  &kp F11  &kp F12  &kp F13  &none    &none
 &tog 1  &none    &none    &none    &none           &trans  &trans  &trans      &trans  &trans  &trans         &none    &none    &none    &none    &tog 1
+            >;
+        };
+
+        bluetooth {
+            bindings = <
+&none  &none         &none         &none         &none         &none  &none                                  &none  &none  &none         &none         &none         &none         &none
+&none  &bt BT_SEL 4  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &none  &none                                  &none  &none  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &bt BT_SEL 4  &none
+&none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none  &none  &none      &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
+&none  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE    &none         &none                &none      &none                &none  &kp K_MUTE    &kp C_VOL_UP  &kp C_VOL_DN  &none         &none
+&none  &none         &none         &none         &none                &none  &none  &none      &none  &none  &none         &none         &none         &none         &none         &none
             >;
         };
     };
