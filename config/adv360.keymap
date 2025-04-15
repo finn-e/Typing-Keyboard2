@@ -297,11 +297,11 @@
         resend {
             display-name = "Base";
             bindings = <
-&none   &none            &none            &none               &none             &none  &none                                                     &none    &none  &none              &none                &none            &none            &none
-&none   &kp Q            &kp Y            &kp G               &lt 11 W          &none  &none                                                     &none    &none  &lt 11 P           &kp L                &kp F            &kp P            &none
-&none   &hm LEFT_META A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &none    &none        &none        &none         &none    &none    &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &none
-&none   &none            &hm RIGHT_ALT J  &lt 10 K            &lt 8 U           &none                        &none        &none                           &none  &lt 8 C            &lt 10 M             &hm RIGHT_ALT B  &none            &none
-&tog 1  &none            &none            &none               &none                    &lt 4 V  &lt 2 SPACE  &lt 6 X      &lt 7 DELETE  &lt 3 T  &lt 5 H         &none              &none                &none            &none            &tog 1
+&none   &none            &none            &none               &none             &none  &none                                                         &none        &none  &none              &none                &none            &none            &none
+&none   &kp Q            &kp Y            &kp G               &lt 11 W          &none  &sys_reset                                                    &sys_reset   &none  &lt 11 P           &kp L                &kp F            &kp P            &none
+&none   &hm LEFT_META A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &bootloader  &none        &none        &none         &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &none
+&none   &none            &hm RIGHT_ALT J  &lt 10 K            &lt 8 U           &none                            &none        &none                               &none  &lt 8 C            &lt 10 M             &hm RIGHT_ALT B  &none            &none
+&tog 1  &none            &none            &none               &none                    &lt 4 V      &lt 2 SPACE  &lt 6 X      &lt 7 DELETE  &lt 3 T  &lt 5 H             &none              &none                &none            &none            &tog 1
             >;
         };
 
