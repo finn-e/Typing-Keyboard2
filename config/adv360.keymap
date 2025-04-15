@@ -47,11 +47,11 @@
         resend {
             display-name = "Base";
             bindings = <
-&none   &none            &none            &none               &none             &none  &none                                           &none  &none  &none              &none                &none            &none            &none
-&none   &kp Q            &kp Y            &kp G               &kp W             &none  &none                                           &none  &none  &kp P              &kp L                &kp F            &kp P            &none
-&none   &hm LEFT_META A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &none  &none      &none      &none       &none  &none  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &none
-&none   &none            &hm RIGHT_ALT J  &kp K               &kp U             &none                    &none      &none                     &none  &kp C              &kp M                &hm RIGHT_ALT B  &none            &none
-&tog 1  &none            &none            &none               &none                    &kp V  &kp SPACE  &kp X      &kp DELETE  &kp T  &kp H         &none              &none                &none            &none            &tog 1
+&none   &none            &none            &none               &none             &none  &none                                                     &none    &none  &none              &none                &none            &none            &none
+&none   &kp Q            &kp Y            &kp G               &kp W             &none  &none                                                     &none    &none  &kp P              &kp L                &kp F            &kp P            &none
+&none   &hm LEFT_META A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &none    &none        &none        &none         &none    &none    &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &none
+&none   &none            &hm RIGHT_ALT J  &kp K               &kp U             &none                        &none        &none                           &none  &kp C              &kp M                &hm RIGHT_ALT B  &none            &none
+&tog 1  &none            &none            &none               &none                    &lt 3 V  &lt 2 SPACE  &lt 4 X      &lt 5 DELETE  &lt 2 T  &lt 3 H         &none              &none                &none            &none            &tog 1
             >;
         };
 
@@ -64,6 +64,69 @@
 &kp LSHFT         &none      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &tog 1            &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &tog 1
             >;
+        };
+
+        num {
+            display-name = "num";
+            bindings = <
+&none   &none       &none   &none   &none   &none  &none                                                    &none     &none  &none         &none   &none   &none       &none
+&none   &kp LSHIFT  &kp N7  &kp N8  &kp N9  &none  &none                                                    &none     &none  &kp N7        &kp N8  &kp N9  &kp RSHIFT  &none
+&none   &kp N0      &kp N4  &kp N5  &kp N6  &none  &none     &none   &none              &none       &none   &none     &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0      &none
+&none   &none       &kp N1  &kp N2  &kp N3  &none                    &none              &none                         &none  &kp NUMBER_1  &kp N2  &kp N3  &none       &none
+&tog 1  &none       &none   &none   &none          &double0  &kp N0  &kp BACKSPACE      &kp DELETE  &kp N0  &double0         &none         &none   &none   &none       &tog 1
+            >;
+        };
+
+        nav {
+            bindings = <
+&none   &none              &none               &none                   &none               &none  &none                                       &none   &none  &none                 &none                    &none                   &none              &none
+&none   &hm LEFT_GUI HOME  &hm LEFT_ALT PG_DN  &hm LEFT_CONTROL PG_UP  &hm LEFT_SHIFT END  &none  &none                                       &none   &none  &hm RIGHT_SHIFT HOME  &hm RIGHT_CONTROL PG_UP  &hm LEFT_ALT PAGE_DOWN  &hm RIGHT_GUI END  &none
+&none   &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none       &none   &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
+&none   &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none       &none                   &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
+&tog 1  &none              &none               &none                   &none                      &trans  &trans  &trans      &trans  &trans  &trans         &none                 &none                    &none                   &none              &tog 1
+            >;
+        };
+
+        func1_l {
+            display-name = "func";
+            bindings = <
+&none   &none    &none   &none   &none   &none  &none                                       &none   &none  &none   &none   &none   &none    &none
+&none   &mo 6    &kp F7  &kp F8  &kp F9  &none  &none                                       &none   &none  &kp F7  &kp F8  &kp F9  &mo 6    &none
+&none   &kp F10  &kp F4  &kp F5  &kp F6  &none  &none   &none   &none       &none   &none   &none   &none  &kp F4  &kp F5  &kp F6  &kp F10  &none
+&none   &none    &kp F1  &kp F2  &kp F3  &none                  &none       &none                   &none  &kp F1  &kp F2  &kp F3  &none    &none
+&tog 1  &none    &none   &none   &none          &trans  &trans  &trans      &trans  &trans  &trans         &none   &none   &none   &none    &tog 1
+            >;
+        };
+
+        func1_r {
+            display-name = "func";
+            bindings = <
+&none   &none    &none   &none   &none   &none  &none                                       &none   &none  &none   &none   &none   &none    &none
+&none   &mo 6    &kp F7  &kp F8  &kp F9  &none  &none                                       &none   &none  &kp F7  &kp F8  &kp F9  &mo 6    &none
+&none   &kp F10  &kp F4  &kp F5  &kp F6  &none  &none   &none   &none       &none   &none   &none   &none  &kp F4  &kp F5  &kp F6  &kp F10  &none
+&none   &none    &kp F1  &kp F2  &kp F3  &none                  &none       &none                   &none  &kp F1  &kp F2  &kp F3  &none    &none
+&tog 1  &none    &none   &none   &none          &trans  &trans  &trans      &trans  &trans  &trans         &none   &none   &none   &none    &tog 1
+            >;
+        };
+
+        func2 {
+            display-name = "func2";
+            bindings = <
+&none   &none    &none    &none    &none    &none  &none                                            &none    &none  &none    &none    &none    &none    &none
+&none   &kp F21  &kp F17  &kp F18  &kp F19  &none  &none                                            &none    &none  &kp F17  &kp F18  &kp F19  &kp F21  &none
+&none   &kp F20  &kp F14  &kp F15  &kp F16  &none  &none    &none    &none        &none    &none    &none    &none  &kp F14  &kp F15  &kp F16  &kp F20  &none
+&none   &none    &kp F11  &kp F12  &kp F13  &none                    &none        &none                      &none  &kp F11  &kp F12  &kp F13  &none    &none
+&tog 1  &none    &none    &none    &none           &kp F23  &kp F22  &kp F24      &kp F24  &kp F22  &kp F23         &none    &none    &none    &none    &tog 1
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        lr_func {
+            if-layers = <4 5>;
+            then-layer = <6>;
         };
     };
 };
