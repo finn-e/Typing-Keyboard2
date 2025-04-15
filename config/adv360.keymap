@@ -76,7 +76,7 @@
         };
 
         hl_esc {
-            bindings = <&kp ESCAPE>;
+            bindings = <&gresc>;
             key-positions = <29 30 31>;
         };
 
@@ -111,7 +111,7 @@
         };
 
         hr_esc {
-            bindings = <&kp ESCAPE>;
+            bindings = <&gresc>;
             key-positions = <42 44 43>;
         };
 
@@ -289,6 +289,46 @@
             bindings = <&bootloader>;
             key-positions = <55 41 23>;
         };
+
+        l_key-repeat {
+            bindings = <&key_repeat>;
+            key-positions = <50 32>;
+        };
+
+        r_key-repeat {
+            bindings = <&key_repeat>;
+            key-positions = <55 41>;
+        };
+
+        l_caps-word {
+            bindings = <&caps_word>;
+            key-positions = <31 17>;
+        };
+
+        r_caps-word {
+            bindings = <&caps_word>;
+            key-positions = <42 24>;
+        };
+
+        r_capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <30 16>;
+        };
+
+        r_capslock {
+            bindings = <&kp CLCK>;
+            key-positions = <43 25>;
+        };
+
+        l_insert {
+            bindings = <&kp INSERT>;
+            key-positions = <29 15>;
+        };
+
+        r_insert {
+            bindings = <&kp INSERT>;
+            key-positions = <44 26>;
+        };
     };
 
     keymap {
@@ -298,9 +338,9 @@
             display-name = "Base";
             bindings = <
 &none   &none            &none            &none               &none             &none  &none                                                         &none        &none  &none              &none                &none            &none            &none
-&none   &kp Q            &kp Y            &kp G               &lt 11 W          &none  &sys_reset                                                    &sys_reset   &none  &lt 11 P           &kp L                &kp F            &kp P            &none
+&none   &kp Q            &hm RIGHT_ALT Y  &lt 11 G            &kp W             &none  &sys_reset                                                    &sys_reset   &none  &kp P              &lt 11 L             &hm RIGHT_ALT F  &kp P            &none
 &none   &hm LEFT_META A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &bootloader  &none        &none        &none         &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &none
-&none   &none            &hm RIGHT_ALT J  &lt 10 K            &lt 8 U           &none                            &none        &none                               &none  &lt 8 C            &lt 10 M             &hm RIGHT_ALT B  &none            &none
+&none   &none            &kp J            &lt 10 K            &lt 8 U           &none                            &none        &none                               &none  &lt 8 C            &lt 10 M             &kp B            &none            &none
 &tog 1  &none            &none            &none               &none                    &lt 4 V      &lt 2 SPACE  &lt 6 X      &lt 7 DELETE  &lt 3 T  &lt 5 H             &none              &none                &none            &none            &tog 1
             >;
         };
