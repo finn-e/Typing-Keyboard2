@@ -142,6 +142,123 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        bthe: bthe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BTHE";
+            bindings = <&the>, <&The>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bfrom: bfrom {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BFROM";
+            bindings = <&from>, <&From>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bhave: bhave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BHAVE";
+            bindings = <&have>, <&Have>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bbecause: bbecause {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BBECAUSE";
+            bindings = <&because>, <&Because>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        btheir: btheir {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BTHEIR";
+            bindings = <&their>, <&Their>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bthere: bthere {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BTHERE";
+            bindings = <&there>, <&There>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        btheyre: btheyre {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BTHEYRE";
+            bindings = <&theyre>, <&Theyre>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bwhere: bwhere {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BWHERE";
+            bindings = <&where>, <&Where>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bwill: bwill {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BWILL";
+            bindings = <&will>, <&Will>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bwould: bwould {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BWOULD";
+            bindings = <&Would>, <&Would>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        baint: baint {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BAINT";
+            bindings = <&aint>, <&Aint>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        byall: byall {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BYALL";
+            bindings = <&yall>, <&Yall>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bshant: bshant {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSHANT";
+            bindings = <&shant>, <&Shant>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -164,6 +281,188 @@
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp H>;
             label = "TH";
+        };
+
+        the: the {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E>;
+            label = "THE";
+        };
+
+        The: The {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp H &kp E>;
+            label = "THE";
+        };
+
+        have: have {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp A &kp V &kp E>;
+            label = "HAVE";
+        };
+
+        Have: Have {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp A &kp V &kp E>;
+            label = "HAVE";
+        };
+
+        from: from {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp R &kp O &kp M>;
+            label = "FROM";
+        };
+
+        From: From {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F) &kp R &kp O &kp M>;
+            label = "FROM";
+        };
+
+        because: because {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp E &kp C &kp A &kp U &kp S &kp E>;
+            label = "BECAUSE";
+        };
+
+        Because: Because {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(B) &kp E &kp C &kp A &kp U &kp S &kp E>;
+            label = "BECAUSE";
+        };
+
+        their: their {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E &kp I &kp R>;
+            label = "THEIR";
+        };
+
+        Their: Their {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp H &kp E &kp I &kp R>;
+            label = "THEIR";
+        };
+
+        there: there {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E &kp R &kp E>;
+            label = "THERE";
+        };
+
+        There: There {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp H &kp E &kp R &kp E>;
+            label = "THERE";
+        };
+
+        theyre: theyre {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E &kp Y &kp SQT &kp R &kp E>;
+            label = "THEYRE";
+        };
+
+        Theyre: Theyre {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp H &kp E &kp Y &kp SQT &kp R &kp E>;
+            label = "THEYRE";
+        };
+
+        where: where {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp H &kp E &kp R &kp E>;
+            label = "WHERE";
+        };
+
+        Where: Where {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp H &kp E &kp R &kp E>;
+            label = "WHERE";
+        };
+
+        will: will {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp I &kp L &kp L>;
+            label = "WILL";
+        };
+
+        Will: Will {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp I &kp L &kp L>;
+            label = "WILL";
+        };
+
+        would: would {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp O &kp U &kp L &kp D>;
+            label = "WOULD";
+        };
+
+        Would: Would {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp O &kp U &kp L &kp D>;
+            label = "WOULD";
+        };
+
+        aint: aint {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp I &kp N &kp SQT &kp T>;
+            label = "AINT";
+        };
+
+        Aint: Aint {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp I &kp N &kp SQT &kp T>;
+            label = "AINT";
+        };
+
+        yall: yall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp SQT &kp A &kp L &kp L>;
+            label = "YALL";
+        };
+
+        Yall: Yall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Y) &kp SQT &kp A &kp L &kp L>;
+            label = "YALL";
+        };
+
+        shant: shant {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp H &kp A &kp N &kp SQT &kp T>;
+            label = "SHANT";
+        };
+
+        Shant: Shant {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp H &kp A &kp N &kp SQT &kp T>;
+            label = "SHANT";
         };
     };
 
@@ -425,36 +724,6 @@
             key-positions = <44 26>;
         };
 
-        l_save {
-            bindings = <&kp LC(S)>;
-            key-positions = <32 18>;
-        };
-
-        r_save {
-            bindings = <&kp RC(S)>;
-            key-positions = <41 23>;
-        };
-
-        l_redo {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <49 31>;
-        };
-
-        r_undo {
-            bindings = <&kp RC(Z)>;
-            key-positions = <56 42>;
-        };
-
-        l_undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <48 30>;
-        };
-
-        r_redo {
-            bindings = <&kp RS(RC(Z))>;
-            key-positions = <57 43>;
-        };
-
         th_Th {
             bindings = <&th_Th 8 0>;
             key-positions = <69 70>;
@@ -473,7 +742,7 @@
             display-name = "Base";
             bindings = <
 &tog 1  &none            &none                   &none               &none                &none  &none                                                     &none        &none  &none              &none                &none            &none              &tog 1
-&none   &caps_n_tap 0 Q  &hm RIGHT_ALT K         &kp L               &kp Y                &none  &sys_reset                                                &sys_reset   &none  &kp G              &kp C                &hm RIGHT_ALT P  &mt PRINTSCREEN Z  &none
+&none   &caps_n_tap 0 Q  &hm RIGHT_ALT K         &tl 15 L            &kp Y                &none  &sys_reset                                                &sys_reset   &none  &kp G              &tl 15 C             &hm RIGHT_ALT P  &mt PRINTSCREEN Z  &none
 &none   &hm LEFT_META I  &mod_o_save LEFT_ALT 0  &hm LEFT_CONTROL R  &hm LEFT_SHIFT E     &none  &bootloader  &none        &none        &none     &none    &bootloader  &none  &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL D  &hm LEFT_ALT N   &hm RIGHT_GUI A    &none
 &none   &none            &j_cut                  &layer_w_copy 9 0   &layer_u_paste 13 0  &none                            &none        &none                           &none  &tl 13 F           &lt 10 M             &kp B            &none              &none
 &tog 2  &none            &none                   &none               &none                       &tl 5 V      &tl 3 SPACE  &tl 7 X      &lkr 8 0  &tl 4 T  &tl 6 H             &none              &none                &none            &none              &tog 2
@@ -624,6 +893,17 @@
 &trans  &trans     &trans        &none   &trans          &trans  &trans       &trans      &trans            &trans        &trans      &trans       &trans  &trans          &none   &trans        &trans     &trans
 &trans  &trans     &trans        &none   &trans          &trans                           &trans            &trans                                 &trans  &trans          &none   &trans        &trans     &trans
 &trans  &trans     &trans        &trans  &trans                  &bootloader  &sys_reset  &bl BL_CYCLE      &bl BL_CYCLE  &sys_reset  &bootloader          &trans          &trans  &trans        &trans     &trans
+            >;
+        };
+
+        words {
+            display-name = "hk";
+            bindings = <
+&none  &none      &none    &none    &none     &none  &none                                   &none   &none  &none     &none    &none    &none      &none
+&none  &bbecause  &bwhere  &bshant  &btheir   &none  &none                                   &none   &none  &btheir   &bshant  &bwhere  &bbecause  &none
+&none  &bfrom     &bwill   &baint   &bthere   &none  &none   &none  &none      &none  &none  &none   &none  &bthere   &baint   &bwill   &bfrom     &none
+&none  &none      &bwould  &byall   &btheyre  &none                 &none      &none                 &none  &btheyre  &byall   &bwould  &none      &none
+&none  &none      &none    &none    &none            &bhave  &bthe  &ht        &ht    &bthe  &bhave         &none     &none    &none    &none      &none
             >;
         };
     };
