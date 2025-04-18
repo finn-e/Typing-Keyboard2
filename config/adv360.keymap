@@ -143,117 +143,117 @@
             flavor = "tap-preferred";
         };
 
-        bthe: bthe {
+        the: the {
             compatible = "zmk,behavior-mod-morph";
-            label = "BTHE";
+            label = "THE";
             bindings = <&lthe>, <&uThe>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bfrom: bfrom {
+        from: from {
             compatible = "zmk,behavior-mod-morph";
-            label = "BFROM";
+            label = "FROM";
             bindings = <&lfrom>, <&uFrom>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bhave: bhave {
+        have: have {
             compatible = "zmk,behavior-mod-morph";
-            label = "BHAVE";
+            label = "HAVE";
             bindings = <&lhave>, <&uHave>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bbecause: bbecause {
+        because: because {
             compatible = "zmk,behavior-mod-morph";
-            label = "BBECAUSE";
+            label = "BECAUSE";
             bindings = <&lbecause>, <&uBecause>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        btheir: btheir {
+        their: their {
             compatible = "zmk,behavior-mod-morph";
-            label = "BTHEIR";
+            label = "THEIR";
             bindings = <&ltheir>, <&uTheir>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bthere: bthere {
+        there: there {
             compatible = "zmk,behavior-mod-morph";
-            label = "BTHERE";
+            label = "THERE";
             bindings = <&lthere>, <&uThere>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        btheyre: btheyre {
+        theyre: theyre {
             compatible = "zmk,behavior-mod-morph";
-            label = "BTHEYRE";
+            label = "THEYRE";
             bindings = <&ltheyre>, <&uTheyre>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bwhere: bwhere {
+        where: where {
             compatible = "zmk,behavior-mod-morph";
-            label = "BWHERE";
+            label = "WHERE";
             bindings = <&lwhere>, <&uWhere>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bwill: bwill {
+        will: will {
             compatible = "zmk,behavior-mod-morph";
-            label = "BWILL";
+            label = "WILL";
             bindings = <&lwill>, <&uWill>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bwould: bwould {
+        would: would {
             compatible = "zmk,behavior-mod-morph";
-            label = "BWOULD";
+            label = "WOULD";
             bindings = <&uWould>, <&uWould>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        baint: baint {
+        aint: aint {
             compatible = "zmk,behavior-mod-morph";
-            label = "BAINT";
+            label = "AINT";
             bindings = <&laint>, <&uAint>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        byall: byall {
+        yall: yall {
             compatible = "zmk,behavior-mod-morph";
-            label = "BYALL";
+            label = "YALL";
             bindings = <&lyall>, <&uYall>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bshant: bshant {
+        shant: shant {
             compatible = "zmk,behavior-mod-morph";
-            label = "BSHANT";
+            label = "SHANT";
             bindings = <&lshant>, <&uShant>;
 
             #binding-cells = <0>;
@@ -901,11 +901,11 @@
         words {
             display-name = "hk";
             bindings = <
-&none  &none      &none    &none    &none     &none  &none                                   &none   &none  &none     &none    &none    &none      &none
-&none  &bbecause  &bwhere  &bshant  &btheir   &none  &none                                   &none   &none  &btheir   &bshant  &bwhere  &bbecause  &none
-&none  &bfrom     &bwill   &baint   &bthere   &none  &none   &none  &none      &none  &none  &none   &none  &bthere   &baint   &bwill   &bfrom     &none
-&none  &none      &bwould  &byall   &btheyre  &none                 &none      &none                 &none  &btheyre  &byall   &bwould  &none      &none
-&none  &none      &none    &none    &none            &bhave  &bthe  &ht        &ht    &bthe  &bhave         &none     &none    &none    &none      &none
+&none  &none     &none   &none   &none    &none  &none                                  &none  &none  &none    &none   &none   &none     &none
+&none  &because  &where  &shant  &their   &none  &none                                  &none  &none  &their   &shant  &where  &because  &none
+&none  &from     &will   &aint   &there   &none  &none  &none  &none      &none  &none  &none  &none  &there   &aint   &will   &from     &none
+&none  &none     &would  &yall   &theyre  &none                &none      &none                &none  &theyre  &yall   &would  &none     &none
+&none  &none     &none   &none   &none           &have  &the   &ht        &ht    &the   &have         &none    &none   &none   &none     &none
             >;
         };
     };
