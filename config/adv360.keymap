@@ -146,7 +146,7 @@
         bthe: bthe {
             compatible = "zmk,behavior-mod-morph";
             label = "BTHE";
-            bindings = <&the>, <&The>;
+            bindings = <&lthe>, <&uThe>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -155,7 +155,7 @@
         bfrom: bfrom {
             compatible = "zmk,behavior-mod-morph";
             label = "BFROM";
-            bindings = <&from>, <&From>;
+            bindings = <&lfrom>, <&uFrom>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -164,7 +164,7 @@
         bhave: bhave {
             compatible = "zmk,behavior-mod-morph";
             label = "BHAVE";
-            bindings = <&have>, <&Have>;
+            bindings = <&lhave>, <&uHave>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -173,7 +173,7 @@
         bbecause: bbecause {
             compatible = "zmk,behavior-mod-morph";
             label = "BBECAUSE";
-            bindings = <&because>, <&Because>;
+            bindings = <&lbecause>, <&uBecause>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -182,7 +182,7 @@
         btheir: btheir {
             compatible = "zmk,behavior-mod-morph";
             label = "BTHEIR";
-            bindings = <&their>, <&Their>;
+            bindings = <&ltheir>, <&uTheir>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -191,7 +191,7 @@
         bthere: bthere {
             compatible = "zmk,behavior-mod-morph";
             label = "BTHERE";
-            bindings = <&there>, <&There>;
+            bindings = <&lthere>, <&uThere>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -200,7 +200,7 @@
         btheyre: btheyre {
             compatible = "zmk,behavior-mod-morph";
             label = "BTHEYRE";
-            bindings = <&theyre>, <&Theyre>;
+            bindings = <&ltheyre>, <&uTheyre>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -209,7 +209,7 @@
         bwhere: bwhere {
             compatible = "zmk,behavior-mod-morph";
             label = "BWHERE";
-            bindings = <&where>, <&Where>;
+            bindings = <&lwhere>, <&uWhere>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -218,7 +218,7 @@
         bwill: bwill {
             compatible = "zmk,behavior-mod-morph";
             label = "BWILL";
-            bindings = <&will>, <&Will>;
+            bindings = <&lwill>, <&uWill>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -227,7 +227,7 @@
         bwould: bwould {
             compatible = "zmk,behavior-mod-morph";
             label = "BWOULD";
-            bindings = <&Would>, <&Would>;
+            bindings = <&uWould>, <&uWould>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -236,7 +236,7 @@
         baint: baint {
             compatible = "zmk,behavior-mod-morph";
             label = "BAINT";
-            bindings = <&aint>, <&Aint>;
+            bindings = <&laint>, <&uAint>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -245,7 +245,7 @@
         byall: byall {
             compatible = "zmk,behavior-mod-morph";
             label = "BYALL";
-            bindings = <&yall>, <&Yall>;
+            bindings = <&lyall>, <&uYall>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -254,7 +254,7 @@
         bshant: bshant {
             compatible = "zmk,behavior-mod-morph";
             label = "BSHANT";
-            bindings = <&shant>, <&Shant>;
+            bindings = <&lshant>, <&uShant>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -283,186 +283,186 @@
             label = "TH";
         };
 
-        the: the {
+        lthe: lthe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp T &kp H &kp E>;
-            label = "THE";
+            label = "LTHE";
         };
 
-        The: The {
+        uThe: uThe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp H &kp E>;
-            label = "THE";
+            label = "UTHE";
         };
 
-        have: have {
+        lhave: lhave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp H &kp A &kp V &kp E>;
-            label = "HAVE";
+            label = "LHAVE";
         };
 
-        Have: Have {
+        uHave: uHave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(H) &kp A &kp V &kp E>;
-            label = "HAVE";
+            label = "UHAVE";
         };
 
-        from: from {
+        lfrom: lfrom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F &kp R &kp O &kp M>;
-            label = "FROM";
+            label = "LFROM";
         };
 
-        From: From {
+        uFrom: uFrom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(F) &kp R &kp O &kp M>;
-            label = "FROM";
+            label = "UFROM";
         };
 
-        because: because {
+        lbecause: lbecause {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp B &kp E &kp C &kp A &kp U &kp S &kp E>;
-            label = "BECAUSE";
+            label = "LBECAUSE";
         };
 
-        Because: Because {
+        uBecause: uBecause {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(B) &kp E &kp C &kp A &kp U &kp S &kp E>;
-            label = "BECAUSE";
+            label = "UBECAUSE";
         };
 
-        their: their {
+        ltheir: ltheir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp T &kp H &kp E &kp I &kp R>;
-            label = "THEIR";
+            label = "LTHEIR";
         };
 
-        Their: Their {
+        uTheir: uTheir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp H &kp E &kp I &kp R>;
-            label = "THEIR";
+            label = "UTHEIR";
         };
 
-        there: there {
+        lthere: lthere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp T &kp H &kp E &kp R &kp E>;
-            label = "THERE";
+            label = "LTHERE";
         };
 
-        There: There {
+        uThere: uThere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp H &kp E &kp R &kp E>;
-            label = "THERE";
+            label = "UTHERE";
         };
 
-        theyre: theyre {
+        ltheyre: ltheyre {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp T &kp H &kp E &kp Y &kp SQT &kp R &kp E>;
-            label = "THEYRE";
+            label = "LTHEYRE";
         };
 
-        Theyre: Theyre {
+        uTheyre: uTheyre {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp H &kp E &kp Y &kp SQT &kp R &kp E>;
-            label = "THEYRE";
+            label = "UTHEYRE";
         };
 
-        where: where {
+        lwhere: lwhere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp W &kp H &kp E &kp R &kp E>;
-            label = "WHERE";
+            label = "LWHERE";
         };
 
-        Where: Where {
+        uWhere: uWhere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(W) &kp H &kp E &kp R &kp E>;
-            label = "WHERE";
+            label = "UWHERE";
         };
 
-        will: will {
+        lwill: lwill {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp W &kp I &kp L &kp L>;
-            label = "WILL";
+            label = "LWILL";
         };
 
-        Will: Will {
+        uWill: uWill {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(W) &kp I &kp L &kp L>;
-            label = "WILL";
+            label = "UWILL";
         };
 
-        would: would {
+        lwould: lwould {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp W &kp O &kp U &kp L &kp D>;
-            label = "WOULD";
+            label = "LWOULD";
         };
 
-        Would: Would {
+        uWould: uWould {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(W) &kp O &kp U &kp L &kp D>;
-            label = "WOULD";
+            label = "UWOULD";
         };
 
-        aint: aint {
+        laint: laint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp A &kp I &kp N &kp SQT &kp T>;
-            label = "AINT";
+            label = "LAINT";
         };
 
-        Aint: Aint {
+        uAint: uAint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(A) &kp I &kp N &kp SQT &kp T>;
-            label = "AINT";
+            label = "UAINT";
         };
 
-        yall: yall {
+        lyall: lyall {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp Y &kp SQT &kp A &kp L &kp L>;
-            label = "YALL";
+            label = "LYALL";
         };
 
-        Yall: Yall {
+        uYall: uYall {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(Y) &kp SQT &kp A &kp L &kp L>;
-            label = "YALL";
+            label = "UYALL";
         };
 
-        shant: shant {
+        lshant: lshant {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp S &kp H &kp A &kp N &kp SQT &kp T>;
-            label = "SHANT";
+            label = "LSHANT";
         };
 
-        Shant: Shant {
+        uShant: uShant {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(S) &kp H &kp A &kp N &kp SQT &kp T>;
-            label = "SHANT";
+            label = "USHANT";
         };
     };
 
