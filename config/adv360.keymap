@@ -99,7 +99,7 @@
         w_copy: w_copy {
             compatible = "zmk,behavior-mod-morph";
             label = "W_COPY";
-            bindings = <&kp RS(W)>, <&kp LC(C)>;
+            bindings = <&kp W>, <&kp LC(C)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
