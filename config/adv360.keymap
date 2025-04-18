@@ -260,6 +260,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        layer_the: layer_the {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_THE";
+            bindings = <&mo>, <&there>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -707,14 +717,14 @@
             key-positions = <44 26>;
         };
 
-        th_Th {
-            bindings = <&uThe>;
-            key-positions = <69 70>;
+        th_x {
+            bindings = <&tl 13 X>;
+            key-positions = <66 65>;
         };
 
-        th_x {
-            bindings = <&tl 7 X>;
-            key-positions = <66 65>;
+        r_thumbs {
+            bindings = <&layer_the 13 0>;
+            key-positions = <69 70>;
         };
     };
 
@@ -724,11 +734,11 @@
         qkly {
             display-name = "Base";
             bindings = <
-&tog 1  &none            &none                   &none               &none                &none  &none                                                     &none        &none  &none              &none                &none            &none              &tog 1
-&none   &caps_n_tap 0 Q  &hm RIGHT_ALT K         &tl 15 L            &kp Y                &none  &sys_reset                                                &sys_reset   &none  &kp G              &tl 15 C             &hm RIGHT_ALT P  &mt PRINTSCREEN Z  &none
-&none   &hm LEFT_META I  &mod_o_save LEFT_ALT 0  &hm LEFT_CONTROL R  &hm LEFT_SHIFT E     &none  &bootloader  &none        &none        &none     &none    &bootloader  &none  &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL D  &hm LEFT_ALT N   &hm RIGHT_GUI A    &none
-&none   &none            &j_cut                  &layer_w_copy 9 0   &layer_u_paste 13 0  &none                            &none        &none                           &none  &tl 13 F           &lt 10 M             &kp B            &none              &none
-&tog 2  &none            &none                   &none               &none                       &tl 5 V      &tl 3 SPACE  &tl 7 X      &lkr 8 0  &tl 4 T  &tl 6 H             &none              &none                &none            &none              &tog 2
+&tog 1  &none           &none                   &none               &none                &none  &none                                                            &none        &none  &none              &none                &none            &none            &tog 1
+&none   &hm LEFT_GUI Q  &hm RIGHT_ALT K         &tl 15 L            &kp Y                &none  &sys_reset                                                       &sys_reset   &none  &mt PRINTSCREEN G  &tl 15 C             &hm RIGHT_ALT P  &hm RIGHT_GUI Z  &none
+&none   &tl 7 I         &mod_o_save LEFT_ALT 0  &hm LEFT_CONTROL R  &hm LEFT_SHIFT E     &none  &bootloader  &none        &none            &none        &none    &bootloader  &none  &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL D  &hm LEFT_ALT N   &tl 8 A          &none
+&none   &none           &j_cut                  &layer_w_copy 9 0   &layer_u_paste 13 0  &none                            &none            &none                              &none  &tl 13 F           &lt 10 M             &kp B            &none            &none
+&tog 2  &none           &none                   &none               &none                       &tl 5 V      &tl 3 SPACE  &key_repeat      &key_repeat  &tl 4 T  &tl 6 H             &none              &none                &none            &none            &tog 2
             >;
         };
 
@@ -739,7 +749,7 @@
 &none   &kp Q            &hm RIGHT_ALT Y  &lt 9 G             &kp W             &none  &sys_reset                                                &sys_reset   &none  &kp P              &tl 10 L             &hm RIGHT_ALT F  &kp Z            &none
 &none   &hm LEFT_META A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &bootloader  &none        &none        &none     &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &none
 &none   &none            &kp J            &kp W               &tl 13 U          &none                            &none        &none                           &none  &tl 13 C           &kp M                &kp B            &none            &none
-&none   &none            &none            &none               &none                    &tl 5 V      &tl 3 SPACE  &tl 7 X      &lkr 8 0  &tl 4 T  &tl 6 H             &none              &none                &none            &none            &none
+&none   &none            &none            &none               &none                    &tl 5 V      &tl 3 SPACE  &tl 7 X      &lkr 0 0  &tl 4 T  &tl 6 H             &none              &none                &none            &none            &none
             >;
         };
 
@@ -757,125 +767,125 @@
         num_l {
             display-name = "num_l";
             bindings = <
-&none  &none                 &none   &none   &none   &none  &none                                         &none     &none  &none         &none   &none   &none                  &none
-&none  &mt LEFT_SHIFT MINUS  &kp N7  &kp N8  &kp N9  &none  &none                                         &none     &none  &kp N7        &kp N8  &kp N9  &mt RIGHT_SHIFT EQUAL  &none
-&none  &kp N0                &kp N4  &kp N5  &kp N6  &none  &none     &none   &none       &none   &none   &none     &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0                 &none
-&none  &none                 &kp N1  &kp N2  &kp N3  &none                    &none       &none                     &none  &kp NUMBER_1  &kp N2  &kp N3  &none                  &none
-&none  &none                 &none   &none   &none          &double0  &kp N0  &trans      &trans  &kp N0  &double0         &none         &none   &none   &none                  &none
+&none  &none                 &none   &none   &none   &none  &none                                     &none   &none  &none         &none   &none   &none                  &none
+&none  &mt LEFT_SHIFT MINUS  &kp N7  &kp N8  &kp N9  &none  &none                                     &none   &none  &kp N7        &kp N8  &kp N9  &mt RIGHT_SHIFT EQUAL  &none
+&none  &kp N0                &kp N4  &kp N5  &kp N6  &none  &none   &none   &none      &none  &none   &none   &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0                 &none
+&none  &none                 &kp N1  &kp N2  &kp N3  &none                  &none      &none                  &none  &kp NUMBER_1  &kp N2  &kp N3  &none                  &none
+&none  &none                 &none   &none   &none          &trans  &trans  &none      &none  &trans  &trans         &none         &none   &none   &none                  &none
             >;
         };
 
         num_r {
             display-name = "num_r";
             bindings = <
-&none  &none             &none   &none   &none   &none  &none                                         &none     &none  &none         &none   &none   &none             &none
-&none  &mt LSHIFT MINUS  &kp N7  &kp N8  &kp N9  &none  &none                                         &none     &none  &kp N7        &kp N8  &kp N9  &mt RSHIFT EQUAL  &none
-&none  &kp N0            &kp N4  &kp N5  &kp N6  &none  &none     &none   &none       &none   &none   &none     &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0            &none
-&none  &none             &kp N1  &kp N2  &kp N3  &none                    &none       &none                     &none  &kp NUMBER_1  &kp N2  &kp N3  &none             &none
-&none  &none             &none   &none   &none          &double0  &kp N0  &trans      &trans  &kp N0  &double0         &none         &none   &none   &none             &none
+&none  &none             &none   &none   &none   &none  &none                                     &none   &none  &none         &none   &none   &none             &none
+&none  &mt LSHIFT MINUS  &kp N7  &kp N8  &kp N9  &none  &none                                     &none   &none  &kp N7        &kp N8  &kp N9  &mt RSHIFT EQUAL  &none
+&none  &kp N0            &kp N4  &kp N5  &kp N6  &none  &none   &none   &none      &none  &none   &none   &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0            &none
+&none  &none             &kp N1  &kp N2  &kp N3  &none                  &none      &none                  &none  &kp NUMBER_1  &kp N2  &kp N3  &none             &none
+&none  &none             &none   &none   &none          &trans  &trans  &none      &none  &trans  &trans         &none         &none   &none   &none             &none
             >;
         };
 
         nav_l {
             bindings = <
-&none  &none              &none               &none                   &none               &none  &none                                       &none   &none  &none                 &none                    &none                   &none              &none
-&none  &hm LEFT_GUI HOME  &hm LEFT_ALT PG_DN  &hm LEFT_CONTROL PG_UP  &hm LEFT_SHIFT END  &none  &none                                       &none   &none  &hm RIGHT_SHIFT HOME  &hm RIGHT_CONTROL PG_UP  &hm LEFT_ALT PAGE_DOWN  &hm RIGHT_GUI END  &none
-&none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none       &none   &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
-&none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none       &none                   &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
-&none  &none              &none               &none                   &none                      &trans  &trans  &trans      &trans  &trans  &trans         &none                 &none                    &none                   &none              &none
+&none  &none              &none               &none                   &none               &none  &none                                     &none   &none  &none                 &none                    &none                   &none              &none
+&none  &hm LEFT_GUI HOME  &hm LEFT_ALT PG_DN  &hm LEFT_CONTROL PG_UP  &hm LEFT_SHIFT END  &none  &none                                     &none   &none  &hm RIGHT_SHIFT HOME  &hm RIGHT_CONTROL PG_UP  &hm LEFT_ALT PAGE_DOWN  &hm RIGHT_GUI END  &none
+&none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
+&none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none      &none                  &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
+&none  &none              &none               &none                   &none                      &trans  &trans  &none      &none  &trans  &trans         &none                 &none                    &none                   &none              &none
             >;
         };
 
         nav_r {
             bindings = <
-&none  &none              &none               &none                   &none               &none  &none                                       &none   &none  &none                 &none                    &none                   &none              &none
-&none  &hm LEFT_GUI HOME  &hm LEFT_ALT PG_DN  &hm LEFT_CONTROL PG_UP  &hm LEFT_SHIFT END  &none  &none                                       &none   &none  &hm RIGHT_SHIFT HOME  &hm RIGHT_CONTROL PG_UP  &hm LEFT_ALT PAGE_DOWN  &hm RIGHT_GUI END  &none
-&none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none       &none   &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
-&none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none       &none                   &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
-&none  &none              &none               &none                   &none                      &trans  &trans  &trans      &trans  &trans  &trans         &none                 &none                    &none                   &none              &none
+&none  &none              &none               &none                   &none               &none  &none                                     &none   &none  &none                 &none                    &none                   &none              &none
+&none  &hm LEFT_GUI HOME  &hm LEFT_ALT PG_DN  &hm LEFT_CONTROL PG_UP  &hm LEFT_SHIFT END  &none  &none                                     &none   &none  &hm RIGHT_SHIFT HOME  &hm RIGHT_CONTROL PG_UP  &hm LEFT_ALT PAGE_DOWN  &hm RIGHT_GUI END  &none
+&none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
+&none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none      &none                  &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
+&none  &none              &none               &none                   &none                      &trans  &trans  &none      &none  &trans  &trans         &none                 &none                    &none                   &none              &none
             >;
         };
 
         mouse-nav_l {
             bindings = <
-&none  &none           &none           &none           &none            &none  &none                                                      &none      &none  &none           &none           &none            &none            &none
-&none  &mkp MB4        &msc SCRL_DOWN  &msc SCRL_UP    &mkp MB5         &none  &none                                                      &none      &none  &mkp MB4        &msc SCRL_UP    &msc SCRL_DOWN   &mkp MB5         &none
-&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none  &none      &none      &none          &none      &none      &none      &none  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none
-&none  &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                        &none          &none                            &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &none
-&none  &none           &none           &none           &none                   &mkp RCLK  &mkp LCLK  &mkp MCLK      &mkp MCLK  &mkp LCLK  &mkp RCLK         &none           &none           &none            &none            &none
+&none  &none   &none           &none            &none            &none  &none                                                      &none      &none  &none           &none           &none            &none   &none
+&none  &trans  &mkp MB4        &mmv MOVE_UP     &msc SCRL_UP     &none  &none                                                      &none      &none  &msc SCRL_UP    &mmv MOVE_UP    &mkp MB4         &trans  &none
+&none  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none  &none      &none      &none          &none      &none      &none      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &none
+&none  &none   &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN   &none                        &none          &none                            &none  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &none   &none
+&none  &none   &none           &none            &none                   &mkp RCLK  &mkp LCLK  &mkp MCLK      &mkp MCLK  &mkp LCLK  &mkp RCLK         &none           &none           &none            &none   &none
             >;
         };
 
         mouse-nav_r {
             bindings = <
-&none  &none           &none           &none           &none            &none  &none                                                      &none      &none  &none           &none           &none            &none            &none
-&none  &mkp MB4        &msc SCRL_DOWN  &msc SCRL_UP    &mkp MB5         &none  &none                                                      &none      &none  &mkp MB4        &msc SCRL_UP    &msc SCRL_DOWN   &mkp MB5         &none
-&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none  &none      &none      &none          &none      &none      &none      &none  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none
-&none  &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                        &none          &none                            &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &none
-&none  &none           &none           &none           &none                   &mkp RCLK  &mkp LCLK  &mkp MCLK      &mkp MCLK  &mkp LCLK  &mkp RCLK         &none           &none           &none            &none            &none
+&none  &none   &none           &none            &none            &none  &none                                                      &none      &none  &none           &none           &none            &none   &none
+&none  &trans  &mkp MB4        &mmv MOVE_UP     &msc SCRL_UP     &none  &none                                                      &none      &none  &msc SCRL_UP    &mmv MOVE_UP    &mkp MB4         &trans  &none
+&none  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none  &none      &none      &none          &none      &none      &none      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &none
+&none  &none   &msc SCRL_LEFT  &msc SCRL_RIGHT  &msc SCRL_DOWN   &none                        &none          &none                            &none  &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &none   &none
+&none  &none   &none           &none            &none                   &mkp RCLK  &mkp LCLK  &mkp MCLK      &mkp MCLK  &mkp LCLK  &mkp RCLK         &none           &none           &none            &none   &none
             >;
         };
 
         bt_l {
             bindings = <
-&none  &none         &none         &none         &none         &none  &none                                  &none  &none  &none         &none         &none         &none         &none
-&none  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none  &none                                  &none  &none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none
-&none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none  &none  &none      &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-&none  &none         &kp C_VOL_DN  &trans        &kp C_VOL_UP  &none                &none      &none                &none  &kp C_VOL_UP  &trans        &kp C_VOL_DN  &none         &none
-&none  &none         &none         &none         &none                &none  &none  &none      &none  &none  &none         &none         &none         &none         &none         &none
+&none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
+&none  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none  &none                                     &none   &none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none
+&none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
+&none  &none         &kp C_VOL_DN  &trans        &kp C_VOL_UP  &none                  &none      &none                  &none  &kp C_VOL_UP  &trans        &kp C_VOL_DN  &none         &none
+&none  &none         &none         &none         &none                &trans  &trans  &none      &none  &trans  &trans         &none         &none         &none         &none         &none
             >;
         };
 
         bt_r {
             bindings = <
-&none  &none         &none         &none         &none         &none  &none                                  &none  &none  &none         &none         &none         &none         &none
-&none  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none  &none                                  &none  &none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none
-&none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none  &none  &none      &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-&none  &none         &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE    &none                &none      &none                &none  &kp K_MUTE    &kp C_VOL_UP  &kp C_VOL_DN  &none         &none
-&none  &none         &none         &none         &none                &none  &none  &none      &none  &none  &none         &none         &none         &none         &none         &none
+&none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
+&none  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none  &none                                     &none   &none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none
+&none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
+&none  &none         &kp C_VOL_DN  &trans        &kp C_VOL_UP  &none                  &none      &none                  &none  &kp C_VOL_UP  &trans        &kp C_VOL_DN  &none         &none
+&none  &none         &none         &none         &none                &trans  &trans  &none      &none  &trans  &trans         &none         &none         &none         &none         &none
             >;
         };
 
         func1 {
             display-name = "func1";
             bindings = <
-&none  &none    &none   &none   &none   &none  &none                                       &none   &none  &none   &none   &none   &none    &none
-&none  &mo 12   &kp F7  &kp F8  &kp F9  &none  &none                                       &none   &none  &kp F7  &kp F8  &kp F9  &mo 12   &none
-&none  &kp F10  &kp F4  &kp F5  &kp F6  &none  &none   &none   &none       &none   &none   &none   &none  &kp F4  &kp F5  &kp F6  &kp F10  &none
-&none  &none    &kp F1  &kp F2  &kp F3  &none                  &none       &none                   &none  &kp F1  &kp F2  &kp F3  &none    &none
-&none  &none    &none   &none   &none          &trans  &trans  &trans      &trans  &trans  &trans         &none   &none   &none   &none    &none
+&none  &none    &none   &none   &none   &none  &none                                     &none   &none  &none   &none   &none   &none    &none
+&none  &mo 12   &kp F7  &kp F8  &kp F9  &none  &none                                     &none   &none  &kp F7  &kp F8  &kp F9  &mo 12   &none
+&none  &kp F10  &kp F4  &kp F5  &kp F6  &none  &none   &none   &none      &none  &none   &none   &none  &kp F4  &kp F5  &kp F6  &kp F10  &none
+&none  &none    &kp F1  &kp F2  &kp F3  &none                  &none      &none                  &none  &kp F1  &kp F2  &kp F3  &none    &none
+&none  &none    &none   &none   &none          &trans  &trans  &none      &none  &trans  &trans         &none   &none   &none   &none    &none
             >;
         };
 
         func2 {
             display-name = "func2";
             bindings = <
-&none  &none              &none    &none    &none    &none  &none                                       &none   &none  &none    &none    &none    &none            &none
-&none  &caps_n_tap 0 F21  &kp F17  &kp F18  &kp F19  &none  &none                                       &none   &none  &kp F17  &kp F18  &kp F19  &kr_n_tap 0 F22  &none
-&none  &kp F20            &kp F14  &kp F15  &kp F16  &none  &none   &none   &none       &none   &none   &none   &none  &kp F14  &kp F15  &kp F16  &kp F20          &none
-&none  &none              &kp F11  &kp F12  &kp F13  &none                  &none       &none                   &none  &kp F11  &kp F12  &kp F13  &none            &none
-&none  &none              &none    &none    &none           &trans  &trans  &trans      &trans  &trans  &trans         &none    &none    &none    &none            &none
+&none  &none              &none    &none    &none    &none  &none                                     &none   &none  &none    &none    &none    &none            &none
+&none  &caps_n_tap 0 F21  &kp F17  &kp F18  &kp F19  &none  &none                                     &none   &none  &kp F17  &kp F18  &kp F19  &kr_n_tap 0 F22  &none
+&none  &kp F20            &kp F14  &kp F15  &kp F16  &none  &none   &none   &none      &none  &none   &none   &none  &kp F14  &kp F15  &kp F16  &kp F20          &none
+&none  &none              &kp F11  &kp F12  &kp F13  &none                  &none      &none                  &none  &kp F11  &kp F12  &kp F13  &none            &none
+&none  &none              &none    &none    &none           &trans  &trans  &none      &none  &trans  &trans         &none    &none    &none    &none            &none
             >;
         };
 
         sym {
             display-name = "sym";
             bindings = <
-&none  &none          &none       &none       &none       &none  &none                                       &none   &none  &none       &none       &none       &none          &none
-&none  &kp LS(MINUS)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &none  &none                                       &none   &none  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(EQUAL)  &none
-&none  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &none  &none   &none   &none       &none   &none   &none   &none  &kp RS(N4)  &kp RS(N5)  &kp RS(N6)  &kp RS(N0)     &none
-&none  &none          &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &none                  &none       &none                   &none  &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &none          &none
-&none  &none          &none       &none       &none              &trans  &trans  &trans      &trans  &trans  &trans         &none       &none       &none       &none          &none
+&none  &none          &none       &none       &none       &none  &none                                     &none   &none  &none       &none       &none       &none          &none
+&none  &kp LS(MINUS)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &none  &none                                     &none   &none  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(EQUAL)  &none
+&none  &kp LS(N0)     &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &none  &none   &none   &none      &none  &none   &none   &none  &kp RS(N4)  &kp RS(N5)  &kp RS(N6)  &kp RS(N0)     &none
+&none  &none          &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &none                  &none      &none                  &none  &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &none          &none
+&none  &none          &none       &none       &none              &trans  &trans  &none      &none  &trans  &trans         &none       &none       &none       &none          &none
             >;
         };
 
         misc {
             bindings = <
-&none  &none       &none              &none  &none           &none  &none                                                                &none        &none  &none           &none  &none              &none       &none
-&none  &soft_off   &out OUT_TOG       &none  &studio_unlock  &none  &none                                                                &none        &none  &studio_unlock  &none  &out OUT_TOG       &soft_off   &none
-&none  &sys_reset  &ext_power EP_TOG  &none  &bootloader     &none  &none        &none       &none             &none         &none       &none        &none  &bootloader     &none  &ext_power EP_TOG  &sys_reset  &none
-&none  &none       &bt BT_CLR_ALL     &none  &bl BL_CYCLE    &none                           &none             &none                                  &none  &bl BL_CYCLE    &none  &bt BT_CLR_ALL     &none       &none
-&none  &none       &none              &none  &none                  &bootloader  &sys_reset  &bl BL_CYCLE      &bl BL_CYCLE  &sys_reset  &bootloader         &none           &none  &none              &none       &none
+&none  &none       &none              &none  &none           &none  &none                                                  &none        &none  &none           &none  &none              &none       &none
+&none  &soft_off   &out OUT_TOG       &none  &studio_unlock  &none  &none                                                  &none        &none  &studio_unlock  &none  &out OUT_TOG       &soft_off   &none
+&none  &sys_reset  &ext_power EP_TOG  &none  &bootloader     &none  &none        &none       &none      &none  &none       &none        &none  &bootloader     &none  &ext_power EP_TOG  &sys_reset  &none
+&none  &none       &bt BT_CLR_ALL     &none  &bl BL_CYCLE    &none                           &none      &none                           &none  &bl BL_CYCLE    &none  &bt BT_CLR_ALL     &none       &none
+&none  &none       &none              &none  &none                  &bootloader  &sys_reset  &none      &none  &sys_reset  &bootloader         &none           &none  &none              &none       &none
             >;
         };
 
@@ -894,19 +904,14 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        lr_mouse {
-            if-layers = <7 8>;
-            then-layer = <12>;
-        };
-
         lr_num {
             if-layers = <3 4>;
-            then-layer = <13>;
+            then-layer = <11>;
         };
 
         lr_nav {
             if-layers = <5 6>;
-            then-layer = <11>;
+            then-layer = <12>;
         };
 
         misc {
