@@ -409,7 +409,7 @@
             display-name = "Base";
             bindings = <
 &none   &none            &none            &none               &none             &none  &none                                                     &none        &none  &none              &none                &none            &none            &none
-&none   &kp Q            &hm RIGHT_ALT Y  &lt 11 G            &kp W             &none  &sys_reset                                                &sys_reset   &none  &kp P              &tl 11 L             &hm RIGHT_ALT F  &kp P            &none
+&none   &kp Q            &hm RIGHT_ALT Y  &lt 11 G            &kp W             &none  &sys_reset                                                &sys_reset   &none  &kp P              &tl 11 L             &hm RIGHT_ALT F  &kp Z            &none
 &none   &hm LEFT_META A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &bootloader  &none        &none        &none     &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &none
 &none   &none            &kp J            &kp K               &tl 10 U          &none                            &none        &none                           &none  &tl 10 C           &kp M                &kp B            &none            &none
 &tog 1  &none            &none            &none               &none                    &tl 4 V      &tl 2 SPACE  &tl 6 X      &lkr 7 0  &tl 3 T  &tl 5 H             &none              &none                &none            &none            &tog 1
