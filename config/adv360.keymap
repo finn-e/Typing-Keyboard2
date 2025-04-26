@@ -582,6 +582,11 @@
             key-positions = <44 42>;
         };
 
+        hr_under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <41 44>;
+        };
+
         hr_bspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <43 42>;
@@ -595,11 +600,6 @@
         hr_comma {
             bindings = <&kp COMMA>;
             key-positions = <42 41>;
-        };
-
-        hr_under {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <41 44>;
         };
 
         bl_del {
