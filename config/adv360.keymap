@@ -97,50 +97,50 @@
             flavor = "tap-preferred";
         };
 
-        w_copy: w_copy {
+        p_copy: p_copy {
             compatible = "zmk,behavior-mod-morph";
-            label = "W_COPY";
-            bindings = <&kp W>, <&kp LC(C)>;
+            label = "P_COPY";
+            bindings = <&kp P>, <&kp LC(C)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
-        layer_w_copy: layer_w_copy {
+        layer_p_copy: layer_p_copy {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_W_COPY";
-            bindings = <&mo>, <&w_copy>;
+            label = "LAYER_P_COPY";
+            bindings = <&mo>, <&p_copy>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
 
-        j_cut: j_cut {
+        x_cut: x_cut {
             compatible = "zmk,behavior-mod-morph";
-            label = "J_CUT";
-            bindings = <&kp J>, <&kp LC(X)>;
+            label = "X_CUT";
+            bindings = <&kp X>, <&kp LC(X)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
-        o_save: o_save {
+        i_save: i_save {
             compatible = "zmk,behavior-mod-morph";
-            label = "O_SAVE";
-            bindings = <&kp O>, <&kp LC(S)>;
+            label = "I_SAVE";
+            bindings = <&kp I>, <&kp LC(S)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
-        mod_o_save: mod_o_save {
+        mod_i_save: mod_i_save {
             compatible = "zmk,behavior-hold-tap";
-            label = "MOD_O_SAVE";
-            bindings = <&kp>, <&o_save>;
+            label = "MOD_I_SAVE";
+            bindings = <&kp>, <&i_save>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
 
@@ -269,6 +269,35 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
+        };
+
+        layer_rpt: layer_rpt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_RPT";
+            bindings = <&mo>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        layer_and: layer_and {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_AND";
+            bindings = <&mo>, <&and>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        and: and {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AND";
+            bindings = <&land>, <&uAnd>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -477,6 +506,20 @@
             wait-ms = <0>;
             tap-ms = <0>;
         };
+
+        land: land {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp D>;
+            label = "LAND";
+        };
+
+        uAnd: uAnd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp N &kp D>;
+            label = "UAND";
+        };
     };
 
     combos {
@@ -493,12 +536,12 @@
         };
 
         tl_osl-sym {
-            bindings = <&sl 13>;
+            bindings = <&sl 12>;
             key-positions = <15 18>;
         };
 
         tl_osl-num {
-            bindings = <&sl 3>;
+            bindings = <&sl 2>;
             key-positions = <17 16>;
         };
 
@@ -523,12 +566,12 @@
         };
 
         tr_osl-sym {
-            bindings = <&sl 13>;
+            bindings = <&sl 12>;
             key-positions = <26 23>;
         };
 
         tr_osl-num {
-            bindings = <&sl 4>;
+            bindings = <&sl 3>;
             key-positions = <25 24>;
         };
 
@@ -771,30 +814,29 @@
             bindings = <&kp LC(Z)>;
             key-positions = <44 23>;
         };
+
+        th_z {
+            bindings = <&layer_and 8 0>;
+            key-positions = <66 65>;
+        };
+
+        th_the {
+            bindings = <&layer_the 9 0>;
+            key-positions = <70 69>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        qkly {
+        jk_bye {
             display-name = "Base";
             bindings = <
-&tog 1  &none           &none                   &none               &none                &none  &none                                                            &none        &none  &none              &none                &none            &none            &tog 1
-&none   &hm LEFT_GUI Q  &hm RIGHT_ALT K         &tl 15 L            &kp Y                &none  &sys_reset                                                       &sys_reset   &none  &mt PRINTSCREEN G  &tl 15 C             &hm RIGHT_ALT P  &hm RIGHT_GUI Z  &none
-&none   &tl 7 I         &mod_o_save LEFT_ALT 0  &hm LEFT_CONTROL R  &hm LEFT_SHIFT E     &none  &bootloader  &none        &none            &none        &none    &bootloader  &none  &hm RIGHT_SHIFT S  &hm RIGHT_CONTROL D  &hm LEFT_ALT N   &tl 8 A          &none
-&none   &none           &j_cut                  &layer_w_copy 9 0   &layer_u_paste 13 0  &none                            &none            &none                              &none  &tl 13 F           &lt 10 M             &kp B            &none            &none
-&tog 2  &none           &none                   &none               &none                       &tl 5 V      &tl 3 SPACE  &key_repeat      &key_repeat  &tl 4 T  &tl 6 H             &none              &none                &none            &none            &tog 2
-            >;
-        };
-
-        resend {
-            display-name = "Base";
-            bindings = <
-&tog 1  &none            &none            &none               &none             &none  &none                                                     &none        &none  &none              &none                &none            &none            &tog 1
-&none   &kp Q            &hm RIGHT_ALT Y  &lt 9 G             &kp W             &none  &sys_reset                                                &sys_reset   &none  &kp P              &tl 10 L             &hm RIGHT_ALT F  &kp Z            &none
-&none   &hm LEFT_META A  &hm LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &bootloader  &none        &none        &none     &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RIGHT_GUI R  &none
-&none   &none            &kp J            &kp W               &tl 13 U          &none                            &none        &none                           &none  &tl 13 C           &kp M                &kp B            &none            &none
-&none   &none            &none            &none               &none                    &tl 5 V      &tl 3 SPACE  &tl 7 X      &lkr 0 0  &tl 4 T  &tl 6 H             &none              &none                &none            &none            &none
+&none   &none        &none                   &none               &none                &none  &none                                                   &none        &none  &none              &none                &none            &none        &none
+&none   &tl 6 J      &hm RIGHT_ALT K         &tl 14 B            &kp Y                &none  &sys_reset                                              &sys_reset   &none  &kp C              &tl 14 L             &hm RIGHT_ALT F  &tl 7 W      &none
+&none   &hm LMETA A  &mod_i_save LEFT_ALT 0  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E     &none  &bootloader     &none        &none      &none  &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RMETA R  &none
+&none   &none        &x_cut                  &layer_p_copy 8 0   &layer_u_paste 12 0  &none                               &none      &none                        &none  &tl 12 G           &lt 9 M              &kp V            &none        &none
+&tog 1  &none        &none                   &none               &none                       &layer_rpt 2 0  &tl 4 SPACE  &none      &none  &tl 5 T  &tl 3 H             &none              &none                &none            &none        &tog 1
             >;
         };
 
@@ -802,10 +844,10 @@
             display-name = "Base";
             bindings = <
 &kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                    &none      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp RET
 &hm LCTRL ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT         &none      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&tog 2            &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &tog 2
+&kp LSHFT         &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&tog 1            &kp GRAVE  &kp BSLH  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &tog 1
             >;
         };
 
@@ -876,7 +918,7 @@
 &none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
 &none  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none  &none                                     &none   &none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none
 &none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-&none  &none         &kp C_VOL_DN  &trans        &kp C_VOL_UP  &none                  &none      &none                  &none  &kp C_VOL_UP  &trans        &kp C_VOL_DN  &none         &none
+&none  &none         &kp C_VOL_DN  &kp K_MUTE    &kp C_VOL_UP  &none                  &none      &none                  &none  &kp C_VOL_UP  &kp K_MUTE    &kp C_VOL_DN  &none         &none
 &none  &none         &none         &none         &none                &trans  &trans  &none      &none  &trans  &trans         &none         &none         &none         &none         &none
             >;
         };
@@ -895,7 +937,7 @@
             display-name = "func1";
             bindings = <
 &none  &none    &none   &none   &none   &none  &none                                     &none   &none  &none   &none   &none   &none    &none
-&none  &mo 12   &kp F7  &kp F8  &kp F9  &none  &none                                     &none   &none  &kp F7  &kp F8  &kp F9  &mo 12   &none
+&none  &mo 11   &kp F7  &kp F8  &kp F9  &none  &none                                     &none   &none  &kp F7  &kp F8  &kp F9  &mo 11   &none
 &none  &kp F10  &kp F4  &kp F5  &kp F6  &none  &none   &none   &none      &none  &none   &none   &none  &kp F4  &kp F5  &kp F6  &kp F10  &none
 &none  &none    &kp F1  &kp F2  &kp F3  &none                  &none      &none                  &none  &kp F1  &kp F2  &kp F3  &none    &none
 &none  &none    &none   &none   &none          &trans  &trans  &none      &none  &trans  &trans         &none   &none   &none   &none    &none
@@ -950,18 +992,18 @@
         compatible = "zmk,conditional-layers";
 
         lr_num {
-            if-layers = <3 4>;
-            then-layer = <11>;
+            if-layers = <2 3>;
+            then-layer = <10>;
         };
 
         lr_nav {
-            if-layers = <5 6>;
-            then-layer = <12>;
+            if-layers = <4 5>;
+            then-layer = <11>;
         };
 
         misc {
-            if-layers = <9 10>;
-            then-layer = <14>;
+            if-layers = <8 9>;
+            then-layer = <13>;
         };
     };
 };
