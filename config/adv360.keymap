@@ -482,249 +482,294 @@
     combos {
         compatible = "zmk,combos";
 
-        hl_period {
-            bindings = <&kp PERIOD>;
-            key-positions = <32 31>;
+        tl_lt {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <15 16>;
         };
 
-        hl_exclam {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <32 30>;
+        tl_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <17 15>;
         };
 
-        hl_colon {
-            bindings = <&kp COLON>;
-            key-positions = <32 29>;
+        tl_osl-sym {
+            bindings = <&sl 13>;
+            key-positions = <15 18>;
         };
 
-        hl_under {
-            bindings = <&kp UNDER>;
-            key-positions = <31 30>;
+        tl_osl-num {
+            bindings = <&sl 3>;
+            key-positions = <17 16>;
         };
 
-        hl_apos {
-            bindings = <&kp SQT>;
-            key-positions = <30 29>;
-        };
-
-        hl_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <32 31 30>;
-        };
-
-        hl_esc {
-            bindings = <&gresc>;
-            key-positions = <29 30 31>;
-        };
-
-        hl_bt-prv {
-            bindings = <&bt BT_PRV>;
-            key-positions = <29 30 31 32>;
-        };
-
-        hr_comma {
-            bindings = <&kp COMMA>;
-            key-positions = <41 42>;
-        };
-
-        hr_question {
-            bindings = <&kp QUESTION>;
-            key-positions = <41 43>;
-        };
-
-        hr_semi {
-            bindings = <&kp SEMI>;
-            key-positions = <44 41>;
-        };
-
-        hr_dash {
-            bindings = <&kp MINUS>;
-            key-positions = <43 42>;
-        };
-
-        hr_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <43 42 41>;
-        };
-
-        hr_esc {
-            bindings = <&gresc>;
-            key-positions = <42 44 43>;
-        };
-
-        hr_bt-nxt {
-            bindings = <&bt BT_NXT>;
-            key-positions = <44 43 42 41>;
-        };
-
-        bl_bspc {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <49 48>;
-        };
-
-        hl_bsl {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <29 31>;
-        };
-
-        hr_slsh {
-            bindings = <&kp SLASH>;
-            key-positions = <44 42>;
-        };
-
-        br_bspc {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <56 57>;
+        tl_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <16 18>;
         };
 
         tl_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <18 17>;
+            key-positions = <17 18>;
+        };
+
+        tr_gt {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <26 25>;
+        };
+
+        tr_brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <26 24>;
+        };
+
+        tr_osl-sym {
+            bindings = <&sl 13>;
+            key-positions = <26 23>;
+        };
+
+        tr_osl-num {
+            bindings = <&sl 4>;
+            key-positions = <25 24>;
+        };
+
+        tr_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <25 23>;
         };
 
         tr_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <24 23>;
+            key-positions = <23 24>;
         };
 
-        tl_brkt {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <16 17>;
+        hl_gresc {
+            bindings = <&gresc>;
+            key-positions = <30 29>;
         };
 
-        tr_brkt {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <25 24>;
+        hl_bslash {
+            bindings = <&kp BSLH>;
+            key-positions = <29 31>;
         };
 
-        tl_brc {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <16 15>;
+        hl_dash {
+            bindings = <&kp MINUS>;
+            key-positions = <29 32>;
         };
 
-        tr_brc {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <25 26>;
+        hl_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <30 31>;
         };
 
-        tl_less {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <18 16>;
+        hl_semi {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <30 32>;
         };
 
-        tr_grtr {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <23 25>;
+        hl_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <32 31>;
         };
 
-        tl_tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <17 15>;
+        hr_gresc {
+            bindings = <&gresc>;
+            key-positions = <44 43>;
         };
 
-        tr_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <26 24>;
+        hr_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <44 42>;
         };
 
-        tl_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <18 15>;
+        hr_bspc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <43 42>;
         };
 
-        tr_prt-sc {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <23 26>;
+        hr_colon {
+            bindings = <&kp COLON>;
+            key-positions = <43 41>;
+        };
+
+        hr_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <42 41>;
         };
 
         bl_del {
             bindings = <&kp DELETE>;
+            key-positions = <48 49>;
+        };
+
+        bl_prtsc {
+            bindings = <&kp PRINTSCREEN>;
             key-positions = <48 50>;
+        };
+
+        bl_ret {
+            bindings = <&kp RETURN>;
+            key-positions = <49 50>;
         };
 
         br_del {
             bindings = <&kp DELETE>;
+            key-positions = <57 56>;
+        };
+
+        br_pscrn {
+            bindings = <&kp PRINTSCREEN>;
             key-positions = <57 55>;
         };
 
-        bl_tab {
-            bindings = <&kp TAB>;
-            key-positions = <50 49>;
+        br_ret {
+            bindings = <&kp RETURN>;
+            key-positions = <56 55>;
         };
 
-        br_tab {
-            bindings = <&kp TAB>;
-            key-positions = <55 56>;
-        };
-
-        tl_bt-clr {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <18 17 16 15>;
-        };
-
-        tr_cad {
-            bindings = <&kp LC(LA(DELETE))>;
-            key-positions = <26 25 24 23>;
-        };
-
-        bl_alt+f4 {
-            bindings = <&kp LA(F4)>;
-            key-positions = <49 48 50>;
-        };
-
-        br_close-window {
-            bindings = <&kp LC(W)>;
-            key-positions = <57 56 55>;
-        };
-
-        l_key-repeat {
-            bindings = <&key_repeat>;
-            key-positions = <50 32>;
-        };
-
-        r_key-repeat {
-            bindings = <&key_repeat>;
-            key-positions = <55 41>;
-        };
-
-        l_caps-word {
-            bindings = <&caps_word>;
-            key-positions = <31 17>;
-        };
-
-        r_caps-word {
-            bindings = <&caps_word>;
-            key-positions = <42 24>;
-        };
-
-        l_capslock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <30 16>;
-        };
-
-        r_capslock {
-            bindings = <&kp CLCK>;
-            key-positions = <43 25>;
-        };
-
-        l_insert {
-            bindings = <&kp INSERT>;
+        vtl_apos {
+            bindings = <&kp APOS>;
             key-positions = <29 15>;
         };
 
-        r_insert {
-            bindings = <&kp INSERT>;
+        vtl_dqt {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <30 16>;
+        };
+
+        vtl_ {
+            bindings = <&none>;
+            key-positions = <31 17>;
+        };
+
+        vtl_stab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <32 18>;
+        };
+
+        vtr_apos {
+            bindings = <&kp APOS>;
             key-positions = <44 26>;
         };
 
-        th_x {
-            bindings = <&tl 13 X>;
-            key-positions = <66 65>;
+        vtr_semi {
+            bindings = <&kp V>;
+            key-positions = <43 25>;
         };
 
-        r_thumbs {
-            bindings = <&layer_the 13 0>;
-            key-positions = <69 70>;
+        vtr_m {
+            bindings = <&kp M>;
+            key-positions = <42 24>;
+        };
+
+        vtr_g {
+            bindings = <&kp G>;
+            key-positions = <41 23>;
+        };
+
+        vbl_os-meta {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <48 30>;
+        };
+
+        vbl_os-lctrl {
+            bindings = <&sk LCTRL>;
+            key-positions = <49 31>;
+        };
+
+        vbl_os-lshift {
+            bindings = <&sk LSHIFT>;
+            key-positions = <50 32>;
+        };
+
+        vbr_lalt {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <43 57>;
+        };
+
+        vbr_rctrl {
+            bindings = <&sk RCTRL>;
+            key-positions = <56 42>;
+        };
+
+        vbr_rshift {
+            bindings = <&sk RSHFT>;
+            key-positions = <55 41>;
+        };
+
+        sthl_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <32 17>;
+        };
+
+        shtl_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <31 18>;
+        };
+
+        sthl_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <16 31>;
+        };
+
+        shtl_amp {
+            bindings = <&kp AMPS>;
+            key-positions = <30 17>;
+        };
+
+        shtr_p {
+            bindings = <&kp P>;
+            key-positions = <41 24>;
+        };
+
+        sthr_x {
+            bindings = <&kp X>;
+            key-positions = <23 42>;
+        };
+
+        shtr_z {
+            bindings = <&kp Z>;
+            key-positions = <42 25>;
+        };
+
+        sthr_k {
+            bindings = <&kp K>;
+            key-positions = <43 24>;
+        };
+
+        hr_under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <41 44>;
+        };
+
+        pl_cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <29 16>;
+        };
+
+        pl_copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <29 17>;
+        };
+
+        pl_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <29 18>;
+        };
+
+        pr_save {
+            bindings = <&kp LC(S)>;
+            key-positions = <44 25>;
+        };
+
+        pr_redo {
+            bindings = <&kp LC(LS(Z))>;
+            key-positions = <44 24>;
+        };
+
+        pr_undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <44 23>;
         };
     };
 
