@@ -597,6 +597,11 @@
             key-positions = <42 41>;
         };
 
+        hr_under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <41 44>;
+        };
+
         bl_del {
             bindings = <&kp DELETE>;
             key-positions = <48 49>;
@@ -735,11 +740,6 @@
         sthr_k {
             bindings = <&kp K>;
             key-positions = <43 24>;
-        };
-
-        hr_under {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <41 44>;
         };
 
         pl_cut {
