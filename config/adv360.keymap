@@ -585,64 +585,76 @@
             key-positions = <23 24>;
         };
 
-        hl_gresc {
+        hl_apos {
             bindings = <&kp APOS>;
             key-positions = <30 29>;
+            layers = <0 2 3 4>;
         };
 
         hl_bslash {
             bindings = <&kp BSLH>;
             key-positions = <29 31>;
+            layers = <0 2 3 4>;
         };
 
         hl_semi {
             bindings = <&kp SEMI>;
             key-positions = <29 32>;
+            layers = <0 2 3 4>;
         };
 
         hl_comma {
             bindings = <&kp COMMA>;
             key-positions = <30 31>;
+            layers = <0 2 3 4>;
         };
 
         hl_question {
             bindings = <&kp QUESTION>;
             key-positions = <30 32>;
+            layers = <0 2 3 4>;
         };
 
         hl_dash {
             bindings = <&kp MINUS>;
             key-positions = <32 31>;
+            layers = <0 2 3 4>;
         };
 
         hr_dqt {
             bindings = <&kp DQT>;
             key-positions = <44 43>;
+            layers = <0 2 3 4>;
         };
 
         hr_slash {
             bindings = <&kp SLASH>;
             key-positions = <44 42>;
+            layers = <0 2 3 4>;
         };
 
         hr_colon {
             bindings = <&kp COLON>;
             key-positions = <41 44>;
+            layers = <0 2 3 4>;
         };
 
         hr_dot {
             bindings = <&kp DOT>;
             key-positions = <43 42>;
+            layers = <0 2 3 4>;
         };
 
         hr_exclam {
             bindings = <&kp EXCLAMATION>;
             key-positions = <43 41>;
+            layers = <0 2 3 4>;
         };
 
         hr_under {
             bindings = <&kp UNDER>;
             key-positions = <42 41>;
+            layers = <0 2 3 4>;
         };
 
         bl_del {
@@ -841,7 +853,7 @@
         };
 
         typing {
-            display-name = "Base";
+            display-name = "typing";
             bindings = <
 &tog 1  &none  &none  &none  &none  &none  &none                                             &none        &none  &none  &none  &none  &none  &tog 1
 &none   &kp J  &kp K  &kp B  &kp Y  &none  &sys_reset                                        &sys_reset   &none  &kp C  &kp L  &kp F  &kp W  &none
