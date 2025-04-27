@@ -586,7 +586,7 @@
         };
 
         hl_gresc {
-            bindings = <&gresc>;
+            bindings = <&kp APOS>;
             key-positions = <30 29>;
         };
 
@@ -595,28 +595,28 @@
             key-positions = <29 31>;
         };
 
-        hl_dash {
-            bindings = <&kp MINUS>;
-            key-positions = <29 32>;
-        };
-
-        hl_bspc {
-            bindings = <&kp BSPC>;
-            key-positions = <30 31>;
-        };
-
         hl_semi {
-            bindings = <&kp SEMICOLON>;
-            key-positions = <30 32>;
+            bindings = <&kp SEMI>;
+            key-positions = <29 32>;
         };
 
         hl_comma {
             bindings = <&kp COMMA>;
+            key-positions = <30 31>;
+        };
+
+        hl_question {
+            bindings = <&kp QUESTION>;
+            key-positions = <30 32>;
+        };
+
+        hl_dash {
+            bindings = <&kp MINUS>;
             key-positions = <32 31>;
         };
 
-        hr_gresc {
-            bindings = <&gresc>;
+        hr_dqt {
+            bindings = <&kp DQT>;
             key-positions = <44 43>;
         };
 
@@ -625,23 +625,23 @@
             key-positions = <44 42>;
         };
 
-        hr_under {
-            bindings = <&kp UNDERSCORE>;
+        hr_colon {
+            bindings = <&kp COLON>;
             key-positions = <41 44>;
         };
 
-        hr_bspc {
-            bindings = <&kp BACKSPACE>;
+        hr_dot {
+            bindings = <&kp DOT>;
             key-positions = <43 42>;
         };
 
-        hr_colon {
-            bindings = <&kp COLON>;
+        hr_exclam {
+            bindings = <&kp EXCLAMATION>;
             key-positions = <43 41>;
         };
 
-        hr_comma {
-            bindings = <&kp COMMA>;
+        hr_under {
+            bindings = <&kp UNDER>;
             key-positions = <42 41>;
         };
 
@@ -650,13 +650,13 @@
             key-positions = <48 49>;
         };
 
-        bl_prtsc {
-            bindings = <&kp PRINTSCREEN>;
+        bl_gresc {
+            bindings = <&gresc>;
             key-positions = <48 50>;
         };
 
-        bl_ret {
-            bindings = <&kp RETURN>;
+        bl_bpsc {
+            bindings = <&kp BSPC>;
             key-positions = <49 50>;
         };
 
@@ -665,19 +665,19 @@
             key-positions = <57 56>;
         };
 
-        br_pscrn {
-            bindings = <&kp PRINTSCREEN>;
+        br_gresc {
+            bindings = <&gresc>;
             key-positions = <57 55>;
         };
 
-        br_ret {
-            bindings = <&kp RETURN>;
+        br_bspc {
+            bindings = <&kp BSPC>;
             key-positions = <56 55>;
         };
 
-        vtl_apos {
-            bindings = <&kp APOS>;
-            key-positions = <29 15>;
+        vtl_gresc {
+            bindings = <&gresc>;
+            key-positions = <29 15 65 66>;
         };
 
         vtl_dqt {
@@ -685,7 +685,7 @@
             key-positions = <30 16>;
         };
 
-        vtl_ {
+        vtl_gresc {
             bindings = <&none>;
             key-positions = <31 17>;
         };
@@ -695,8 +695,8 @@
             key-positions = <32 18>;
         };
 
-        vtr_apos {
-            bindings = <&kp APOS>;
+        vtr_gresc {
+            bindings = <&gresc>;
             key-positions = <44 26>;
         };
 
@@ -705,13 +705,13 @@
             key-positions = <43 25>;
         };
 
-        vtr_m {
-            bindings = <&kp M>;
+        vtr_p {
+            bindings = <&kp P>;
             key-positions = <42 24>;
         };
 
-        vtr_g {
-            bindings = <&kp G>;
+        vtr_tab {
+            bindings = <&kp TAB>;
             key-positions = <41 23>;
         };
 
@@ -928,7 +928,7 @@
 &none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
 &none  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none  &none                                     &none   &none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none
 &none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-&none  &none         &kp C_VOL_DN  &trans        &kp C_VOL_UP  &none                  &none      &none                  &none  &kp C_VOL_UP  &trans        &kp C_VOL_DN  &none         &none
+&none  &none         &kp C_VOL_DN  &kp K_MUTE    &kp C_VOL_UP  &none                  &none      &none                  &none  &kp C_VOL_UP  &kp K_MUTE    &kp C_VOL_DN  &none         &none
 &none  &none         &none         &none         &none                &trans  &trans  &none      &none  &trans  &trans         &none         &none         &none         &none         &none
             >;
         };
@@ -983,7 +983,7 @@
 &none  &because  &where  &shant  &their   &none  &none                                  &none  &none  &their   &shant  &where  &because  &none
 &none  &from     &will   &aint   &there   &none  &none  &none  &none      &none  &none  &none  &none  &there   &aint   &will   &from     &none
 &none  &none     &would  &yall   &theyre  &none                &none      &none                &none  &theyre  &yall   &would  &none     &none
-&none  &none     &none   &none   &none           &have  &the   &ht        &ht    &the   &have         &none    &none   &none   &none     &none
+&none  &none     &none   &none   &none           &have  &the   &none      &none  &the   &have         &none    &none   &none   &none     &none
             >;
         };
     };
@@ -993,12 +993,12 @@
 
         lr_num {
             if-layers = <2 3>;
-            then-layer = <10>;
+            then-layer = <11>;
         };
 
         lr_nav {
             if-layers = <4 5>;
-            then-layer = <11>;
+            then-layer = <10>;
         };
 
         misc {
