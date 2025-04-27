@@ -535,13 +535,13 @@
             key-positions = <17 15>;
         };
 
-        tl_osl-sym {
-            bindings = <&sl 12>;
+        tl_ret {
+            bindings = <&kp RET>;
             key-positions = <15 18>;
         };
 
-        tl_osl-num {
-            bindings = <&sl 2>;
+        tl_osl-bt {
+            bindings = <&sl 8>;
             key-positions = <17 16>;
         };
 
@@ -565,13 +565,13 @@
             key-positions = <26 24>;
         };
 
-        tr_osl-sym {
-            bindings = <&sl 12>;
+        tr_ret {
+            bindings = <&kp RET>;
             key-positions = <26 23>;
         };
 
-        tr_osl-num {
-            bindings = <&sl 3>;
+        tr_osl-bt {
+            bindings = <&sl 9>;
             key-positions = <25 24>;
         };
 
@@ -680,13 +680,13 @@
             key-positions = <29 15 65 66>;
         };
 
-        vtl_dqt {
-            bindings = <&kp DOUBLE_QUOTES>;
+        vtl_osl-sym {
+            bindings = <&sl 12>;
             key-positions = <30 16>;
         };
 
-        vtl_gresc {
-            bindings = <&none>;
+        vtl_osl-num {
+            bindings = <&sl 2>;
             key-positions = <31 17>;
         };
 
@@ -700,13 +700,13 @@
             key-positions = <44 26>;
         };
 
-        vtr_semi {
-            bindings = <&kp V>;
+        vtr_osl-sym {
+            bindings = <&sl 12>;
             key-positions = <43 25>;
         };
 
-        vtr_p {
-            bindings = <&kp P>;
+        vtr_osl-num {
+            bindings = <&sl 3>;
             key-positions = <42 24>;
         };
 
@@ -800,18 +800,18 @@
             key-positions = <29 18>;
         };
 
-        pr_save {
-            bindings = <&kp LC(S)>;
+        pr_mute {
+            bindings = <&kp K_MUTE>;
             key-positions = <44 25>;
         };
 
         pr_redo {
-            bindings = <&kp LC(LS(Z))>;
+            bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <44 24>;
         };
 
-        pr_undo {
-            bindings = <&kp LC(Z)>;
+        pr_volu {
+            bindings = <&kp C_VOL_UP>;
             key-positions = <44 23>;
         };
 
@@ -937,7 +937,7 @@
             display-name = "func1";
             bindings = <
 &none  &none    &none   &none   &none   &none  &none                                     &none   &none  &none   &none   &none   &none    &none
-&none  &mo 11   &kp F7  &kp F8  &kp F9  &none  &none                                     &none   &none  &kp F7  &kp F8  &kp F9  &mo 11   &none
+&none  &mo 11   &kp F7  &kp F8  &kp F9  &none  &none                                     &none   &none  &kp F7  &kp F8  &kp F9  &sl 11   &none
 &none  &kp F10  &kp F4  &kp F5  &kp F6  &none  &none   &none   &none      &none  &none   &none   &none  &kp F4  &kp F5  &kp F6  &kp F10  &none
 &none  &none    &kp F1  &kp F2  &kp F3  &none                  &none      &none                  &none  &kp F1  &kp F2  &kp F3  &none    &none
 &none  &none    &none   &none   &none          &trans  &trans  &none      &none  &trans  &trans         &none   &none   &none   &none    &none
