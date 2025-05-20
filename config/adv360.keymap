@@ -81,7 +81,7 @@
         u_paste: u_paste {
             compatible = "zmk,behavior-mod-morph";
             label = "U_PASTE";
-            bindings = <&kp U>, <&kp LC(V)>;
+            bindings = <&tap_u_qu>, <&kp LC(V)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -295,6 +295,22 @@
             compatible = "zmk,behavior-mod-morph";
             label = "AND";
             bindings = <&land>, <&uAnd>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        tap_u_qu: tap_u_qu {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_U_QU";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&qu>;
+        };
+
+        qu: qu {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QU";
+            bindings = <&lqu>, <&uQu>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -519,6 +535,20 @@
             #binding-cells = <0>;
             bindings = <&kp LS(A) &kp N &kp D>;
             label = "UAND";
+        };
+
+        lqu: lqu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U>;
+            label = "LQU";
+        };
+
+        uQu: uQu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Q) &kp U>;
+            label = "UQU";
         };
     };
 
