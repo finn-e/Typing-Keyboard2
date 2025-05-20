@@ -601,7 +601,7 @@
         };
 
         tr_osl-bt {
-            bindings = <&sl 10>;
+            bindings = <&sl 9>;
             key-positions = <25 24>;
         };
 
@@ -723,7 +723,7 @@
         };
 
         vtl_osl-sym {
-            bindings = <&sl 13>;
+            bindings = <&sl 12>;
             key-positions = <30 16>;
         };
 
@@ -743,7 +743,7 @@
         };
 
         vtr_osl-sym {
-            bindings = <&sl 13>;
+            bindings = <&sl 12>;
             key-positions = <43 25>;
         };
 
@@ -857,14 +857,19 @@
             key-positions = <44 23>;
         };
 
-        th_z {
-            bindings = <&layer_and 9 0>;
+        th_and {
+            bindings = <&layer_and 10 0>;
             key-positions = <66 65>;
         };
 
         th_the {
             bindings = <&layer_the 10 0>;
             key-positions = <70 69>;
+        };
+
+        th_func2 {
+            bindings = <&mo 11>;
+            key-positions = <66 65 70 69>;
         };
     };
 
@@ -875,9 +880,9 @@
             display-name = "Base";
             bindings = <
 &tog 1  &none        &none                   &none               &none                &none  &none                                                   &none        &none  &none              &none                &none            &none        &tog 1
-&none   &tl 7 J      &hm RIGHT_ALT K         &tl 15 B            &kp Y                &none  &sys_reset                                              &sys_reset   &none  &kp C              &tl 15 L             &hm RIGHT_ALT F  &tl 8 W      &none
+&none   &tl 7 J      &hm RIGHT_ALT K         &tl 14 B            &kp Y                &none  &sys_reset                                              &sys_reset   &none  &kp C              &tl 14 L             &hm RIGHT_ALT F  &tl 8 W      &none
 &none   &hm LMETA A  &mod_i_save LEFT_ALT 0  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E     &none  &bootloader     &none        &none      &none  &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RMETA R  &none
-&none   &none        &x_cut                  &layer_p_copy 9 0   &layer_u_paste 13 0  &none                               &none      &none                        &none  &tl 13 G           &lt 10 M             &kp V            &none        &none
+&none   &none        &x_cut                  &layer_p_copy 9 0   &layer_u_paste 12 0  &none                               &none      &none                        &none  &tl 12 G           &lt 0 M              &kp V            &none        &none
 &tog 2  &none        &none                   &none               &none                       &layer_rpt 3 0  &tl 5 SPACE  &none      &none  &tl 6 T  &tl 4 H             &none              &none                &none            &none        &tog 2
             >;
         };
@@ -889,7 +894,7 @@
 &none   &kp J  &kp K  &kp B  &kp Y  &none  &sys_reset                                        &sys_reset   &none  &kp C  &kp L  &kp F  &kp W  &none
 &none   &kp A  &kp I  &kp O  &kp E  &none  &bootloader  &none      &none       &none  &none  &bootloader  &none  &kp D  &kp N  &kp S  &kp R  &none
 &none   &none  &kp X  &kp P  &kp U  &none                          &none       &none                      &none  &kp G  &kp M  &kp V  &none  &none
-&none   &none  &none  &none  &none         &key_repeat  &kp SPACE  &mo 13      &mo 4  &kp T  &kp H               &none  &none  &none  &none  &none
+&none   &none  &none  &none  &none         &key_repeat  &kp SPACE  &mo 12      &mo 4  &kp T  &kp H               &none  &none  &none  &none  &none
             >;
         };
 
@@ -966,17 +971,7 @@
             >;
         };
 
-        bt_l {
-            bindings = <
-&none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
-&none  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none  &none                                     &none   &none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none
-&none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-&none  &none         &kp C_VOL_DN  &kp K_MUTE    &kp C_VOL_UP  &none                  &none      &none                  &none  &kp C_VOL_UP  &kp K_MUTE    &kp C_VOL_DN  &none         &none
-&none  &none         &none         &none         &none                &trans  &trans  &none      &none  &trans  &trans         &none         &none         &none         &none         &none
-            >;
-        };
-
-        bt_r {
+        bt {
             bindings = <
 &none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
 &none  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none  &none                                     &none   &none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none
@@ -989,11 +984,11 @@
         func1 {
             display-name = "func1";
             bindings = <
-&none  &none    &none   &none   &none   &none  &none                                     &none   &none  &none   &none   &none   &none    &none
-&none  &mo 12   &kp F7  &kp F8  &kp F9  &none  &none                                     &none   &none  &kp F7  &kp F8  &kp F9  &sl 12   &none
-&none  &kp F10  &kp F4  &kp F5  &kp F6  &none  &none   &none   &none      &none  &none   &none   &none  &kp F4  &kp F5  &kp F6  &kp F10  &none
-&none  &none    &kp F1  &kp F2  &kp F3  &none                  &none      &none                  &none  &kp F1  &kp F2  &kp F3  &none    &none
-&none  &none    &none   &none   &none          &trans  &trans  &none      &none  &trans  &trans         &none   &none   &none   &none    &none
+&none  &none             &none        &none         &none          &none  &none                                     &none   &none  &none          &none         &none        &none          &none
+&none  &mt LEFT_GUI F22  &mt LALT F7  &mt LCTRL F8  &mt LSHIFT F9  &none  &none                                     &none   &none  &mt RSHIFT F7  &mt RCTRL F8  &mt LALT F9  &mt RMETA F22  &none
+&none  &kp F10           &kp F4       &kp F5        &kp F6         &none  &none   &none   &none      &none  &none   &none   &none  &kp F4         &kp F5        &kp F6       &kp F10        &none
+&none  &none             &kp F1       &kp F2        &kp F3         &none                  &none      &none                  &none  &kp F1         &kp F2        &kp F3       &none          &none
+&none  &none             &none        &none         &none                 &mo 11  &mo 11  &none      &none  &mo 11  &mo 11         &none          &none         &none        &none          &none
             >;
         };
 
@@ -1046,17 +1041,12 @@
 
         lr_num {
             if-layers = <3 4>;
-            then-layer = <12>;
+            then-layer = <11>;
         };
 
         lr_nav {
             if-layers = <5 6>;
-            then-layer = <11>;
-        };
-
-        misc {
-            if-layers = <9 10>;
-            then-layer = <14>;
+            then-layer = <10>;
         };
     };
 };
