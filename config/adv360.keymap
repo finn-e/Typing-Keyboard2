@@ -116,10 +116,10 @@
             flavor = "tap-preferred";
         };
 
-        x_cut: x_cut {
+        k_cut: k_cut {
             compatible = "zmk,behavior-mod-morph";
-            label = "X_CUT";
-            bindings = <&kp X>, <&kp LC(X)>;
+            label = "K_CUT";
+            bindings = <&kp K>, <&kp LC(X)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -305,6 +305,8 @@
             label = "TAP_U_QU";
             #binding-cells = <0>;
             bindings = <&kp U>, <&qu>;
+
+            tapping-term-ms = <200>;
         };
 
         qu: qu {
@@ -880,9 +882,9 @@
             display-name = "Base";
             bindings = <
 &tog 1  &none        &none                   &none               &none                &none  &none                                                   &none        &none  &none              &none                &none            &none        &tog 1
-&none   &tl 7 J      &hm RIGHT_ALT K         &tl 14 B            &kp Y                &none  &sys_reset                                              &sys_reset   &none  &kp C              &tl 14 L             &hm RIGHT_ALT F  &tl 8 W      &none
+&none   &tl 7 J      &hm RIGHT_ALT Y         &tl 14 B            &kp X                &none  &sys_reset                                              &sys_reset   &none  &kp C              &tl 14 L             &hm RIGHT_ALT F  &tl 8 W      &none
 &none   &hm LMETA A  &mod_i_save LEFT_ALT 0  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E     &none  &bootloader     &none        &none      &none  &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RMETA R  &none
-&none   &none        &x_cut                  &layer_p_copy 9 0   &layer_u_paste 12 0  &none                               &none      &none                        &none  &tl 12 G           &lt 0 M              &kp V            &none        &none
+&none   &none        &k_cut                  &layer_p_copy 9 0   &layer_u_paste 12 0  &none                               &none      &none                        &none  &tl 12 G           &lt 0 M              &kp V            &none        &none
 &tog 2  &none        &none                   &none               &none                       &layer_rpt 3 0  &tl 5 SPACE  &none      &none  &tl 6 T  &tl 4 H             &none              &none                &none            &none        &tog 2
             >;
         };
