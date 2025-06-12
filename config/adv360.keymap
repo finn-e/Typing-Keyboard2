@@ -38,16 +38,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        lkr: layer_key-repeat {
-            compatible = "zmk,behavior-hold-tap";
-            label = "layer_key-repeat";
-            bindings = <&mo>, <&key_repeat>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
         th_Th: th_Th {
             compatible = "zmk,behavior-hold-tap";
             label = "TH_TH";
@@ -97,19 +87,19 @@
             flavor = "tap-preferred";
         };
 
-        p_copy: p_copy {
+        x_copy: x_copy {
             compatible = "zmk,behavior-mod-morph";
-            label = "P_COPY";
-            bindings = <&kp P>, <&kp LC(C)>;
+            label = "X_COPY";
+            bindings = <&kp X>, <&kp LC(C)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
-        layer_p_copy: layer_p_copy {
+        layer_x_copy: layer_x_copy {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_P_COPY";
-            bindings = <&mo>, <&p_copy>;
+            label = "LAYER_X_COPY";
+            bindings = <&mo>, <&x_copy>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -881,11 +871,11 @@
         jk_bye {
             display-name = "Base";
             bindings = <
-&tog 1  &none        &none                   &none               &none                &none  &none                                                   &none        &none  &none              &none                &none            &none        &tog 1
-&none   &tl 7 J      &hm RIGHT_ALT Y         &tl 14 B            &kp X                &none  &sys_reset                                              &sys_reset   &none  &kp C              &tl 14 L             &hm RIGHT_ALT F  &tl 8 W      &none
-&none   &hm LMETA A  &mod_i_save LEFT_ALT 0  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E     &none  &bootloader     &none        &none      &none  &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RMETA R  &none
-&none   &none        &k_cut                  &layer_p_copy 9 0   &layer_u_paste 12 0  &none                               &none      &none                        &none  &tl 12 G           &lt 0 M              &kp V            &none        &none
-&tog 2  &none        &none                   &none               &none                       &layer_rpt 3 0  &tl 5 SPACE  &none      &none  &tl 6 T  &tl 4 H             &none              &none                &none            &none        &tog 2
+&tog 1  &none        &none                   &none               &none                &none  &none                                                     &none        &none  &none              &none                &none            &none        &tog 1
+&none   &tl 7 J      &hm RIGHT_ALT Y         &tl 14 B            &kp P                &none  &sys_reset                                                &sys_reset   &none  &kp C              &tl 14 L             &hm RIGHT_ALT F  &tl 8 W      &none
+&none   &hm LMETA A  &mod_i_save LEFT_ALT 0  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E     &none  &bootloader     &none        &none       &none   &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RMETA R  &none
+&none   &none        &k_cut                  &layer_x_copy 9 0   &layer_u_paste 12 0  &none                               &none       &none                         &none  &tl 12 G           &lt 0 M              &kp V            &none        &none
+&tog 2  &none        &none                   &none               &none                       &layer_rpt 3 0  &tl 5 SPACE  &mo 12      &mo 12  &tl 6 T  &tl 4 H             &none              &none                &none            &none        &tog 2
             >;
         };
 
