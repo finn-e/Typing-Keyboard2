@@ -871,11 +871,11 @@
         jk_bye {
             display-name = "Base";
             bindings = <
-&tog 1  &none        &none                   &none               &none                &none  &none                                                     &none        &none  &none              &none                &none            &none        &tog 1
-&none   &tl 7 J      &hm RIGHT_ALT K         &tl 14 B            &kp Y                &none  &sys_reset                                                &sys_reset   &none  &kp C              &tl 14 L             &hm RIGHT_ALT F  &tl 8 W      &none
-&none   &hm LMETA A  &mod_i_save LEFT_ALT 0  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E     &none  &bootloader     &none        &none       &none   &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RMETA R  &none
-&none   &none        &x_cut                  &layer_p_copy 9 0   &layer_u_paste 12 0  &none                               &none       &none                         &none  &tl 12 G           &lt 0 M              &kp V            &none        &none
-&tog 2  &none        &none                   &none               &none                       &layer_rpt 3 0  &tl 5 SPACE  &mo 12      &mo 12  &tl 6 T  &tl 4 H             &none              &none                &none            &none        &tog 2
+&tog 1  &none        &none                   &none               &none             &none  &none                                                     &none        &none  &none              &none                &none            &none        &tog 1
+&none   &gresc       &hm RIGHT_ALT K         &tl 14 B            &tl 12 Y          &none  &sys_reset                                                &sys_reset   &none  &tl 12 C           &tl 14 L             &hm RIGHT_ALT F  &kp W        &none
+&none   &hm LMETA A  &mod_i_save LEFT_ALT 0  &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &bootloader     &none        &none       &none   &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RMETA R  &none
+&none   &none        &x_cut                  &p_copy             &tap_u_qu         &none                               &none       &none                         &none  &kp G              &kp M                &kp V            &none        &none
+&tog 2  &none        &none                   &none               &none                    &layer_rpt 3 0  &tl 5 SPACE  &mo 12      &mo 12  &tl 6 T  &tl 4 H             &none              &none                &none            &none        &tog 2
             >;
         };
 
@@ -1039,6 +1039,16 @@
         lr_nav {
             if-layers = <5 6>;
             then-layer = <10>;
+        };
+
+        leftThumbs {
+            if-layers = <5 3>;
+            then-layer = <7>;
+        };
+
+        rightThumbs {
+            if-layers = <6 4>;
+            then-layer = <8>;
         };
     };
 };
