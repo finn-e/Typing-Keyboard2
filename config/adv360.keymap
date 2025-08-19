@@ -1054,12 +1054,12 @@
 
         leftThumbs {
             if-layers = <5 3>;
-            then-layer = <7>;
+            then-layer = <12>;
         };
 
         rightThumbs {
             if-layers = <6 4>;
-            then-layer = <8>;
+            then-layer = <12>;
         };
     };
 };
