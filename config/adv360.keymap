@@ -753,16 +753,6 @@
             bindings = <&kp P>;
             key-positions = <42 57>;
         };
-
-        th_please {
-            bindings = <&please>;
-            key-positions = <65 66>;
-        };
-
-        th_thankyou {
-            bindings = <&thankyou>;
-            key-positions = <69 70>;
-        };
     };
 
     keymap {
