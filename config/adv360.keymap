@@ -512,32 +512,32 @@
     combos {
         compatible = "zmk,combos";
 
-        tl_osl-bt {
+        tl_sl-bt {
             bindings = <&sl 7>;
             key-positions = <17 16>;
         };
 
-        tl_ret {
-            bindings = <&kp RET>;
+        tl_sl-misc {
+            bindings = <&sl 11>;
             key-positions = <16 18>;
         };
 
-        tl_osl-sym {
+        tl_sl-sym {
             bindings = <&sl 10>;
             key-positions = <17 18>;
         };
 
-        tr_osl-bt {
+        tr_sl-bt {
             bindings = <&sl 7>;
             key-positions = <25 24>;
         };
 
-        tr_ret {
-            bindings = <&kp RET>;
+        tr_sl-misc {
+            bindings = <&sl 11>;
             key-positions = <25 23>;
         };
 
-        tr_osl-sym {
+        tr_sl-sym {
             bindings = <&sl 10>;
             key-positions = <23 24>;
         };
