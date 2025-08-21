@@ -913,22 +913,22 @@
 
         lr_num {
             if-layers = <3 4>;
-            then-layer = <9>;
+            then-layer = <11>;
         };
 
         lr_nav {
             if-layers = <5 6>;
-            then-layer = <8>;
+            then-layer = <12>;
         };
 
         leftThumbs {
             if-layers = <5 3>;
-            then-layer = <11>;
+            then-layer = <9>;
         };
 
         rightThumbs {
             if-layers = <6 4>;
-            then-layer = <10>;
+            then-layer = <8>;
         };
     };
 };
