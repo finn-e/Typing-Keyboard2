@@ -244,6 +244,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        rpt_copy: rpt_copy {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPT_COPY";
+            bindings = <&key_repeat>, <&kp LC(C)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     macros {
@@ -572,8 +581,8 @@
             layers = <0 2 3 4>;
         };
 
-        hl_lparen {
-            bindings = <&kp LEFT_PARENTHESIS>;
+        hl_comma {
+            bindings = <&kp COMMA>;
             key-positions = <32 31>;
             layers = <0 2 3 4>;
         };
@@ -609,7 +618,7 @@
         };
 
         hr_rparen {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp DOT>;
             key-positions = <42 41>;
             layers = <0 2 3 4>;
         };
@@ -762,9 +771,9 @@
             display-name = "Base";
             bindings = <
 &tog 1  &none        &none            &none               &none             &none  &none                                                     &none        &none  &none              &none                &none            &none        &tog 1
-&none   &kp TAB      &hm RIGHT_ALT K  &tl 12 B            &tl 10 Y          &none  &sys_reset                                                &sys_reset   &none  &tl 10 C           &tl 12 L             &hm RIGHT_ALT F  &kp RETURN   &none
+&none   &kp RET      &hm RIGHT_ALT K  &tl 12 B            &tl 10 Y          &none  &sys_reset                                                &sys_reset   &none  &tl 10 C           &tl 12 L             &hm RIGHT_ALT F  &kp TAB      &none
 &none   &hm LMETA A  &mt LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &bootloader     &none        &none       &none   &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RMETA R  &none
-&none   &none        &x_cut           &comma_copy         &u_paste          &none                               &none       &none                         &none  &kp G              &kp M                &kp V            &none        &none
+&none   &none        &x_cut           &rpt_copy           &u_paste          &none                               &none       &none                         &none  &kp G              &kp M                &kp V            &none        &none
 &tog 2  &none        &none            &none               &none                    &layer_rpt 3 0  &tl 5 SPACE  &mo 10      &mo 10  &tl 6 T  &tl 4 H             &none              &none                &none            &none        &tog 2
             >;
         };
