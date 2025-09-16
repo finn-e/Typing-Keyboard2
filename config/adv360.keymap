@@ -743,13 +743,13 @@
             key-positions = <30 17>;
         };
 
-        shtr_p {
-            bindings = <&kp Z>;
+        shtr_x {
+            bindings = <&kp X>;
             key-positions = <41 24>;
         };
 
-        sthr_x {
-            bindings = <&kp X>;
+        sthr_z {
+            bindings = <&kp Z>;
             key-positions = <23 42>;
         };
 
