@@ -22,7 +22,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NAVLOCK";
             #binding-cells = <0>;
-            bindings = <&sl 4>, <&tog 4>;
+            bindings = <&sl 3>, <&tog 3>;
         };
     };
 
@@ -129,8 +129,8 @@
             key-positions = <32 31>;
         };
 
-        eia_grave {
-            bindings = <&kp GRAVE>;
+        eia_apos {
+            bindings = <&kp SQT>;
             key-positions = <17 16 30>;
         };
 
@@ -239,103 +239,103 @@
             key-positions = <30 31 18>;
         };
 
-        ion_gresc {
-            bindings = <&gresc>;
+        ion_esc {
+            bindings = <&kp ESCAPE>;
             key-positions = <30 31 32>;
         };
 
-        SPea_u {
-            bindings = <&kp U>;
+        SPea_question {
+            bindings = <&kp QUESTION>;
             key-positions = <66 16 17>;
         };
 
-        SPet_c {
-            bindings = <&kp C>;
+        SPet_VolUp {
+            bindings = <&kp C_VOLUME_UP>;
             key-positions = <66 16 18>;
         };
 
-        SPei_lalt {
-            bindings = <&sk LALT>;
+        SPei_rbrace {
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <66 16 30>;
         };
 
-        SPeo_y {
-            bindings = <&kp Y>;
+        SPeo_gresc {
+            bindings = <&gresc>;
             key-positions = <66 16 31>;
         };
 
-        SPen_w {
-            bindings = <&kp W>;
+        SPen_bslash {
+            bindings = <&kp BSLH>;
             key-positions = <66 16 32>;
         };
 
-        SPat_l {
-            bindings = <&kp L>;
+        SPat_plus {
+            bindings = <&kp PLUS>;
             key-positions = <66 17 18>;
         };
 
-        SPai_g {
-            bindings = <&kp G>;
+        SPai_stab {
+            bindings = <&kp LS(TAB)>;
             key-positions = <66 17 30>;
         };
 
-        SPao_ctrl {
-            bindings = <&sk LEFT_CONTROL>;
+        SPao_rbracket {
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <66 17 31>;
         };
 
-        SPan_d {
-            bindings = <&kp D>;
+        SPan_at {
+            bindings = <&kp AT_SIGN>;
             key-positions = <66 17 32>;
         };
 
-        SPti_m {
-            bindings = <&kp M>;
+        SPti_slash {
+            bindings = <&kp SLASH>;
             key-positions = <66 18 30>;
         };
 
-        SPto_f {
-            bindings = <&kp F>;
+        SPto_hash {
+            bindings = <&kp HASH>;
             key-positions = <66 18 31>;
         };
 
-        SPtn_shift {
-            bindings = <&sk LEFT_SHIFT>;
+        SPtn_rparen {
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <66 18 32>;
         };
 
-        SPio_h {
-            bindings = <&kp H>;
+        SPio_equal {
+            bindings = <&kp EQUAL>;
             key-positions = <66 31 30>;
         };
 
-        SPin_s {
-            bindings = <&kp S>;
+        SPin_dollar {
+            bindings = <&kp DOLLAR>;
             key-positions = <66 30 32>;
         };
 
-        SPon_r {
-            bindings = <&kp R>;
+        SPon_amps {
+            bindings = <&kp AMPS>;
             key-positions = <66 32 31>;
         };
 
-        SPeia_grave {
-            bindings = <&kp GRAVE>;
+        SPeia_dqt {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <66 17 16 30>;
         };
 
-        SPeit_minus {
-            bindings = <&kp MINUS>;
+        SPeit_under {
+            bindings = <&kp UNDER>;
             key-positions = <66 30 16 18>;
         };
 
-        SPeio_comma {
-            bindings = <&kp COMMA>;
+        SPeio_semi {
+            bindings = <&kp SEMI>;
             key-positions = <66 16 30 31>;
         };
 
-        SPein_dot {
-            bindings = <&kp DOT>;
+        SPein_colon {
+            bindings = <&kp COLON>;
             key-positions = <66 30 16 32>;
         };
 
@@ -379,18 +379,18 @@
             key-positions = <66 18 32 31>;
         };
 
-        SPeiao_del {
-            bindings = <&kp DELETE>;
+        SPeiao_ctrl+del {
+            bindings = <&kp LC(DELETE)>;
             key-positions = <66 30 16 17 31>;
         };
 
-        SPeitn_num {
-            bindings = <&Numlock>;
+        SPeitn_sym {
+            bindings = <&sl 5>;
             key-positions = <66 30 16 18 32>;
         };
 
-        SPaotn_nav {
-            bindings = <&Navlock>;
+        SPaotn_bt {
+            bindings = <&sl 7>;
             key-positions = <66 32 18 17 31>;
         };
 
@@ -399,114 +399,113 @@
             key-positions = <66 16 17 18>;
         };
 
-        SPean_paste {
-            bindings = <&kp LC(V)>;
+        SPean_spaste {
+            bindings = <&kp LC(LS(V))>;
             key-positions = <66 16 17 32>;
         };
 
-        SPeot_copy {
-            bindings = <&kp LC(C)>;
+        SPeot_scopy {
+            bindings = <&kp LC(LS(C))>;
             key-positions = <66 18 31 16>;
         };
 
-        SPeon_undo {
-            bindings = <&kp LC(Z)>;
+        SPeon_sundo {
+            bindings = <&kp LC(LS(Z))>;
             key-positions = <66 16 31 32>;
         };
 
-        SPiat_cut {
-            bindings = <&kp LC(X)>;
+        SPiat_scut {
+            bindings = <&kp LC(LS(X))>;
             key-positions = <66 30 17 18>;
         };
 
-        SPian_showall {
-            bindings = <&kp LG(W)>;
+        SPian_showdesktops {
+            bindings = <&kp LG(G)>;
             key-positions = <66 30 17 32>;
         };
 
-        SPiot_redo {
-            bindings = <&kp LC(LS(Z))>;
+        SPiot_unsredo {
+            bindings = <&kp LC(Z)>;
             key-positions = <66 30 31 18>;
         };
 
-        SPion_gresc {
-            bindings = <&gresc>;
+        SPion_tilde {
+            bindings = <&kp TILDE>;
             key-positions = <66 30 31 32>;
         };
 
-
-        BSea_u {
-            bindings = <&kp U>;
+        BSea_question {
+            bindings = <&kp QUESTION>;
             key-positions = <65 16 17>;
         };
 
-        BSet_c {
-            bindings = <&kp C>;
+        BSet_voldn {
+            bindings = <&kp C_VOL_DN>;
             key-positions = <65 16 18>;
         };
 
-        BSei_lalt {
-            bindings = <&sk LALT>;
+        BSei_lbrace {
+            bindings = <&sk LEFT_BRACE>;
             key-positions = <65 16 30>;
         };
 
-        BSeo_y {
-            bindings = <&kp Y>;
+        BSeo_gresc {
+            bindings = <&gresc>;
             key-positions = <65 16 31>;
         };
 
-        BSen_w {
-            bindings = <&kp W>;
+        BSen_caret {
+            bindings = <&kp CARET>;
             key-positions = <65 16 32>;
         };
 
-        BSat_l {
-            bindings = <&kp L>;
+        BSat_astrk {
+            bindings = <&kp ASTRK>;
             key-positions = <65 17 18>;
         };
 
-        BSai_g {
-            bindings = <&kp G>;
+        BSai_atab {
+            bindings = <&kp LA(G)>;
             key-positions = <65 17 30>;
         };
 
-        BSao_ctrl {
-            bindings = <&sk LEFT_CONTROL>;
+        BSao_lbracket {
+            bindings = <&sk LEFT_BRACKET>;
             key-positions = <65 17 31>;
         };
 
-        BSan_d {
-            bindings = <&kp D>;
+        BSan_at {
+            bindings = <&kp AT_SIGN>;
             key-positions = <65 17 32>;
         };
 
-        BSti_m {
-            bindings = <&kp M>;
+        BSti_percent {
+            bindings = <&kp PERCENT>;
             key-positions = <65 18 30>;
         };
 
-        BSto_f {
-            bindings = <&kp F>;
+        BSto_hash {
+            bindings = <&kp HASH>;
             key-positions = <65 18 31>;
         };
 
-        BStn_shift {
-            bindings = <&sk LEFT_SHIFT>;
+        BStn_lparen {
+            bindings = <&sk LEFT_PARENTHESIS>;
             key-positions = <65 18 32>;
         };
 
-        BSio_h {
-            bindings = <&kp H>;
+        BSio_equal {
+            bindings = <&kp EQUAL>;
             key-positions = <65 31 30>;
         };
 
-        BSin_s {
-            bindings = <&kp S>;
+        BSin_dollar {
+            bindings = <&kp DOLLAR>;
             key-positions = <65 30 32>;
         };
 
-        BSon_r {
-            bindings = <&kp R>;
+        BSon_pipe {
+            bindings = <&kp PIPE>;
             key-positions = <65 32 31>;
         };
 
@@ -515,18 +514,18 @@
             key-positions = <65 17 16 30>;
         };
 
-        BSeit_minus {
-            bindings = <&kp MINUS>;
+        BSeit_tilde {
+            bindings = <&kp TILDE>;
             key-positions = <65 30 16 18>;
         };
 
-        BSeio_comma {
-            bindings = <&kp COMMA>;
+        BSeio_question {
+            bindings = <&kp QUESTION>;
             key-positions = <65 16 30 31>;
         };
 
-        BSein_dot {
-            bindings = <&kp DOT>;
+        BSein_exclamation {
+            bindings = <&kp EXCLAMATION>;
             key-positions = <65 30 16 32>;
         };
 
@@ -570,18 +569,18 @@
             key-positions = <65 18 32 31>;
         };
 
-        BSeiao_del {
-            bindings = <&kp DELETE>;
+        BSeiao_cbspc {
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <65 30 16 17 31>;
         };
 
-        BSeitn_num {
-            bindings = <&Numlock>;
+        BSeitn_sym {
+            bindings = <&sl 5>;
             key-positions = <65 30 16 18 32>;
         };
 
-        BSaotn_nav {
-            bindings = <&Navlock>;
+        BSaotn_bt {
+            bindings = <&sl 7>;
             key-positions = <65 32 18 17 31>;
         };
 
@@ -610,8 +609,8 @@
             key-positions = <65 30 17 18>;
         };
 
-        BSian_showall {
-            bindings = <&kp LG(W)>;
+        BSian_showdesktop {
+            bindings = <&kp LG(D)>;
             key-positions = <65 30 17 32>;
         };
 
@@ -620,11 +619,15 @@
             key-positions = <65 30 31 18>;
         };
 
-        BSion_gresc {
-            bindings = <&gresc>;
+        BSion_grave {
+            bindings = <&kp GRAVE>;
             key-positions = <65 30 31 32>;
         };
 
+        fingers_misc {
+            bindings = <&sl 6>;
+            key-positions = <16 17 18 32 31 30>;
+        };
     };
 
     keymap {
@@ -663,6 +666,17 @@
             >;
         };
 
+        nav {
+            display-name = "nav";
+            bindings = <
+&none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
+&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &none                                     &none   &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
+&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none
+&none  &none     &kp LEFT   &kp DOWN   &kp RIGHT  &none                  &none      &none                  &none  &kp LEFT  &kp DOWN   &kp RIGHT  &none      &none
+&none  &none     &none      &none      &none             &trans  &trans  &none      &none  &trans  &trans         &none     &none      &none      &none      &none
+            >;
+        };
+
         num {
             display-name = "num";
             bindings = <
@@ -674,14 +688,14 @@
             >;
         };
 
-        nav {
-            display-name = "nav";
+        sym {
+            display-name = "sym";
             bindings = <
-&none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
-&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &none                                     &none   &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
-&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none
-&none  &none     &kp LEFT   &kp DOWN   &kp RIGHT  &none                  &none      &none                  &none  &kp LEFT  &kp DOWN   &kp RIGHT  &none      &none
-&none  &none     &none      &none      &none             &trans  &trans  &none      &none  &trans  &trans         &none     &none      &none      &none      &none
+&none  &none       &none       &none       &none       &none  &none                                     &none   &none  &none             &none       &none       &none       &none
+&none  &kp K_MUTE  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &none  &none                                     &none   &none  &kp LS(N7)        &kp LS(N8)  &kp LS(N9)  &kp K_MUTE  &none
+&none  &kp LS(N0)  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &none  &none   &none   &none      &none  &none   &none   &none  &kp LS(NUMBER_4)  &kp LS(N5)  &kp LS(N6)  &kp LS(N0)  &none
+&none  &none       &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &none                  &none      &none                  &none  &kp LS(NUMBER_1)  &kp LS(N2)  &kp LS(N3)  &none       &none
+&none  &none       &none       &none       &none              &trans  &trans  &none      &none  &trans  &trans         &none             &none       &none       &none       &none
             >;
         };
 
