@@ -243,6 +243,16 @@
             bindings = <&kp LG(L)>;
             key-positions = <48 49 50>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <66>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <65>;
+        };
     };
 
     keymap {
