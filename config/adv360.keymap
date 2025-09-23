@@ -154,8 +154,8 @@
             key-positions = <31 17 16>;
         };
 
-        aot_k {
-            bindings = <&kp K>;
+        aot_z {
+            bindings = <&kp Z>;
             key-positions = <31 17 18>;
         };
 
@@ -164,8 +164,8 @@
             key-positions = <31 17 30>;
         };
 
-        aon_v {
-            bindings = <&kp V>;
+        aon_x {
+            bindings = <&kp X>;
             key-positions = <31 17 32>;
         };
 
@@ -174,8 +174,8 @@
             key-positions = <32 18 16>;
         };
 
-        tna_x {
-            bindings = <&kp X>;
+        tna_v {
+            bindings = <&kp V>;
             key-positions = <18 17 32>;
         };
 
@@ -184,8 +184,8 @@
             key-positions = <18 32 30>;
         };
 
-        tno_z {
-            bindings = <&kp Z>;
+        tno_k {
+            bindings = <&kp K>;
             key-positions = <18 32 31>;
         };
 
