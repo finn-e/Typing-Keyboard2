@@ -245,83 +245,83 @@
         };
 
         SPtab_home {
-            bindings = <&kp home>;
-            key-positions = <15 29>;
+            bindings = <&kp HOME>;
+            key-positions = <15 66>;
         };
 
-        SPesc_ {
-            bindings = <&kp left>;
-            key-positions = <15 29>;
+        SPesc_left {
+            bindings = <&kp LEFT>;
+            key-positions = <29 66>;
         };
 
         SPe_pgdn {
-            bindings = <&kp pg_dn>;
-            key-positions = <15 29>;
+            bindings = <&kp PG_DN>;
+            key-positions = <16 66>;
         };
 
         SPa_pgup {
-            bindings = <&kp pg_up>;
-            key-positions = <15 29>;
+            bindings = <&kp PG_UP>;
+            key-positions = <17 66>;
         };
 
         SPt_end {
-            bindings = <&kp end>;
-            key-positions = <15 29>;
+            bindings = <&kp END>;
+            key-positions = <18 66>;
         };
 
         SPi_down {
-            bindings = <&kp down>;
-            key-positions = <15 29>;
+            bindings = <&kp DOWN>;
+            key-positions = <30 66>;
         };
 
         SPo_up {
-            bindings = <&kp up>;
-            key-positions = <15 29>;
+            bindings = <&kp UP>;
+            key-positions = <31 66>;
         };
 
         SPn_right {
-            bindings = <&kp right>;
-            key-positions = <15 29>;
+            bindings = <&kp RIGHT>;
+            key-positions = <32 66>;
         };
 
         SPx_left {
-            bindings = <&kp left>;
-            key-positions = <15 29>;
+            bindings = <&kp LEFT>;
+            key-positions = <48 66>;
         };
 
         SPc_down {
-            bindings = <&kp down>;
-            key-positions = <15 29>;
+            bindings = <&kp DOWN>;
+            key-positions = <15 29 66>;
         };
 
         SPv_right {
-            bindings = <&kp right>;
-            key-positions = <15 29>;
+            bindings = <&kp RIGHT>;
+            key-positions = <15 29 66>;
         };
 
         SPpinky_meta {
             bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+            key-positions = <15 29 66>;
         };
 
         SPxc_undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <48 49>;
+            key-positions = <48 49 66>;
         };
 
         SPxv_save {
             bindings = <&kp LC(S)>;
-            key-positions = <48 50>;
+            key-positions = <48 50 66>;
         };
 
         SPcv_redo {
             bindings = <&kp LC(LS(Z))>;
-            key-positions = <50 49>;
+            key-positions = <50 49 66>;
         };
 
         SPxcv_lockscreen {
             bindings = <&kp LG(L)>;
-            key-positions = <48 49 50>;
+            key-positions = <48 49 50 66>;
         };
 
         SPea_question {
@@ -515,88 +515,88 @@
         };
 
         BStab_dot {
-            bindings = <&kp>;
-            key-positions = <15 29>;
+            bindings = <&kp DOT>;
+            key-positions = <15 65>;
         };
 
-        BSesc_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSesc_0 {
+            bindings = <&kp N0>;
+            key-positions = <29 65>;
         };
 
-        BSe_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSe_9 {
+            bindings = <&kp N9>;
+            key-positions = <16 65>;
         };
 
-        BSa_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSa_8 {
+            bindings = <&kp N8>;
+            key-positions = <15 29 65>;
         };
 
-        BSt_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSt_7 {
+            bindings = <&kp N7>;
+            key-positions = <15 29 65>;
         };
 
-        BSi_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSi_6 {
+            bindings = <&kp N6>;
+            key-positions = <30 65>;
         };
 
-        BSo_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSo_5 {
+            bindings = <&kp N5>;
+            key-positions = <31 65>;
         };
 
-        BSn_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSn_4 {
+            bindings = <&sk N4>;
+            key-positions = <32 65>;
         };
 
-        BSx_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSx_3 {
+            bindings = <&sk N3>;
+            key-positions = <48 65>;
         };
 
-        BSc_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSc_2 {
+            bindings = <&kp N2>;
+            key-positions = <49 65>;
         };
 
-        BSv_ {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+        BSv_1 {
+            bindings = <&kp N1>;
+            key-positions = <50 65>;
         };
 
         BSpinky_meta {
             bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
+            key-positions = <15 29 65>;
         };
 
         BSxc_undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <48 49>;
+            key-positions = <48 49 65>;
         };
 
         BSxv_save {
             bindings = <&kp LC(S)>;
-            key-positions = <48 50>;
+            key-positions = <48 50 65>;
         };
 
         BScv_redo {
             bindings = <&kp LC(LS(Z))>;
-            key-positions = <50 49>;
+            key-positions = <50 49 65>;
         };
 
         BSxcv_lockscreen {
             bindings = <&kp LG(L)>;
-            key-positions = <48 49 50>;
+            key-positions = <48 49 50 65>;
         };
 
         BSea_question {
             bindings = <&kp QUESTION>;
-            key-positions = <65 16 17>;
+            key-positions = <16 17 65>;
         };
 
         BSet_voldn {
