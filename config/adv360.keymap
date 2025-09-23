@@ -244,58 +244,58 @@
             key-positions = <30 31 32>;
         };
 
-        SPtab_ {
-            bindings = <&sk LEFT_GUI>;
+        SPtab_home {
+            bindings = <&kp home>;
             key-positions = <15 29>;
         };
 
         SPesc_ {
-            bindings = <&sk LEFT_GUI>;
+            bindings = <&kp left>;
             key-positions = <15 29>;
         };
 
-        SPe_ {
-            bindings = <&sk LEFT_GUI>;
+        SPe_pgdn {
+            bindings = <&kp pg_dn>;
             key-positions = <15 29>;
         };
 
-        SPa_ {
-            bindings = <&sk LEFT_GUI>;
+        SPa_pgup {
+            bindings = <&kp pg_up>;
             key-positions = <15 29>;
         };
 
-        SPt_ {
-            bindings = <&sk LEFT_GUI>;
+        SPt_end {
+            bindings = <&kp end>;
             key-positions = <15 29>;
         };
 
-        SPi_ {
-            bindings = <&sk LEFT_GUI>;
+        SPi_down {
+            bindings = <&kp down>;
             key-positions = <15 29>;
         };
 
-        SPo_ {
-            bindings = <&sk LEFT_GUI>;
+        SPo_up {
+            bindings = <&kp up>;
             key-positions = <15 29>;
         };
 
-        SPn_ {
-            bindings = <&sk LEFT_GUI>;
+        SPn_right {
+            bindings = <&kp right>;
             key-positions = <15 29>;
         };
 
-        SPx_ {
-            bindings = <&sk LEFT_GUI>;
+        SPx_left {
+            bindings = <&kp left>;
             key-positions = <15 29>;
         };
 
-        SPc_ {
-            bindings = <&sk LEFT_GUI>;
+        SPc_down {
+            bindings = <&kp down>;
             key-positions = <15 29>;
         };
 
-        SPv_ {
-            bindings = <&sk LEFT_GUI>;
+        SPv_right {
+            bindings = <&kp right>;
             key-positions = <15 29>;
         };
 
@@ -514,8 +514,8 @@
             key-positions = <66 30 31 32>;
         };
 
-        BStab_ {
-            bindings = <&sk LEFT_GUI>;
+        BStab_dot {
+            bindings = <&kp>;
             key-positions = <15 29>;
         };
 
