@@ -264,23 +264,8 @@
             key-positions = <50 66>;
         };
 
-        SPx_left {
-            bindings = <&kp LEFT>;
-            key-positions = <48 66>;
-        };
-
-        SPc_down {
-            bindings = <&kp DOWN>;
-            key-positions = <29 47 66>;
-        };
-
-        SPv_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <29 47 66>;
-        };
-
-        SPpinky_meta {
-            bindings = <&sk LEFT_GUI>;
+        SPpinky_smeta {
+            bindings = <&kp RET>;
             key-positions = <29 47 66>;
         };
 
@@ -620,7 +605,7 @@
         };
 
         BSeitn_sym {
-            bindings = <&sl 5>;
+            bindings = <&sl 0>;
             key-positions = <65 48 30 32 50>;
         };
 
@@ -1090,7 +1075,7 @@
         };
 
         SPeitn_sym_R {
-            bindings = <&sl 5>;
+            bindings = <&sl 0>;
             key-positions = <69 57 43 41 55>;
         };
 
@@ -1340,7 +1325,7 @@
         };
 
         BSeitn_sym_R {
-            bindings = <&sl 5>;
+            bindings = <&sl 0>;
             key-positions = <70 57 43 41 55>;
         };
 
@@ -1412,11 +1397,11 @@
         typing {
             display-name = "Overlay";
             bindings = <
-&none  &none     &none  &none  &none  &none  &trans                                               &trans       &none  &none  &none  &none  &none     &none
-&none  &none     &none  &none  &none  &none  &trans                                               &trans       &none  &none  &none  &none  &none     &none
-&none  &kp BSPC  &kp E  &kp A  &kp T  &none  &trans       &none      &none      &none  &none      &trans       &none  &kp T  &kp A  &kp E  &kp BSPC  &none
-&none  &kp RET   &kp I  &kp O  &kp N  &none                          &mo 3      &mo 3                          &none  &kp I  &kp O  &kp N  &kp RET   &none
-&none  &none     &none  &none  &none         &key_repeat  &kp SPACE  &mo 4      &mo 4  &kp SPACE  &key_repeat         &none  &none  &none  &none     &none
+&none  &none       &none  &none  &none  &none  &trans                                               &trans       &none  &none  &none  &none  &none       &none
+&none  &none       &none  &none  &none  &none  &trans                                               &trans       &none  &none  &none  &none  &none       &none
+&none  &kp BSPC    &kp E  &kp A  &kp T  &none  &trans       &none      &none      &none  &none      &trans       &none  &kp T  &kp A  &kp E  &kp BSPC    &none
+&none  &kp ESCAPE  &kp I  &kp O  &kp N  &none                          &mo 3      &mo 3                          &none  &kp I  &kp O  &kp N  &kp ESCAPE  &none
+&none  &none       &none  &none  &none         &key_repeat  &kp SPACE  &mo 4      &mo 4  &kp SPACE  &key_repeat         &none  &none  &none  &none       &none
             >;
         };
 
@@ -1435,9 +1420,9 @@
             display-name = "nav";
             bindings = <
 &none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
-&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &none                                     &none   &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
+&none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
 &none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none
-&none  &none     &kp LEFT   &kp DOWN   &kp RIGHT  &none                  &none      &none                  &none  &kp LEFT  &kp DOWN   &kp RIGHT  &none      &none
+&none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none                  &none      &none                  &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
 &none  &none     &none      &none      &none             &trans  &trans  &none      &none  &trans  &trans         &none     &none      &none      &none      &none
             >;
         };
@@ -1445,22 +1430,22 @@
         num {
             display-name = "num";
             bindings = <
-&none  &none   &none   &none   &none   &none  &none                                     &none   &none  &none         &none   &none   &none   &none
-&none  &none   &none   &none   &none   &none  &none                                     &none   &none  &none         &none   &none   &none   &none
-&none  &kp N8  &kp N6  &kp N4  &kp N2  &none  &none   &none   &none      &none  &none   &none   &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0  &none
-&none  &kp N9  &kp N7  &kp N5  &kp N3  &none                  &none      &none                  &none  &kp NUMBER_1  &kp N2  &kp N3  &none   &none
-&none  &none   &none   &none   &none          &kp N1  &kp N0  &none      &none  &trans  &trans         &none         &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none  &none                                     &none   &none  &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none  &none                                     &none   &none  &none   &none   &none   &none   &none
+&none  &kp N1  &kp N3  &kp N5  &kp N7  &none  &none   &none   &none      &none  &none   &none   &none  &kp N7  &kp N5  &kp N3  &kp N1  &none
+&none  &kp N2  &kp N4  &kp N6  &kp N8  &none                  &none      &none                  &none  &kp N8  &kp N6  &kp N4  &kp N2  &none
+&none  &none   &none   &none   &none          &kp N9  &kp N0  &none      &none  &kp N0  &kp N9         &none   &none   &none   &none   &none
             >;
         };
 
         sym {
-            display-name = "sym";
+            display-name = "num";
             bindings = <
-&none  &none       &none       &none       &none       &none  &none                                     &none   &none  &none             &none       &none       &none       &none
-&none  &kp K_MUTE  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &none  &none                                     &none   &none  &kp LS(N7)        &kp LS(N8)  &kp LS(N9)  &kp K_MUTE  &none
-&none  &kp LS(N0)  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &none  &none   &none   &none      &none  &none   &none   &none  &kp LS(NUMBER_4)  &kp LS(N5)  &kp LS(N6)  &kp LS(N0)  &none
-&none  &none       &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &none                  &none      &none                  &none  &kp LS(NUMBER_1)  &kp LS(N2)  &kp LS(N3)  &none       &none
-&none  &none       &none       &none       &none              &trans  &trans  &none      &none  &trans  &trans         &none             &none       &none       &none       &none
+&none  &none         &none          &none          &none         &none  &none                                                 &none       &none  &none         &none          &none          &none         &none
+&none  &none         &none          &none          &none         &none  &none                                                 &none       &none  &none         &none          &none          &none         &none
+&none  &kp LS(EXCL)  &kp LS(POUND)  &kp LS(PRCNT)  &kp LS(AMPS)  &none  &none       &none       &none      &none  &none       &none       &none  &kp LS(AMPS)  &kp LS(PRCNT)  &kp LS(POUND)  &kp LS(EXCL)  &none
+&none  &kp LS(AT)    &kp LS(DLLR)   &kp LS(CARET)  &kp LS(STAR)  &none                          &none      &none                          &none  &kp LS(STAR)  &kp LS(CARET)  &kp LS(DLLR)   &kp LS(AT)    &none
+&none  &none         &none          &none          &none                &kp LS(N9)  &kp LS(N0)  &none      &none  &kp LS(N0)  &kp LS(N9)         &none         &none          &none          &none         &none
             >;
         };
 
@@ -1470,7 +1455,7 @@
 &none  &none       &none            &none       &none        &none  &none                                     &none   &none  &none        &none       &none            &none       &none
 &none  &none       &none            &none       &none        &none  &none                                     &none   &none  &none        &none       &none            &none       &none
 &none  &kp K_MUTE  &kp PRINTSCREEN  &caps_word  &sys_reset   &none  &none   &none   &none      &none  &none   &none   &none  &sys_reset   &caps_word  &kp PRINTSCREEN  &kp K_MUTE  &none
-&none  &bl BL_TOG  &kp INS          &kp CAPS    &bootloader  &none                  &none      &none                  &none  &bootloader  &kp CAPS    &kp INSERT       &none       &none
+&none  &bl BL_TOG  &kp INS          &kp CAPS    &bootloader  &none                  &none      &none                  &none  &bootloader  &kp CAPS    &kp INSERT       &bl BL_TOG  &none
 &none  &none       &none            &none       &none               &trans  &trans  &none      &none  &trans  &trans         &none        &none       &none            &none       &none
             >;
         };
