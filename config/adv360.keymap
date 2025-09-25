@@ -29,770 +29,746 @@
     combos {
         compatible = "zmk,combos";
 
-        pinky_meta {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29>;
-        };
-
-        xc_undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <48 49>;
-        };
-
-        xv_save {
-            bindings = <&kp LC(S)>;
-            key-positions = <48 50>;
-        };
-
-        cv_redo {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <50 49>;
-        };
-
-        xcv_lockscreen {
-            bindings = <&kp LG(L)>;
-            key-positions = <48 49 50>;
-        };
-
-        ea_h {
-            bindings = <&kp H>;
-            key-positions = <16 17>;
-        };
-
-        et_s {
-            bindings = <&kp S>;
-            key-positions = <16 18>;
-        };
-
-        ei_lalt {
-            bindings = <&sk LALT>;
-            key-positions = <16 30>;
-        };
-
-        eo_y {
-            bindings = <&kp Y>;
-            key-positions = <16 31>;
-        };
-
-        en_w {
-            bindings = <&kp W>;
-            key-positions = <16 32>;
-        };
-
-        at_r {
-            bindings = <&kp R>;
-            key-positions = <17 18>;
-        };
-
-        ai_g {
-            bindings = <&kp G>;
-            key-positions = <17 30>;
-        };
-
-        ao_ctrl {
-            bindings = <&sk LEFT_CONTROL>;
-            key-positions = <17 31>;
-        };
-
-        an_d {
-            bindings = <&kp D>;
-            key-positions = <17 32>;
-        };
-
-        ti_m {
-            bindings = <&kp M>;
-            key-positions = <18 30>;
-        };
-
-        to_f {
-            bindings = <&kp F>;
-            key-positions = <18 31>;
-        };
-
-        tn_shift {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <18 32>;
-        };
-
-        io_u {
-            bindings = <&kp U>;
-            key-positions = <31 30>;
-        };
-
-        in_c {
-            bindings = <&kp C>;
-            key-positions = <30 32>;
-        };
-
-        on_l {
-            bindings = <&kp L>;
-            key-positions = <32 31>;
-        };
-
-        eia_apos {
-            bindings = <&kp SQT>;
-            key-positions = <17 16 30>;
-        };
-
-        eit_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <30 16 18>;
-        };
-
-        eio_comma {
-            bindings = <&kp COMMA>;
-            key-positions = <16 30 31>;
-        };
-
-        ein_dot {
-            bindings = <&kp DOT>;
-            key-positions = <30 16 32>;
-        };
-
-        eao_p {
-            bindings = <&kp P>;
-            key-positions = <31 17 16>;
-        };
-
-        aot_z {
-            bindings = <&kp Z>;
-            key-positions = <31 17 18>;
-        };
-
-        aoi_b {
-            bindings = <&kp B>;
-            key-positions = <31 17 30>;
-        };
-
-        aon_x {
-            bindings = <&kp X>;
-            key-positions = <31 17 32>;
-        };
-
-        tne_q {
-            bindings = <&kp Q>;
-            key-positions = <32 18 16>;
-        };
-
-        tna_v {
-            bindings = <&kp V>;
-            key-positions = <18 17 32>;
-        };
-
-        tni_j {
-            bindings = <&kp J>;
-            key-positions = <18 32 30>;
-        };
-
-        tno_k {
-            bindings = <&kp K>;
-            key-positions = <18 32 31>;
-        };
-
-        eiao_del {
-            bindings = <&kp DELETE>;
-            key-positions = <30 16 17 31>;
-        };
-
-        eitn_num {
-            bindings = <&Numlock>;
-            key-positions = <30 16 18 32>;
-        };
-
-        aotn_nav {
-            bindings = <&Navlock>;
-            key-positions = <32 18 17 31>;
-        };
-
-        eat_ret {
-            bindings = <&kp RETURN>;
-            key-positions = <16 17 18>;
-        };
-
-        ean_paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <16 17 32>;
-        };
-
-        eot_copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <18 31 16>;
-        };
-
-        eon_undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <16 31 32>;
-        };
-
-        iat_cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <30 17 18>;
-        };
-
-        ian_showall {
-            bindings = <&kp LG(W)>;
-            key-positions = <30 17 32>;
-        };
-
-        iot_redo {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <30 31 18>;
-        };
-
-        ion_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <30 31 32>;
-        };
-
-        SPtab_home {
-            bindings = <&kp HOME>;
-            key-positions = <15 66>;
-        };
-
-        SPesc_left {
-            bindings = <&kp LEFT>;
-            key-positions = <29 66>;
-        };
-
-        SPe_pgdn {
-            bindings = <&kp PG_DN>;
-            key-positions = <16 66>;
-        };
-
-        SPa_pgup {
-            bindings = <&kp PG_UP>;
-            key-positions = <17 66>;
-        };
-
-        SPt_end {
-            bindings = <&kp END>;
-            key-positions = <18 66>;
-        };
-
-        SPi_down {
-            bindings = <&kp DOWN>;
-            key-positions = <30 66>;
-        };
-
-        SPo_up {
-            bindings = <&kp UP>;
-            key-positions = <31 66>;
-        };
-
-        SPn_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <32 66>;
-        };
-
-        SPx_left {
-            bindings = <&kp LEFT>;
-            key-positions = <48 66>;
-        };
-
-        SPc_down {
-            bindings = <&kp DOWN>;
-            key-positions = <15 29 66>;
-        };
-
-        SPv_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <15 29 66>;
-        };
-
-        SPpinky_meta {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29 66>;
-        };
-
-        SPxc_undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <48 49 66>;
-        };
-
-        SPxv_save {
-            bindings = <&kp LC(S)>;
-            key-positions = <48 50 66>;
-        };
-
-        SPcv_redo {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <50 49 66>;
-        };
-
-        SPxcv_lockscreen {
-            bindings = <&kp LG(L)>;
-            key-positions = <48 49 50 66>;
-        };
-
-        SPea_question {
-            bindings = <&kp QUESTION>;
-            key-positions = <66 16 17>;
-        };
-
-        SPet_VolUp {
-            bindings = <&kp C_VOLUME_UP>;
-            key-positions = <66 16 18>;
-        };
-
-        SPei_rbrace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <66 16 30>;
-        };
-
-        SPeo_gresc {
-            bindings = <&gresc>;
-            key-positions = <66 16 31>;
-        };
-
-        SPen_bslash {
-            bindings = <&kp BSLH>;
-            key-positions = <66 16 32>;
-        };
-
-        SPat_plus {
-            bindings = <&kp PLUS>;
-            key-positions = <66 17 18>;
-        };
-
-        SPai_stab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <66 17 30>;
-        };
-
-        SPao_rbracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <66 17 31>;
-        };
-
-        SPan_at {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <66 17 32>;
-        };
-
-        SPti_slash {
-            bindings = <&kp SLASH>;
-            key-positions = <66 18 30>;
-        };
-
-        SPto_hash {
-            bindings = <&kp HASH>;
-            key-positions = <66 18 31>;
-        };
-
-        SPtn_rparen {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <66 18 32>;
-        };
-
-        SPio_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <66 31 30>;
-        };
-
-        SPin_dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <66 30 32>;
-        };
-
-        SPon_amps {
-            bindings = <&kp AMPS>;
-            key-positions = <66 32 31>;
-        };
-
-        SPeia_dqt {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <66 17 16 30>;
-        };
-
-        SPeit_under {
-            bindings = <&kp UNDER>;
-            key-positions = <66 30 16 18>;
-        };
-
-        SPeio_semi {
-            bindings = <&kp SEMI>;
-            key-positions = <66 16 30 31>;
-        };
-
-        SPein_colon {
-            bindings = <&kp COLON>;
-            key-positions = <66 30 16 32>;
-        };
-
-        SPeao_p {
-            bindings = <&kp P>;
-            key-positions = <66 31 17 16>;
-        };
-
-        SPaot_k {
-            bindings = <&kp K>;
-            key-positions = <66 31 17 18>;
-        };
-
-        SPaoi_b {
-            bindings = <&kp B>;
-            key-positions = <66 31 17 30>;
-        };
-
-        SPaon_v {
-            bindings = <&kp V>;
-            key-positions = <66 31 17 32>;
-        };
-
-        SPtne_q {
-            bindings = <&kp Q>;
-            key-positions = <66 32 18 16>;
-        };
-
-        SPtna_x {
-            bindings = <&kp X>;
-            key-positions = <66 18 17 32>;
-        };
-
-        SPtni_j {
-            bindings = <&kp J>;
-            key-positions = <66 18 32 30>;
-        };
-
-        SPtno_z {
-            bindings = <&kp Z>;
-            key-positions = <66 18 32 31>;
-        };
-
-        SPeiao_ctrl+del {
-            bindings = <&kp LC(DELETE)>;
-            key-positions = <66 30 16 17 31>;
-        };
-
-        SPeitn_sym {
-            bindings = <&sl 5>;
-            key-positions = <66 30 16 18 32>;
-        };
-
-        SPaotn_bt {
-            bindings = <&sl 7>;
-            key-positions = <66 32 18 17 31>;
-        };
-
-        SPeat_ret {
-            bindings = <&kp RETURN>;
-            key-positions = <66 16 17 18>;
-        };
-
-        SPean_spaste {
-            bindings = <&kp LC(LS(V))>;
-            key-positions = <66 16 17 32>;
-        };
-
-        SPeot_scopy {
-            bindings = <&kp LC(LS(C))>;
-            key-positions = <66 18 31 16>;
-        };
-
-        SPeon_sundo {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <66 16 31 32>;
-        };
-
-        SPiat_scut {
-            bindings = <&kp LC(LS(X))>;
-            key-positions = <66 30 17 18>;
-        };
-
-        SPian_showdesktops {
-            bindings = <&kp LG(G)>;
-            key-positions = <66 30 17 32>;
-        };
-
-        SPiot_unsredo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <66 30 31 18>;
-        };
-
-        SPion_tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <66 30 31 32>;
-        };
-
-        BStab_dot {
-            bindings = <&kp DOT>;
-            key-positions = <15 65>;
-        };
-
-        BSesc_0 {
-            bindings = <&kp N0>;
-            key-positions = <29 65>;
-        };
-
-        BSe_9 {
-            bindings = <&kp N9>;
-            key-positions = <16 65>;
-        };
-
-        BSa_8 {
-            bindings = <&kp N8>;
-            key-positions = <15 29 65>;
-        };
-
-        BSt_7 {
-            bindings = <&kp N7>;
-            key-positions = <15 29 65>;
-        };
-
-        BSi_6 {
-            bindings = <&kp N6>;
-            key-positions = <30 65>;
-        };
-
-        BSo_5 {
-            bindings = <&kp N5>;
-            key-positions = <31 65>;
-        };
-
-        BSn_4 {
-            bindings = <&sk N4>;
-            key-positions = <32 65>;
-        };
-
-        BSx_3 {
-            bindings = <&sk N3>;
-            key-positions = <48 65>;
-        };
-
-        BSc_2 {
-            bindings = <&kp N2>;
-            key-positions = <49 65>;
-        };
-
-        BSv_1 {
-            bindings = <&kp N1>;
-            key-positions = <50 65>;
-        };
-
-        BSpinky_meta {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <15 29 65>;
-        };
-
-        BSxc_undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <48 49 65>;
-        };
-
-        BSxv_save {
-            bindings = <&kp LC(S)>;
-            key-positions = <48 50 65>;
-        };
-
-        BScv_redo {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <50 49 65>;
-        };
-
-        BSxcv_lockscreen {
-            bindings = <&kp LG(L)>;
-            key-positions = <48 49 50 65>;
-        };
-
-        BSea_question {
-            bindings = <&kp QUESTION>;
-            key-positions = <16 17 65>;
-        };
-
-        BSet_voldn {
-            bindings = <&kp C_VOL_DN>;
-            key-positions = <65 16 18>;
-        };
-
-        BSei_lbrace {
-            bindings = <&sk LEFT_BRACE>;
-            key-positions = <65 16 30>;
-        };
-
-        BSeo_gresc {
-            bindings = <&gresc>;
-            key-positions = <65 16 31>;
-        };
-
-        BSen_caret {
-            bindings = <&kp CARET>;
-            key-positions = <65 16 32>;
-        };
-
-        BSat_astrk {
-            bindings = <&kp ASTRK>;
-            key-positions = <65 17 18>;
-        };
-
-        BSai_atab {
-            bindings = <&kp LA(G)>;
-            key-positions = <65 17 30>;
-        };
-
-        BSao_lbracket {
-            bindings = <&sk LEFT_BRACKET>;
-            key-positions = <65 17 31>;
-        };
-
-        BSan_at {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <65 17 32>;
-        };
-
-        BSti_percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <65 18 30>;
-        };
-
-        BSto_hash {
-            bindings = <&kp HASH>;
-            key-positions = <65 18 31>;
-        };
-
-        BStn_lparen {
-            bindings = <&sk LEFT_PARENTHESIS>;
-            key-positions = <65 18 32>;
-        };
-
-        BSio_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <65 31 30>;
-        };
-
-        BSin_dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <65 30 32>;
-        };
-
-        BSon_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <65 32 31>;
-        };
-
-        BSeia_grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <65 17 16 30>;
-        };
-
-        BSeit_tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <65 30 16 18>;
-        };
-
-        BSeio_question {
-            bindings = <&kp QUESTION>;
-            key-positions = <65 16 30 31>;
-        };
-
-        BSein_exclamation {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <65 30 16 32>;
-        };
-
-        BSeao_p {
-            bindings = <&kp P>;
-            key-positions = <65 31 17 16>;
-        };
-
-        BSaot_k {
-            bindings = <&kp K>;
-            key-positions = <65 31 17 18>;
-        };
-
-        BSaoi_b {
-            bindings = <&kp B>;
-            key-positions = <65 31 17 30>;
-        };
-
-        BSaon_v {
-            bindings = <&kp V>;
-            key-positions = <65 31 17 32>;
-        };
-
-        BStne_q {
-            bindings = <&kp Q>;
-            key-positions = <65 32 18 16>;
-        };
-
-        BStna_x {
-            bindings = <&kp X>;
-            key-positions = <65 18 17 32>;
-        };
-
-        BStni_j {
-            bindings = <&kp J>;
-            key-positions = <65 18 32 30>;
-        };
-
-        BStno_z {
-            bindings = <&kp Z>;
-            key-positions = <65 18 32 31>;
-        };
-
-        BSeiao_cbspc {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <65 30 16 17 31>;
-        };
-
-        BSeitn_sym {
-            bindings = <&sl 5>;
-            key-positions = <65 30 16 18 32>;
-        };
-
-        BSaotn_bt {
-            bindings = <&sl 7>;
-            key-positions = <65 32 18 17 31>;
-        };
-
-        BSeat_ret {
-            bindings = <&kp RETURN>;
-            key-positions = <65 16 17 18>;
-        };
-
-        BSean_paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <65 16 17 32>;
-        };
-
-        BSeot_copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <65 18 31 16>;
-        };
-
-        BSeon_undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <65 16 31 32>;
-        };
-
-        BSiat_cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <65 30 17 18>;
-        };
-
-        BSian_showdesktop {
-            bindings = <&kp LG(D)>;
-            key-positions = <65 30 17 32>;
-        };
-
-        BSiot_redo {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <65 30 31 18>;
-        };
-
-        BSion_grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <65 30 31 32>;
-        };
-
-        fingers_misc {
-            bindings = <&sl 6>;
-            key-positions = <16 17 18 32 31 30>;
-        };
-
-        rh-test {
-            bindings = <&kp A>;
-            key-positions = <41 23 25 24 42 43 44 26 55 56 57 70 69>;
-        };
+pinky_meta {
+    bindings = <&sk LEFT_GUI>;
+    key-positions = <29 47>;
+};
+
+ea_h {
+    bindings = <&kp H>;
+    key-positions = <30 31>;
+};
+
+et_s {
+    bindings = <&kp S>;
+    key-positions = <30 32>;
+};
+
+ei_lalt {
+    bindings = <&sk LALT>;
+    key-positions = <30 48>;
+};
+
+eo_y {
+    bindings = <&kp Y>;
+    key-positions = <30 49>;
+};
+
+en_w {
+    bindings = <&kp W>;
+    key-positions = <30 50>;
+};
+
+at_r {
+    bindings = <&kp R>;
+    key-positions = <31 32>;
+};
+
+ai_g {
+    bindings = <&kp G>;
+    key-positions = <31 48>;
+};
+
+ao_ctrl {
+    bindings = <&sk LEFT_CONTROL>;
+    key-positions = <31 49>;
+};
+
+an_d {
+    bindings = <&kp D>;
+    key-positions = <31 50>;
+};
+
+ti_m {
+    bindings = <&kp M>;
+    key-positions = <32 48>;
+};
+
+to_f {
+    bindings = <&kp F>;
+    key-positions = <32 49>;
+};
+
+tn_shift {
+    bindings = <&sk LEFT_SHIFT>;
+    key-positions = <32 50>;
+};
+
+io_u {
+    bindings = <&kp U>;
+    key-positions = <49 48>;
+};
+
+in_c {
+    bindings = <&kp C>;
+    key-positions = <48 50>;
+};
+
+on_l {
+    bindings = <&kp L>;
+    key-positions = <50 49>;
+};
+
+eia_apos {
+    bindings = <&kp SQT>;
+    key-positions = <31 30 48>;
+};
+
+eit_minus {
+    bindings = <&kp MINUS>;
+    key-positions = <48 30 32>;
+};
+
+eio_comma {
+    bindings = <&kp COMMA>;
+    key-positions = <30 48 49>;
+};
+
+ein_dot {
+    bindings = <&kp DOT>;
+    key-positions = <48 30 50>;
+};
+
+eao_p {
+    bindings = <&kp P>;
+    key-positions = <49 31 30>;
+};
+
+aot_z {
+    bindings = <&kp Z>;
+    key-positions = <49 31 32>;
+};
+
+aoi_b {
+    bindings = <&kp B>;
+    key-positions = <49 31 48>;
+};
+
+aon_x {
+    bindings = <&kp X>;
+    key-positions = <49 31 50>;
+};
+
+tne_q {
+    bindings = <&kp Q>;
+    key-positions = <50 32 30>;
+};
+
+tna_v {
+    bindings = <&kp V>;
+    key-positions = <32 31 50>;
+};
+
+tni_j {
+    bindings = <&kp J>;
+    key-positions = <32 50 48>;
+};
+
+tno_k {
+    bindings = <&kp K>;
+    key-positions = <32 50 49>;
+};
+
+eiao_del {
+    bindings = <&kp DELETE>;
+    key-positions = <48 30 31 49>;
+};
+
+eitn_num {
+    bindings = <&Numlock>;
+    key-positions = <48 30 32 50>;
+};
+
+aotn_nav {
+    bindings = <&Navlock>;
+    key-positions = <50 32 31 49>;
+};
+
+eat_ret {
+    bindings = <&kp RETURN>;
+    key-positions = <30 31 32>;
+};
+
+ean_paste {
+    bindings = <&kp LC(V)>;
+    key-positions = <30 31 50>;
+};
+
+eot_copy {
+    bindings = <&kp LC(C)>;
+    key-positions = <32 49 30>;
+};
+
+eon_undo {
+    bindings = <&kp LC(Z)>;
+    key-positions = <30 49 50>;
+};
+
+iat_cut {
+    bindings = <&kp LC(X)>;
+    key-positions = <48 31 32>;
+};
+
+ian_showall {
+    bindings = <&kp LG(W)>;
+    key-positions = <48 31 50>;
+};
+
+iot_redo {
+    bindings = <&kp LC(LS(Z))>;
+    key-positions = <48 49 32>;
+};
+
+ion_esc {
+    bindings = <&kp ESCAPE>;
+    key-positions = <48 49 50>;
+};
+
+SPtab_home {
+    bindings = <&kp HOME>;
+    key-positions = <29 66>;
+};
+
+SPesc_left {
+    bindings = <&kp LEFT>;
+    key-positions = <47 66>;
+};
+
+SPe_pgdn {
+    bindings = <&kp PG_DN>;
+    key-positions = <30 66>;
+};
+
+SPa_pgup {
+    bindings = <&kp PG_UP>;
+    key-positions = <31 66>;
+};
+
+SPt_end {
+    bindings = <&kp END>;
+    key-positions = <32 66>;
+};
+
+SPi_down {
+    bindings = <&kp DOWN>;
+    key-positions = <48 66>;
+};
+
+SPo_up {
+    bindings = <&kp UP>;
+    key-positions = <49 66>;
+};
+
+SPn_right {
+    bindings = <&kp RIGHT>;
+    key-positions = <50 66>;
+};
+
+SPx_left {
+    bindings = <&kp LEFT>;
+    key-positions = <48 66>;
+};
+
+SPc_down {
+    bindings = <&kp DOWN>;
+    key-positions = <29 47 66>;
+};
+
+SPv_right {
+    bindings = <&kp RIGHT>;
+    key-positions = <29 47 66>;
+};
+
+SPpinky_meta {
+    bindings = <&sk LEFT_GUI>;
+    key-positions = <29 47 66>;
+};
+
+SPxc_undo {
+    bindings = <&kp LC(Z)>;
+    key-positions = <48 49 66>;
+};
+
+SPxv_save {
+    bindings = <&kp LC(S)>;
+    key-positions = <48 50 66>;
+};
+
+SPcv_redo {
+    bindings = <&kp LC(LS(Z))>;
+    key-positions = <50 49 66>;
+};
+
+SPxcv_lockscreen {
+    bindings = <&kp LG(L)>;
+    key-positions = <48 49 50 66>;
+};
+
+SPea_question {
+    bindings = <&kp QUESTION>;
+    key-positions = <66 30 31>;
+};
+
+SPet_VolUp {
+    bindings = <&kp C_VOLUME_UP>;
+    key-positions = <66 30 32>;
+};
+
+SPei_rbrace {
+    bindings = <&kp RIGHT_BRACE>;
+    key-positions = <66 30 48>;
+};
+
+SPeo_gresc {
+    bindings = <&gresc>;
+    key-positions = <66 30 49>;
+};
+
+SPen_bslash {
+    bindings = <&kp BSLH>;
+    key-positions = <66 30 50>;
+};
+
+SPat_plus {
+    bindings = <&kp PLUS>;
+    key-positions = <66 31 32>;
+};
+
+SPai_stab {
+    bindings = <&kp LS(TAB)>;
+    key-positions = <66 31 48>;
+};
+
+SPao_rbracket {
+    bindings = <&kp RIGHT_BRACKET>;
+    key-positions = <66 31 49>;
+};
+
+SPan_at {
+    bindings = <&kp AT_SIGN>;
+    key-positions = <66 31 50>;
+};
+
+SPti_slash {
+    bindings = <&kp SLASH>;
+    key-positions = <66 32 48>;
+};
+
+SPto_hash {
+    bindings = <&kp HASH>;
+    key-positions = <66 32 49>;
+};
+
+SPtn_rparen {
+    bindings = <&kp RIGHT_PARENTHESIS>;
+    key-positions = <66 32 50>;
+};
+
+SPio_equal {
+    bindings = <&kp EQUAL>;
+    key-positions = <66 49 48>;
+};
+
+SPin_dollar {
+    bindings = <&kp DOLLAR>;
+    key-positions = <66 48 50>;
+};
+
+SPon_amps {
+    bindings = <&kp AMPS>;
+    key-positions = <66 50 49>;
+};
+
+SPeia_dqt {
+    bindings = <&kp DOUBLE_QUOTES>;
+    key-positions = <66 31 30 48>;
+};
+
+SPeit_under {
+    bindings = <&kp UNDER>;
+    key-positions = <66 48 30 32>;
+};
+
+SPeio_semi {
+    bindings = <&kp SEMI>;
+    key-positions = <66 30 48 49>;
+};
+
+SPein_colon {
+    bindings = <&kp COLON>;
+    key-positions = <66 48 30 50>;
+};
+
+SPeao_p {
+    bindings = <&kp P>;
+    key-positions = <66 49 31 30>;
+};
+
+SPaot_k {
+    bindings = <&kp K>;
+    key-positions = <66 49 31 32>;
+};
+
+SPaoi_b {
+    bindings = <&kp B>;
+    key-positions = <66 49 31 48>;
+};
+
+SPaon_v {
+    bindings = <&kp V>;
+    key-positions = <66 49 31 50>;
+};
+
+SPtne_q {
+    bindings = <&kp Q>;
+    key-positions = <66 50 32 30>;
+};
+
+SPtna_x {
+    bindings = <&kp X>;
+    key-positions = <66 32 31 50>;
+};
+
+SPtni_j {
+    bindings = <&kp J>;
+    key-positions = <66 32 50 48>;
+};
+
+SPtno_z {
+    bindings = <&kp Z>;
+    key-positions = <66 32 50 49>;
+};
+
+SPeiao_ctrl+del {
+    bindings = <&kp LC(DELETE)>;
+    key-positions = <66 48 30 31 49>;
+};
+
+SPeitn_sym {
+    bindings = <&sl 5>;
+    key-positions = <66 48 30 32 50>;
+};
+
+SPaotn_bt {
+    bindings = <&sl 7>;
+    key-positions = <66 50 32 31 49>;
+};
+
+SPeat_ret {
+    bindings = <&kp RETURN>;
+    key-positions = <66 30 31 32>;
+};
+
+SPean_spaste {
+    bindings = <&kp LC(LS(V))>;
+    key-positions = <66 30 31 50>;
+};
+
+SPeot_scopy {
+    bindings = <&kp LC(LS(C))>;
+    key-positions = <66 32 49 30>;
+};
+
+SPeon_sundo {
+    bindings = <&kp LC(LS(Z))>;
+    key-positions = <66 30 49 50>;
+};
+
+SPiat_scut {
+    bindings = <&kp LC(LS(X))>;
+    key-positions = <66 48 31 32>;
+};
+
+SPian_showdesktops {
+    bindings = <&kp LG(G)>;
+    key-positions = <66 48 31 50>;
+};
+
+SPiot_unsredo {
+    bindings = <&kp LC(Z)>;
+    key-positions = <66 48 49 32>;
+};
+
+SPion_tilde {
+    bindings = <&kp TILDE>;
+    key-positions = <66 48 49 50>;
+};
+
+BStab_dot {
+    bindings = <&kp DOT>;
+    key-positions = <29 65>;
+};
+
+BSesc_0 {
+    bindings = <&kp N0>;
+    key-positions = <47 65>;
+};
+
+BSe_9 {
+    bindings = <&kp N9>;
+    key-positions = <30 65>;
+};
+
+BSa_8 {
+    bindings = <&kp N8>;
+    key-positions = <29 47 65>;
+};
+
+BSt_7 {
+    bindings = <&kp N7>;
+    key-positions = <29 47 65>;
+};
+
+BSi_6 {
+    bindings = <&kp N6>;
+    key-positions = <48 65>;
+};
+
+BSo_5 {
+    bindings = <&kp N5>;
+    key-positions = <49 65>;
+};
+
+BSn_4 {
+    bindings = <&sk N4>;
+    key-positions = <50 65>;
+};
+
+BSx_3 {
+    bindings = <&sk N3>;
+    key-positions = <48 65>;
+};
+
+BSc_2 {
+    bindings = <&kp N2>;
+    key-positions = <49 65>;
+};
+
+BSv_1 {
+    bindings = <&kp N1>;
+    key-positions = <50 65>;
+};
+
+BSpinky_meta {
+    bindings = <&sk LEFT_GUI>;
+    key-positions = <29 47 65>;
+};
+
+BSxc_undo {
+    bindings = <&kp LC(Z)>;
+    key-positions = <48 49 65>;
+};
+
+BSxv_save {
+    bindings = <&kp LC(S)>;
+    key-positions = <48 50 65>;
+};
+
+BScv_redo {
+    bindings = <&kp LC(LS(Z))>;
+    key-positions = <50 49 65>;
+};
+
+BSxcv_lockscreen {
+    bindings = <&kp LG(L)>;
+    key-positions = <48 49 50 65>;
+};
+
+BSea_question {
+    bindings = <&kp QUESTION>;
+    key-positions = <30 31 65>;
+};
+
+BSet_voldn {
+    bindings = <&kp C_VOL_DN>;
+    key-positions = <65 30 32>;
+};
+
+BSei_lbrace {
+    bindings = <&sk LEFT_BRACE>;
+    key-positions = <65 30 48>;
+};
+
+BSeo_gresc {
+    bindings = <&gresc>;
+    key-positions = <65 30 49>;
+};
+
+BSen_caret {
+    bindings = <&kp CARET>;
+    key-positions = <65 30 50>;
+};
+
+BSat_astrk {
+    bindings = <&kp ASTRK>;
+    key-positions = <65 31 32>;
+};
+
+BSai_atab {
+    bindings = <&kp LA(G)>;
+    key-positions = <65 31 48>;
+};
+
+BSao_lbracket {
+    bindings = <&sk LEFT_BRACKET>;
+    key-positions = <65 31 49>;
+};
+
+BSan_at {
+    bindings = <&kp AT_SIGN>;
+    key-positions = <65 31 50>;
+};
+
+BSti_percent {
+    bindings = <&kp PERCENT>;
+    key-positions = <65 32 48>;
+};
+
+BSto_hash {
+    bindings = <&kp HASH>;
+    key-positions = <65 32 49>;
+};
+
+BStn_lparen {
+    bindings = <&sk LEFT_PARENTHESIS>;
+    key-positions = <65 32 50>;
+};
+
+BSio_equal {
+    bindings = <&kp EQUAL>;
+    key-positions = <65 49 48>;
+};
+
+BSin_dollar {
+    bindings = <&kp DOLLAR>;
+    key-positions = <65 48 50>;
+};
+
+BSon_pipe {
+    bindings = <&kp PIPE>;
+    key-positions = <65 50 49>;
+};
+
+BSeia_grave {
+    bindings = <&kp GRAVE>;
+    key-positions = <65 31 30 48>;
+};
+
+BSeit_tilde {
+    bindings = <&kp TILDE>;
+    key-positions = <65 48 30 32>;
+};
+
+BSeio_question {
+    bindings = <&kp QUESTION>;
+    key-positions = <65 30 48 49>;
+};
+
+BSein_exclamation {
+    bindings = <&kp EXCLAMATION>;
+    key-positions = <65 48 30 50>;
+};
+
+BSeao_p {
+    bindings = <&kp P>;
+    key-positions = <65 49 31 30>;
+};
+
+BSaot_k {
+    bindings = <&kp K>;
+    key-positions = <65 49 31 32>;
+};
+
+BSaoi_b {
+    bindings = <&kp B>;
+    key-positions = <65 49 31 48>;
+};
+
+BSaon_v {
+    bindings = <&kp V>;
+    key-positions = <65 49 31 50>;
+};
+
+BStne_q {
+    bindings = <&kp Q>;
+    key-positions = <65 50 32 30>;
+};
+
+BStna_x {
+    bindings = <&kp X>;
+    key-positions = <65 32 31 50>;
+};
+
+BStni_j {
+    bindings = <&kp J>;
+    key-positions = <65 32 50 48>;
+};
+
+BStno_z {
+    bindings = <&kp Z>;
+    key-positions = <65 32 50 49>;
+};
+
+BSeiao_cbspc {
+    bindings = <&kp LC(BACKSPACE)>;
+    key-positions = <65 48 30 31 49>;
+};
+
+BSeitn_sym {
+    bindings = <&sl 5>;
+    key-positions = <65 48 30 32 50>;
+};
+
+BSaotn_bt {
+    bindings = <&sl 7>;
+    key-positions = <65 50 32 31 49>;
+};
+
+BSeat_ret {
+    bindings = <&kp RETURN>;
+    key-positions = <65 30 31 32>;
+};
+
+BSean_paste {
+    bindings = <&kp LC(V)>;
+    key-positions = <65 30 31 50>;
+};
+
+BSeot_copy {
+    bindings = <&kp LC(C)>;
+    key-positions = <65 32 49 30>;
+};
+
+BSeon_undo {
+    bindings = <&kp LC(Z)>;
+    key-positions = <65 30 49 50>;
+};
+
+BSiat_cut {
+    bindings = <&kp LC(X)>;
+    key-positions = <65 48 31 32>;
+};
+
+BSian_showdesktop {
+    bindings = <&kp LG(D)>;
+    key-positions = <65 48 31 50>;
+};
+
+BSiot_redo {
+    bindings = <&kp LC(LS(Z))>;
+    key-positions = <65 48 49 32>;
+};
+
+BSion_grave {
+    bindings = <&kp GRAVE>;
+    key-positions = <65 48 49 50>;
+};
+
+fingers_misc {
+    bindings = <&sl 6>;
+    key-positions = <30 31 32 50 49 48>;
+};
+
     };
 
     keymap {
