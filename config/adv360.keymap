@@ -54,13 +54,13 @@
             key-positions = <48 49 50>;
         };
 
-        ea_u {
-            bindings = <&kp U>;
+        ea_h {
+            bindings = <&kp H>;
             key-positions = <16 17>;
         };
 
-        et_c {
-            bindings = <&kp C>;
+        et_s {
+            bindings = <&kp S>;
             key-positions = <16 18>;
         };
 
@@ -79,8 +79,8 @@
             key-positions = <16 32>;
         };
 
-        at_l {
-            bindings = <&kp L>;
+        at_r {
+            bindings = <&kp R>;
             key-positions = <17 18>;
         };
 
@@ -114,18 +114,18 @@
             key-positions = <18 32>;
         };
 
-        io_h {
-            bindings = <&kp H>;
+        io_u {
+            bindings = <&kp U>;
             key-positions = <31 30>;
         };
 
-        in_s {
-            bindings = <&kp S>;
+        in_c {
+            bindings = <&kp C>;
             key-positions = <30 32>;
         };
 
-        on_r {
-            bindings = <&kp R>;
+        on_l {
+            bindings = <&kp L>;
             key-positions = <32 31>;
         };
 
@@ -796,11 +796,11 @@
         bougie {
             display-name = "Base";
             bindings = <
-&tog 1  &none       &none      &none      &none      &none  &none                                                &none        &none  &none      &none      &none      &none    &tog 1
-&none   &kp TAB     &kp E      &kp A      &kp T      &none  &sys_reset                                           &sys_reset   &none  &kp T      &kp A      &kp E      &kp TAB  &none
-&none   &kp ESCAPE  &kp I      &kp O      &kp N      &none  &bootloader  &none      &none      &none  &none      &bootloader  &none  &kp N      &kp O      &kp I      &kp ESC  &none
-&none   &none       &kp LC(X)  &kp LC(C)  &kp LC(V)  &none                          &none      &none                          &none  &kp LC(V)  &kp LC(C)  &kp LC(X)  &none    &none
-&tog 2  &none       &none      &none      &none             &kp BSPC     &kp SPACE  &mo 0      &mo 0  &kp SPACE  &kp BSPC            &none      &none      &none      &none    &tog 2
+&tog 1  &none          &none      &none      &none      &none  &none                                                &none        &none  &none      &none      &none      &none          &tog 1
+&none   &kp BACKSPACE  &kp E      &kp A      &kp T      &none  &sys_reset                                           &sys_reset   &none  &kp T      &kp A      &kp E      &kp BACKSPACE  &none
+&none   &kp RET        &kp I      &kp O      &kp N      &none  &bootloader  &none      &none      &none  &none      &bootloader  &none  &kp N      &kp O      &kp I      &kp RET        &none
+&none   &none          &kp LC(X)  &kp LC(C)  &kp LC(V)  &none                          &none      &none                          &none  &kp LC(V)  &kp LC(C)  &kp LC(X)  &none          &none
+&tog 2  &none          &none      &none      &none             &kp BSPC     &kp SPACE  &mo 0      &mo 0  &kp SPACE  &kp BSPC            &none      &none      &none      &none          &tog 2
             >;
         };
 
