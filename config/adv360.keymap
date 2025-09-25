@@ -29,8 +29,8 @@
     combos {
         compatible = "zmk,combos";
 
-        pinky_ret {
-            bindings = <&kp RET>;
+        pinky_skshift {
+            bindings = <&sk LSHFT>;
             key-positions = <29 47>;
         };
 
@@ -264,8 +264,8 @@
             key-positions = <50 66>;
         };
 
-        SPpinky_smeta {
-            bindings = <&kp RET>;
+        SPpinky_more {
+            bindings = <&kp GT>;
             key-positions = <29 47 66>;
         };
 
@@ -454,13 +454,13 @@
             key-positions = <66 48 49 32>;
         };
 
-        SPion_tilde {
+        SPion_0 {
             bindings = <&kp TILDE>;
             key-positions = <66 48 49 50>;
         };
 
-        BSpinky_smeta {
-            bindings = <&kp LS(RET)>;
+        BSpinky_less {
+            bindings = <&kp LT>;
             key-positions = <29 47 65>;
         };
 
@@ -649,8 +649,8 @@
             key-positions = <65 48 49 32>;
         };
 
-        BSion_grave {
-            bindings = <&kp GRAVE>;
+        BSion_9 {
+            bindings = <&kp N9>;
             key-positions = <65 48 49 50>;
         };
 
@@ -660,7 +660,7 @@
         };
 
         pinky_ret_R {
-            bindings = <&kp RET>;
+            bindings = <&sk LSHIFT>;
             key-positions = <44 58>;
         };
 
@@ -1069,18 +1069,18 @@
             key-positions = <69 41 55 56>;
         };
 
-        SPeiao_ctrl+del_R {
-            bindings = <&kp LC(DELETE)>;
+        SPeiao_bt_R {
+            bindings = <&sl 7>;
             key-positions = <69 57 43 42 56>;
         };
 
-        SPeitn_sym_R {
-            bindings = <&sl 0>;
+        SPeitn_misc_R {
+            bindings = <&sl 6>;
             key-positions = <69 57 43 41 55>;
         };
 
-        SPaotn_bt_R {
-            bindings = <&sl 7>;
+        SPaotn_sym_R {
+            bindings = <&sl 5>;
             key-positions = <69 55 41 42 56>;
         };
 
@@ -1377,6 +1377,46 @@
         fingers_misc_R {
             bindings = <&sl 6>;
             key-positions = <43 42 41 55 56 57>;
+        };
+
+        KRbs_1 {
+            bindings = <&kp N1>;
+            key-positions = <29 65>;
+        };
+
+        KResc_2 {
+            bindings = <&kp N2>;
+            key-positions = <65 47>;
+        };
+
+        KRe_3 {
+            bindings = <&kp N3>;
+            key-positions = <30 65>;
+        };
+
+        KRi_4 {
+            bindings = <&kp N4>;
+            key-positions = <48 65>;
+        };
+
+        KRa_5 {
+            bindings = <&kp N5>;
+            key-positions = <31 65>;
+        };
+
+        KRo_6 {
+            bindings = <&kp N6>;
+            key-positions = <31 65>;
+        };
+
+        KRt_7 {
+            bindings = <&kp N7>;
+            key-positions = <32 65>;
+        };
+
+        KRn_8 {
+            bindings = <&kp N8>;
+            key-positions = <50 65>;
         };
     };
 
