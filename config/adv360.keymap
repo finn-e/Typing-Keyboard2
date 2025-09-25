@@ -788,6 +788,11 @@
             bindings = <&sl 6>;
             key-positions = <16 17 18 32 31 30>;
         };
+
+        rh-test {
+            bindings = <&kp A>;
+            key-positions = <41 23 25 24 42 43 44 26 55 56 57 70 69>;
+        };
     };
 
     keymap {
