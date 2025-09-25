@@ -29,8 +29,8 @@
     combos {
         compatible = "zmk,combos";
 
-        pinky_meta {
-            bindings = <&sk LEFT_GUI>;
+        pinky_ret {
+            bindings = <&kp RET>;
             key-positions = <29 47>;
         };
 
@@ -89,8 +89,8 @@
             key-positions = <32 49>;
         };
 
-        tn_shift {
-            bindings = <&sk LEFT_SHIFT>;
+        tn_meta {
+            bindings = <&sk LEFT_META>;
             key-positions = <32 50>;
         };
 
@@ -284,26 +284,6 @@
             key-positions = <29 47 66>;
         };
 
-        SPxc_undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <48 49 66>;
-        };
-
-        SPxv_save {
-            bindings = <&kp LC(S)>;
-            key-positions = <48 50 66>;
-        };
-
-        SPcv_redo {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <50 49 66>;
-        };
-
-        SPxcv_lockscreen {
-            bindings = <&kp LG(L)>;
-            key-positions = <48 49 50 66>;
-        };
-
         SPea_question {
             bindings = <&kp QUESTION>;
             key-positions = <66 30 31>;
@@ -439,18 +419,18 @@
             key-positions = <66 32 50 49>;
         };
 
-        SPeiao_ctrl+del {
-            bindings = <&kp LC(DELETE)>;
+        SPeiao_bt {
+            bindings = <&sl 7>;
             key-positions = <66 48 30 31 49>;
         };
 
-        SPeitn_sym {
-            bindings = <&sl 5>;
+        SPeitn_misc {
+            bindings = <&sl 6>;
             key-positions = <66 48 30 32 50>;
         };
 
-        SPaotn_bt {
-            bindings = <&sl 7>;
+        SPaotn_sym {
+            bindings = <&sl 5>;
             key-positions = <66 50 32 31 49>;
         };
 
@@ -494,84 +474,9 @@
             key-positions = <66 48 49 50>;
         };
 
-        BStab_dot {
-            bindings = <&kp DOT>;
-            key-positions = <29 65>;
-        };
-
-        BSesc_0 {
-            bindings = <&kp N0>;
-            key-positions = <47 65>;
-        };
-
-        BSe_9 {
-            bindings = <&kp N9>;
-            key-positions = <30 65>;
-        };
-
-        BSa_8 {
-            bindings = <&kp N8>;
+        BSpinky_smeta {
+            bindings = <&kp LS(RET)>;
             key-positions = <29 47 65>;
-        };
-
-        BSt_7 {
-            bindings = <&kp N7>;
-            key-positions = <29 47 65>;
-        };
-
-        BSi_6 {
-            bindings = <&kp N6>;
-            key-positions = <48 65>;
-        };
-
-        BSo_5 {
-            bindings = <&kp N5>;
-            key-positions = <49 65>;
-        };
-
-        BSn_4 {
-            bindings = <&sk N4>;
-            key-positions = <50 65>;
-        };
-
-        BSx_3 {
-            bindings = <&sk N3>;
-            key-positions = <48 65>;
-        };
-
-        BSc_2 {
-            bindings = <&kp N2>;
-            key-positions = <49 65>;
-        };
-
-        BSv_1 {
-            bindings = <&kp N1>;
-            key-positions = <50 65>;
-        };
-
-        BSpinky_meta {
-            bindings = <&sk LEFT_GUI>;
-            key-positions = <29 47 65>;
-        };
-
-        BSxc_undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <48 49 65>;
-        };
-
-        BSxv_save {
-            bindings = <&kp LC(S)>;
-            key-positions = <48 50 65>;
-        };
-
-        BScv_redo {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <50 49 65>;
-        };
-
-        BSxcv_lockscreen {
-            bindings = <&kp LG(L)>;
-            key-positions = <48 49 50 65>;
         };
 
         BSea_question {
@@ -769,8 +674,8 @@
             key-positions = <30 31 32 50 49 48>;
         };
 
-        pinky_meta_R {
-            bindings = <&sk LEFT_GUI>;
+        pinky_ret_R {
+            bindings = <&kp RET>;
             key-positions = <44 58>;
         };
 
@@ -829,8 +734,8 @@
             key-positions = <41 56>;
         };
 
-        tn_shift_R {
-            bindings = <&sk LEFT_SHIFT>;
+        tn_meta_R {
+            bindings = <&sk LEFT_META>;
             key-positions = <41 55>;
         };
 
@@ -1289,29 +1194,9 @@
             key-positions = <55 70>;
         };
 
-        BSpinky_meta_R {
-            bindings = <&sk LEFT_GUI>;
+        BSpinky_sret_R {
+            bindings = <&kp LS(RET)>;
             key-positions = <44 58 70>;
-        };
-
-        BSxc_undo_R {
-            bindings = <&kp LC(Z)>;
-            key-positions = <57 56 70>;
-        };
-
-        BSxv_save_R {
-            bindings = <&kp LC(S)>;
-            key-positions = <57 55 70>;
-        };
-
-        BScv_redo_R {
-            bindings = <&kp LC(LS(Z))>;
-            key-positions = <55 56 70>;
-        };
-
-        BSxcv_lockscreen_R {
-            bindings = <&kp LG(L)>;
-            key-positions = <57 56 55 70>;
         };
 
         BSea_question_R {
@@ -1345,7 +1230,7 @@
         };
 
         BSai_atab_R {
-            bindings = <&kp LA(G)>;
+            bindings = <&kp LA(TAB)>;
             key-positions = <70 42 57>;
         };
 
@@ -1508,11 +1393,6 @@
             bindings = <&sl 6>;
             key-positions = <43 42 41 55 56 57>;
         };
-
-        test-right-hand {
-            bindings = <&kp A>;
-            key-positions = <69 70 55 41 42 57 43 44 58 56>;
-        };
     };
 
     keymap {
@@ -1521,11 +1401,11 @@
         bougie {
             display-name = "Base";
             bindings = <
-&none  &none     &none  &none  &none  &none  &tog 2                                               &tog 1       &none  &none  &none  &none  &none     &none
-&none  &none     &none  &none  &none  &none  &sys_reset                                           &sys_reset   &none  &none  &none  &none  &none     &none
-&none  &kp BSPC  &kp E  &kp A  &kp T  &none  &bootloader  &none      &none      &none  &none      &bootloader  &none  &kp T  &kp A  &kp E  &kp BSPC  &none
-&none  &kp RET   &kp I  &kp O  &kp N  &none                          &mo 3      &mo 3                          &none  &kp N  &kp O  &kp I  &kp RET   &none
-&none  &none     &none  &none  &none         &key_repeat  &kp SPACE  &mo 4      &mo 4  &kp SPACE  &key_repeat         &none  &none  &none  &none     &none
+&none  &none       &none  &none  &none  &none  &tog 2                                               &tog 1       &none  &none  &none  &none  &none       &none
+&none  &none       &none  &none  &none  &none  &sys_reset                                           &sys_reset   &none  &none  &none  &none  &none       &none
+&none  &kp BSPC    &kp E  &kp A  &kp T  &none  &bootloader  &none      &none      &none  &none      &bootloader  &none  &kp T  &kp A  &kp E  &kp BSPC    &none
+&none  &kp ESCAPE  &kp I  &kp O  &kp N  &none                          &mo 3      &mo 3                          &none  &kp N  &kp O  &kp I  &kp ESCAPE  &none
+&none  &none       &none  &none  &none         &key_repeat  &kp SPACE  &mo 4      &mo 4  &kp SPACE  &key_repeat         &none  &none  &none  &none       &none
             >;
         };
 
@@ -1565,11 +1445,11 @@
         num {
             display-name = "num";
             bindings = <
-&none  &none                 &none   &none   &none   &none  &none                                     &none   &none  &none         &none   &none   &none                  &none
-&none  &mt LEFT_SHIFT MINUS  &kp N7  &kp N8  &kp N9  &none  &none                                     &none   &none  &kp N7        &kp N8  &kp N9  &mt RIGHT_SHIFT EQUAL  &none
-&none  &kp N0                &kp N4  &kp N5  &kp N6  &none  &none   &none   &none      &none  &none   &none   &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0                 &none
-&none  &none                 &kp N1  &kp N2  &kp N3  &none                  &none      &none                  &none  &kp NUMBER_1  &kp N2  &kp N3  &none                  &none
-&none  &none                 &none   &none   &none          &trans  &trans  &none      &none  &trans  &trans         &none         &none   &none   &none                  &none
+&none  &none   &none   &none   &none   &none  &none                                     &none   &none  &none         &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none  &none                                     &none   &none  &none         &none   &none   &none   &none
+&none  &kp N8  &kp N6  &kp N4  &kp N2  &none  &none   &none   &none      &none  &none   &none   &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0  &none
+&none  &kp N9  &kp N7  &kp N5  &kp N3  &none                  &none      &none                  &none  &kp NUMBER_1  &kp N2  &kp N3  &none   &none
+&none  &none   &none   &none   &none          &kp N1  &kp N0  &none      &none  &trans  &trans         &none         &none   &none   &none   &none
             >;
         };
 
@@ -1587,22 +1467,22 @@
         misc {
             display-name = "misc";
             bindings = <
-&none  &none       &none            &none         &none        &none  &none                                     &none   &none  &none        &none         &none            &none       &none
-&none  &bl BL_TOG  &kp INSERT       &caps_word    &sys_reset   &none  &none                                     &none   &none  &sys_reset   &caps_word    &kp INSERT       &bl BL_TOG  &none
-&none  &kp K_MUTE  &kp PRINTSCREEN  &kp CAPSLOCK  &bootloader  &none  &none   &none   &none      &none  &none   &none   &none  &bootloader  &kp CAPSLOCK  &kp PRINTSCREEN  &kp K_MUTE  &none
-&none  &none       &trans           &trans        &trans       &none                  &none      &none                  &none  &trans       &trans        &trans           &none       &none
-&none  &none       &none            &none         &none               &trans  &trans  &none      &none  &trans  &trans         &none        &none         &none            &none       &none
+&none  &none       &none            &none       &none        &none  &none                                     &none   &none  &none        &none       &none            &none       &none
+&none  &none       &none            &none       &none        &none  &none                                     &none   &none  &none        &none       &none            &none       &none
+&none  &kp K_MUTE  &kp PRINTSCREEN  &caps_word  &sys_reset   &none  &none   &none   &none      &none  &none   &none   &none  &sys_reset   &caps_word  &kp PRINTSCREEN  &kp K_MUTE  &none
+&none  &bl BL_TOG  &kp INS          &kp CAPS    &bootloader  &none                  &none      &none                  &none  &bootloader  &kp CAPS    &kp INSERT       &none       &none
+&none  &none       &none            &none       &none               &trans  &trans  &none      &none  &trans  &trans         &none        &none       &none            &none       &none
             >;
         };
 
         bt {
             display-name = "bt";
             bindings = <
-&none  &none         &none         &none         &none           &none  &none                                     &none   &none  &none           &none         &none         &none         &none
-&none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR      &none  &none                                     &none   &none  &bt BT_CLR      &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 3    &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-&none  &none         &trans        &trans        &bt BT_CLR_ALL  &none                  &none      &none                  &none  &bt BT_CLR_ALL  &trans        &trans        &none         &none
-&none  &none         &none         &none         &none                  &trans  &trans  &none      &none  &trans  &trans         &none           &none         &none         &none         &none
+&none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
+&none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
+&none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none                  &none      &none                  &none  &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_SEL 4  &none
+&none  &none         &none         &none         &none                &trans  &trans  &none      &none  &trans  &trans         &none         &none         &none         &none         &none
             >;
         };
     };
