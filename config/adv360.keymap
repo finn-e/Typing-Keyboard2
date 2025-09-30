@@ -40,7 +40,7 @@
 #define MISC 8
 // CONFIG
 #define COMBO_TIMEOUT 70
-#define COMBO_LAYERS DEF NAV NUM
+#define COMBO_LAYERS 'DEF NAV DSK WIN NUM SYM BT MISC'
 #define STICKY_TIMEOUT 1000
 #define HOLD_TAP_TIMEOUT 190
 // BEHAVIOR REDEFINITIONS
@@ -66,11 +66,11 @@
         default {
             display-name = "Base";
             bindings = <
-&none  &none       &none  &none  &none  &none  &tog QWE                                             &tog QWE     &none  &none  &none  &none  &none       &none
-&none  &none       &none  &none  &none  &none  &sys_reset                                           &sys_reset   &none  &none  &none  &none  &none       &none
-&none  &none       &none  &none  &none  &none  &bootloader  &none      &none      &none  &none      &bootloader  &none  &kp T  &kp A  &kp E  &kp BSPC    &none
-&none  &none       &none  &none  &none  &none                          &mo 3      &mo 3                          &none  &kp N  &kp O  &kp I  &kp ESCAPE  &none
-&none  &none       &none  &none  &none         &key_repeat  &kp SPACE  &mo 4      &mo 4  &kp SPACE  &key_repeat         &none  &none  &none  &none       &none
+&none  &none &none  &none  &none  &none  &tog QWE                                             &tog QWE     &none  &none  &none  &none  &none       &none
+&none  &none &none  &none  &none  &none  &sys_reset                                           &sys_reset   &none  &none  &none  &none  &none       &none
+&none  &none &none  &none  &none  &none  &bootloader  &none      &none      &none  &none      &bootloader  &none  &none  &none  &none  &none       &none
+&none  &none &none  &none  &none  &none                          &mo 3      &mo 3                          &none  &none  &none  &none  &none       &none
+&none  &none &none  &none  &none         &none        &none      &mo 4      &mo 4  &none      &none        &none  &none  &none  &none       &none
             >;
         };
 
