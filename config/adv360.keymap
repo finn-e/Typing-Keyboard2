@@ -43,7 +43,17 @@
 #define COMBO_LAYERS DEF NAV DSK WIN NUM SYM BT MSC
 #define STICKY_TIMEOUT 1000
 #define HOLD_TAP_TIMEOUT 190
-
+// BEHAVIOR REDEFINITIONS
+&sk {
+    release-after-ms = <STICKY_TIMEOUT>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
+&sl {
+    release-after-ms = <STICKY_TIMEOUT>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
 // MAIN NODE
 / {
     behaviors {
