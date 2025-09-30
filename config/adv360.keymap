@@ -32,12 +32,12 @@
 #define DEF  0
 #define QWE  1
 #define NAV  2
-#define DESK 3
+#define DSK  3
 #define WIN  4
 #define NUM  5
 #define SYM  6
 #define BT   7
-#define MISC 8
+#define MSC  8
 // CONFIG
 #define COMBO_TIMEOUT 70
 #define COMBO_LAYERS "DEF NAV DSK WIN NUM SYM BT MISC"
@@ -153,8 +153,8 @@
         };
     };
 
-        misc {
-            display-name = "misc";
+        miscellaneous {
+            display-name = "msc";
             bindings = <
 &none  &none       &none            &none       &none        &none  &none                                     &none   &none  &none        &none       &none            &none       &none
 &none  &none       &none            &none       &none        &none  &none                                     &none   &none  &none        &none       &none            &none       &none
