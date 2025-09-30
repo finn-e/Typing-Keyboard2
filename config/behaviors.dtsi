@@ -1,15 +1,3 @@
-// BEHAVIOR REDEFINITIONS
-&sk {
-    release-after-ms = <STICKY_TIMEOUT>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
-&sl {
-    release-after-ms = <STICKY_TIMEOUT>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
-// NEW BEHAVIORS
 sticky_numlock: sticky_numlock {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
