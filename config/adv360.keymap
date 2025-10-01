@@ -1426,11 +1426,11 @@
         bougie {
             display-name = "Base";
             bindings = <
-&none  &none       &none  &none  &none  &none  &tog 2                                               &tog 1       &none  &none  &none  &none  &none       &none
-&none  &none       &none  &none  &none  &none  &sys_reset                                           &sys_reset   &none  &none  &none  &none  &none       &none
-&none  &kp BSPC    &kp E  &kp A  &kp T  &none  &bootloader  &none      &none      &none  &none      &bootloader  &none  &kp T  &kp A  &kp E  &kp BSPC    &none
-&none  &kp ESCAPE  &kp I  &kp O  &kp N  &none                          &mo 3      &mo 3                          &none  &kp N  &kp O  &kp I  &kp ESCAPE  &none
-&none  &none       &none  &none  &none         &key_repeat  &kp SPACE  &mo 4      &mo 4  &kp SPACE  &key_repeat         &none  &none  &none  &none       &none
+&none  &none       &none  &none  &none            &none  &tog 2                                               &tog 1       &none  &none  &none  &none  &none       &none
+&none  &none       &none  &none  &lt 3 BACKSPACE  &none  &sys_reset                                           &sys_reset   &none  &none  &none  &none  &none       &none
+&none  &kp BSPC    &kp E  &kp A  &kp T            &none  &bootloader  &none      &none      &none  &none      &bootloader  &none  &kp T  &kp A  &kp E  &kp BSPC    &none
+&none  &kp ESCAPE  &kp I  &kp O  &kp N            &none                          &mo 3      &mo 3                          &none  &kp N  &kp O  &kp I  &kp ESCAPE  &none
+&none  &none       &none  &none  &none                   &key_repeat  &kp SPACE  &mo 4      &mo 4  &kp SPACE  &key_repeat         &none  &none  &none  &none       &none
             >;
         };
 
