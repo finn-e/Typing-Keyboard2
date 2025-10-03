@@ -72,11 +72,11 @@
         default {
             display-name = "Base";
             bindings = <
-&none  &none &none  &none  &none  &none  &tog QWE                                             &tog QWE     &none  &none  &none  &none  &none       &none
-&none  &none &none  &none  &none  &none  &sys_reset                                           &sys_reset   &none  &none  &none  &none  &none       &none
-&none  &none &none  &none  &none  &none  &bootloader  &none      &none      &none  &none      &bootloader  &none  &none  &none  &none  &none       &none
-&none  &none &none  &none  &none  &none                          &mo 3      &mo 3                          &none  &none  &none  &none  &none       &none
-&none  &none &none  &none  &none         &none        &none      &mo 4      &mo 4  &none      &none        &none  &none  &none  &none       &none
+&none  &none       &none  &none  &none  &none  &tog QWE                                                 &tog QWE      &none  &none  &none  &none  &none       &none
+&none  &none       &none  &none  &none  &none  &sys_reset                                               &sys_reset    &none  &none  &none  &none  &none       &none
+&none  &key_repeat &as E  &as A  &as T  &none  &bootloader    &none       &none      &none  &none       &bootloader   &none  &as T  &as A  &as E  &key_repeat &none
+&none  &kp TAB     &as I  &as O  &as N  &none                             &mo 3      &mo 3                            &none  &as N  &as O  &as I  &kp TAB     &none
+&none  &none       &none  &none  &none         &lt DESK BSPC  &lt NAV SPC &mo 4      &mo 4  &lt NAV SPC &lt DESK BSPC &none  &none  &none  &none       &none
             >;
         };
 
