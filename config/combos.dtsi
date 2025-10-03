@@ -1,4 +1,3 @@
-
 #define LOCOMBO(NAME, BINDINGS, KEYPOS) \
 combo_l_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
