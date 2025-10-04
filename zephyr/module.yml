@@ -1,0 +1,5 @@
+name: zmk-keyboard-adv360
+build:
+  settings:
+    board_root: .
+
