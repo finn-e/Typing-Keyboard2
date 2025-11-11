@@ -253,6 +253,17 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
+
+        test_behavior: test_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TEST_BEHAVIOR";
+            bindings = <&uQu>, <&lplease>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            retro-tap;
+            flavor = "balanced";
+        };
     };
 
     macros {
