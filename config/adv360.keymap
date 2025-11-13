@@ -781,11 +781,11 @@
         k_bye {
             display-name = "Base";
             bindings = <
-&tog 1              &none        &none            &none               &none             &none  &none                                                     &none        &none  &none              &none                &none            &none        &tog 1
-&none               &kp TAB      &hm RIGHT_ALT K  &tl 12 B            &tl 10 Y          &none  &sys_reset                                                &sys_reset   &none  &tl 10 C           &tl 12 L             &hm RIGHT_ALT F  &kp TAB      &none
-&test_behavior 0 0  &hm LMETA A  &mt LEFT_ALT I   &hm LEFT_CONTROL O  &hm LEFT_SHIFT E  &none  &bootloader     &none        &none       &none   &none    &bootloader  &none  &hm RIGHT_SHIFT D  &hm RIGHT_CONTROL N  &hm LEFT_ALT S   &hm RMETA R  &none
-&none               &none        &x_cut           &rpt_copy           &u_paste          &none                               &none       &none                         &none  &kp G              &kp M                &kp V            &none        &none
-&tog 2              &none        &none            &none               &none                    &layer_rpt 3 0  &tl 5 SPACE  &mo 10      &mo 10  &tl 6 T  &tl 4 H             &none              &none                &none            &none        &tog 2
+&tog 1  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none                                                          &none            &none  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR  &tog 1
+&none   &sk LCTRL   &kp R         &kp O         &kp C         &none  &sys_reset                                                     &sys_reset       &none  &kp C         &kp O         &kp R         &sk LCTRL   &none
+&none   &sk LSHIFT  &kp N         &kp E         &kp T         &none  &bootloader      &none        &none       &none   &none        &bootloader      &none  &kp T         &kp E         &kp N         &sk LSHFT   &none
+&none   &sk LMETA   &kp H         &kp A         &kp S         &none                                &none       &none                                 &none  &kp S         &kp A         &kp H         &sk LMETA   &none
+&tog 2  &none       &none         &none         &none                &tl 3 BACKSPACE  &tl 5 SPACE  &mo 10      &mo 10  &tl 6 SPACE  &tl 4 BACKSPACE         &none         &none         &none         &none       &tog 2
             >;
         };
 
