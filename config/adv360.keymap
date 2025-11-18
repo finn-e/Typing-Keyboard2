@@ -903,7 +903,7 @@
             key-positions = <4 52>;
         };
 
-        t3+r4l_kr {
+        t3+r4l_keyrepeat {
             bindings = <&key_repeat>;
             key-positions = <2 3 52>;
         };
@@ -918,7 +918,7 @@
             key-positions = <3 4 52>;
         };
 
-        t3+r4r_keyrepeat {
+        t3+r4r_kr {
             bindings = <&key_repeat>;
             key-positions = <11>;
         };
@@ -933,7 +933,7 @@
             key-positions = <9>;
         };
 
-        t3+r4r_kr {
+        t3+r4r_keyrepeat {
             bindings = <&key_repeat>;
             key-positions = <11 10>;
         };
