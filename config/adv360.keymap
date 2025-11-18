@@ -738,7 +738,7 @@
             key-positions = <32 31 52>;
         };
 
-        t3+hl_apos {
+        t3+hr_apos {
             bindings = <&kp SQT>;
             key-positions = <53 43>;
         };
