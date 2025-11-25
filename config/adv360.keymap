@@ -955,11 +955,11 @@
         k_bye {
             display-name = "Base";
             bindings = <
-&tog 1  &sk LMETA   &kp L         &kp I         &kp C         &none  &none                                                                      &none            &none  &kp C         &kp I         &kp L         &sk LMETA   &tog 1
-&none   &sk LCTRL   &kp R         &kp O         &kp D         &none  &sys_reset                                                                 &sys_reset       &none  &kp D         &kp O         &kp R         &sk LCTRL   &none
-&none   &sk LSHIFT  &kp N         &kp E         &kp T         &none  &bootloader      &none        &none             &none         &none        &bootloader      &none  &kp T         &kp E         &kp N         &sk LSHFT   &none
-&none   &sk LMETA   &kp H         &kp A         &kp S         &none                                &tl 8 DOT         &tl 8 DOT                                   &none  &kp S         &kp A         &kp H         &sk LMETA   &none
-&tog 2  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2         &tl 3 BACKSPACE  &tl 5 SPACE  &tl 10 COMMA      &tl 10 COMMA  &tl 6 SPACE  &tl 4 BACKSPACE         &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR  &tog 2
+&tog 1  &sk LALT    &kp L  &kp I  &kp C  &bt BT_SEL 0  &bt BT_CLR                                                             &bt BT_CLR       &bt BT_SEL 0  &kp C  &kp I  &kp L  &sk LALT   &tog 1
+&none   &sk LCTRL   &kp R  &kp O  &kp D  &bt BT_SEL 1  &sys_reset                                                             &sys_reset       &bt BT_SEL 1  &kp D  &kp O  &kp R  &sk LCTRL  &none
+&none   &sk LSHIFT  &kp N  &kp E  &kp T  &bt BT_SEL 2  &bootloader      &none        &none           &none       &none        &bootloader      &bt BT_SEL 2  &kp T  &kp E  &kp N  &sk LSHFT  &none
+&none   &sk LMETA   &kp H  &kp A  &kp S  &bt BT_SEL 3                                &tl 8 TAB       &tl 8 TAB                                 &bt BT_SEL 3  &kp S  &kp A  &kp H  &sk LMETA  &none
+&tog 2  &sk RALT    &kp M  &kp U  &kp G                &tl 3 BACKSPACE  &tl 5 SPACE  &tl 10 RET      &tl 10 RET  &tl 6 SPACE  &tl 4 BACKSPACE                &kp G  &kp U  &kp M  &sk RALT   &tog 2
             >;
         };
 
