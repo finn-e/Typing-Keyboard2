@@ -532,420 +532,220 @@
     combos {
         compatible = "zmk,combos";
 
-        hl_p {
-            bindings = <&kp P>;
+        hl_i {
+            bindings = <&kp I>;
             key-positions = <30 31>;
             layers = <0 2 3 4>;
         };
 
-        hl_w {
-            bindings = <&kp W>;
+        hl_l {
+            bindings = <&kp L>;
             key-positions = <30 32>;
             layers = <0 2 3 4>;
         };
 
-        hl_f {
-            bindings = <&kp F>;
+        hl_c {
+            bindings = <&kp C>;
             key-positions = <32 31>;
             layers = <0 2 3 4>;
         };
 
-        hr_p {
-            bindings = <&kp P>;
+        hr_i {
+            bindings = <&kp I>;
             key-positions = <43 42>;
             layers = <0 2 3 4>;
         };
 
-        hr_w {
-            bindings = <&kp W>;
+        hr_l {
+            bindings = <&kp L>;
             key-positions = <43 41>;
             layers = <0 2 3 4>;
         };
 
-        hr_f {
-            bindings = <&kp F>;
+        hr_c {
+            bindings = <&kp C>;
             key-positions = <42 41>;
             layers = <0 2 3 4>;
         };
 
-        bl_b {
-            bindings = <&kp B>;
+        bl_u {
+            bindings = <&kp U>;
             key-positions = <48 49>;
         };
 
-        bl_y {
-            bindings = <&kp Y>;
+        bl_g {
+            bindings = <&kp M>;
             key-positions = <48 50>;
         };
 
-        bl_k {
-            bindings = <&kp K>;
+        bl_m {
+            bindings = <&kp G>;
             key-positions = <49 50>;
         };
 
-        br_b {
-            bindings = <&kp B>;
+        br_u {
+            bindings = <&kp U>;
             key-positions = <57 56>;
         };
 
-        br_y {
-            bindings = <&kp Y>;
+        br_m {
+            bindings = <&kp M>;
             key-positions = <57 55>;
         };
 
-        br_k {
-            bindings = <&kp K>;
+        br_g {
+            bindings = <&kp G>;
             key-positions = <56 55>;
         };
 
-        ul_j {
-            bindings = <&kp J>;
+        ul_p {
+            bindings = <&kp P>;
             key-positions = <16 17>;
         };
 
-        ul_v {
-            bindings = <&kp V>;
+        ul_w {
+            bindings = <&kp W>;
             key-positions = <16 18>;
         };
 
-        ul_x {
-            bindings = <&kp X>;
+        ul_f {
+            bindings = <&kp F>;
             key-positions = <17 18>;
         };
 
-        ur_j {
-            bindings = <&kp J>;
+        ur_p {
+            bindings = <&kp P>;
             key-positions = <24 25>;
         };
 
-        ur_v {
-            bindings = <&kp V>;
+        ur_w {
+            bindings = <&kp W>;
             key-positions = <25 23>;
         };
 
-        ur_x {
-            bindings = <&kp X>;
+        ur_f {
+            bindings = <&kp F>;
             key-positions = <23 24>;
         };
 
-        r4l_q {
+        hbdl_y {
+            bindings = <&kp Y>;
+            key-positions = <16 31>;
+        };
+
+        hbdl_b {
+            bindings = <&kp B>;
+            key-positions = <48 31>;
+        };
+
+        hbdl_x {
+            bindings = <&kp X>;
+            key-positions = <30 50>;
+        };
+
+        hbdl_j {
             bindings = <&kp J>;
-            key-positions = <2 3>;
+            key-positions = <48 32>;
         };
 
-        r4l_slash {
-            bindings = <&kp SLASH>;
-            key-positions = <2 4>;
+        hbdl_v {
+            bindings = <&kp V>;
+            key-positions = <31 50>;
         };
 
-        r4l_z {
+        hbdl_k {
             bindings = <&kp K>;
-            key-positions = <3 4>;
+            key-positions = <49 32>;
         };
 
-        r4r_q {
+        hbdr_y {
+            bindings = <&kp Y>;
+            key-positions = <44 57>;
+        };
+
+        hbdr_b {
+            bindings = <&kp B>;
+            key-positions = <58 43>;
+        };
+
+        hbdr_x {
+            bindings = <&kp X>;
+            key-positions = <44 56>;
+        };
+
+        hbdr_j {
+            bindings = <&kp J>;
+            key-positions = <58 42>;
+        };
+
+        hbdr_v {
+            bindings = <&kp V>;
+            key-positions = <42 55>;
+        };
+
+        hbdr_k {
+            bindings = <&kp K>;
+            key-positions = <56 41>;
+        };
+
+        hudl_bslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <16 31>;
+        };
+
+        hudl_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <30 17>;
+        };
+
+        hudl_q {
             bindings = <&kp Q>;
-            key-positions = <10 11>;
+            key-positions = <16 32>;
         };
 
-        r4r_slash {
-            bindings = <&kp SLASH>;
-            key-positions = <11 9>;
-        };
-
-        r4r_z {
+        hudl_z {
             bindings = <&kp Z>;
-            key-positions = <9 10>;
+            key-positions = <30 18>;
         };
 
-        r5l_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <63 62>;
-        };
-
-        r5l_bslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <62 64>;
-        };
-
-        r5l_amps {
+        hudl_amps {
             bindings = <&kp AMPS>;
-            key-positions = <63 64>;
+            key-positions = <17 32>;
         };
 
-        r5r_pipe {
+        hudl_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <72 73>;
+            key-positions = <31 18>;
         };
 
-        r5r_bslash {
+        hudr_bslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <71 73>;
+            key-positions = <25 42>;
         };
 
-        r5r_amps {
-            bindings = <&kp AMPS>;
-            key-positions = <71 72>;
-        };
-
-        hl_gresc {
-            bindings = <&gresc>;
-            key-positions = <30 31 32>;
-        };
-
-        hr_gresc {
-            bindings = <&gresc>;
-            key-positions = <41 42 43>;
-        };
-
-        t+hl_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <66 32>;
-        };
-
-        t+hr_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <69 41>;
-        };
-
-        t3+hl_apos {
-            bindings = <&kp SQT>;
-            key-positions = <52 30>;
-        };
-
-        t3+hl_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <31 52>;
-        };
-
-        t3+hl_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <30 52>;
-        };
-
-        t3+hl_semi {
-            bindings = <&kp SEMI>;
-            key-positions = <31 52 30>;
-        };
-
-        t3+hl_at {
-            bindings = <&kp AT>;
-            key-positions = <32 30 52>;
-        };
-
-        t3+hl_backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <32 31 52>;
-        };
-
-        t3+hr_apos {
-            bindings = <&kp SQT>;
-            key-positions = <53 43>;
-        };
-
-        t3+hr_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <42 53>;
-        };
-
-        t3+hr_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <41 53>;
-        };
-
-        t3+hr_semi {
-            bindings = <&kp SEMI>;
-            key-positions = <43 42 53>;
-        };
-
-        t3+hr_at {
-            bindings = <&kp AT>;
-            key-positions = <41 43 53>;
-        };
-
-        t3+hr_backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <42 41 53>;
-        };
-
-        t3+bl_lbra {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <48 52>;
-        };
-
-        t3+bl_slash {
+        hudr_slash {
             bindings = <&kp SLASH>;
-            key-positions = <49 52>;
+            key-positions = <43 24>;
         };
 
-        t3+bl_rbra {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <50 52>;
+        hudr_q {
+            bindings = <&kp Q>;
+            key-positions = <25 41>;
         };
 
-        t3+bl_lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <48 49 52>;
+        hudr_z {
+            bindings = <&kp Z>;
+            key-positions = <43 23>;
         };
 
-        t3+bl_amps {
+        hudr_amps {
             bindings = <&kp AMPS>;
-            key-positions = <50 48 52>;
+            key-positions = <24 41>;
         };
 
-        t3+bl_rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <49 50 52>;
-        };
-
-        t3+br_lbkt {
-            bindings = <&kp LBKT>;
-            key-positions = <57 53>;
-        };
-
-        t3+br_slash {
-            bindings = <&kp SLASH>;
-            key-positions = <56 53>;
-        };
-
-        t3+br_rbkt {
-            bindings = <&kp RBKT>;
-            key-positions = <53 55>;
-        };
-
-        t3+br_lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <56 53 57>;
-        };
-
-        t3+br_amps {
-            bindings = <&kp AMPS>;
-            key-positions = <57 55 53>;
-        };
-
-        t3+br_rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <56 55 53>;
-        };
-
-        ul_hash {
-            bindings = <&kp HASH>;
-            key-positions = <16 52>;
-        };
-
-        t3+ul_dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <17 52>;
-        };
-
-        t3+ul_percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <18 52>;
-        };
-
-        t3+ul_caret {
-            bindings = <&kp CARET>;
-            key-positions = <16 17 52>;
-        };
-
-        t3+ul_pipe {
+        hudr_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <16 18 52>;
-        };
-
-        t3+ul_asterisk {
-            bindings = <&kp ASTERISK>;
-            key-positions = <17 18 52>;
-        };
-
-        t3+ur_hash {
-            bindings = <&kp HASH>;
-            key-positions = <25 53>;
-        };
-
-        t3+ur_dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <24 53>;
-        };
-
-        t3+ur_percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <23 53>;
-        };
-
-        t3+ur_caret {
-            bindings = <&kp CARET>;
-            key-positions = <24 25 53>;
-        };
-
-        t3+ur_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <23 25 53>;
-        };
-
-        t3+ur_asterisk {
-            bindings = <&kp ASTERISK>;
-            key-positions = <23 24 53>;
-        };
-
-        t3+r4l_kr {
-            bindings = <&key_repeat>;
-            key-positions = <2 52>;
-        };
-
-        t3+r4l_caspword {
-            bindings = <&caps_word>;
-            key-positions = <3 52>;
-        };
-
-        t3+r4l_printscreen {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <4 52>;
-        };
-
-        t3+r4l_keyrepeat {
-            bindings = <&key_repeat>;
-            key-positions = <2 3 52>;
-        };
-
-        t3+r4l_capslock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <4 2 52>;
-        };
-
-        t3+r4l_insert {
-            bindings = <&kp INSERT>;
-            key-positions = <3 4 52>;
-        };
-
-        t3+r4r_kr {
-            bindings = <&key_repeat>;
-            key-positions = <11>;
-        };
-
-        t3+r4r_capsword {
-            bindings = <&caps_word>;
-            key-positions = <10>;
-        };
-
-        t3+r4r_printscreen {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <9>;
-        };
-
-        t3+r4r_keyrepeat {
-            bindings = <&key_repeat>;
-            key-positions = <11 10>;
-        };
-
-        t3+r4r_capslock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <11 9>;
-        };
-
-        t3+r4r_insert {
-            bindings = <&kp INSERT>;
-            key-positions = <53 9 10>;
+            key-positions = <23 42>;
         };
     };
 
@@ -955,11 +755,11 @@
         k_bye {
             display-name = "Base";
             bindings = <
-&tog 1  &sk LALT    &kp L  &kp I  &kp C  &bt BT_SEL 0  &bt BT_CLR                                                             &bt BT_CLR       &bt BT_SEL 0  &kp C  &kp I  &kp L  &sk LALT   &tog 1
+&tog 1  &none       &none  &none  &none  &bt BT_SEL 0  &bt BT_CLR                                                             &bt BT_CLR       &bt BT_SEL 0  &none  &none  &none  &none      &tog 1
 &none   &sk LCTRL   &kp R  &kp O  &kp D  &bt BT_SEL 1  &sys_reset                                                             &sys_reset       &bt BT_SEL 1  &kp D  &kp O  &kp R  &sk LCTRL  &none
 &none   &sk LSHIFT  &kp N  &kp E  &kp T  &bt BT_SEL 2  &bootloader      &none        &none           &none       &none        &bootloader      &bt BT_SEL 2  &kp T  &kp E  &kp N  &sk LSHFT  &none
 &none   &sk LMETA   &kp H  &kp A  &kp S  &bt BT_SEL 3                                &tl 8 TAB       &tl 8 TAB                                 &bt BT_SEL 3  &kp S  &kp A  &kp H  &sk LMETA  &none
-&tog 2  &sk RALT    &kp M  &kp U  &kp G                &tl 3 BACKSPACE  &tl 5 SPACE  &tl 10 RET      &tl 10 RET  &tl 6 SPACE  &tl 4 BACKSPACE                &kp G  &kp U  &kp M  &sk RALT   &tog 2
+&tog 2  &none       &none  &none  &none                &tl 3 BACKSPACE  &tl 5 SPACE  &tl 10 RET      &tl 10 RET  &tl 6 SPACE  &tl 4 BACKSPACE                &none  &none  &none  &none      &tog 2
             >;
         };
 
