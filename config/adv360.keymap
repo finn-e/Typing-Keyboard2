@@ -658,13 +658,13 @@
             key-positions = <9 10>;
         };
 
-        r5l_bslash {
-            bindings = <&kp BACKSLASH>;
+        r5l_pipe {
+            bindings = <&kp PIPE>;
             key-positions = <63 62>;
         };
 
-        r5l_pipe {
-            bindings = <&kp PIPE>;
+        r5l_bslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <62 64>;
         };
 
@@ -673,13 +673,13 @@
             key-positions = <63 64>;
         };
 
-        r5r_bslash {
-            bindings = <&kp BSLH>;
+        r5r_pipe {
+            bindings = <&kp PIPE>;
             key-positions = <72 73>;
         };
 
-        r5r_pipe {
-            bindings = <&kp PIPE>;
+        r5r_bslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <71 73>;
         };
 
