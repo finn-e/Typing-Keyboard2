@@ -630,7 +630,7 @@
 
         hbdl_y {
             bindings = <&kp Y>;
-            key-positions = <16 31>;
+            key-positions = <30 49>;
         };
 
         hbdl_b {
@@ -660,22 +660,22 @@
 
         hbdr_y {
             bindings = <&kp Y>;
-            key-positions = <44 57>;
+            key-positions = <56 43>;
         };
 
         hbdr_b {
             bindings = <&kp B>;
-            key-positions = <58 43>;
+            key-positions = <57 42>;
         };
 
         hbdr_x {
             bindings = <&kp X>;
-            key-positions = <44 56>;
+            key-positions = <43 55>;
         };
 
         hbdr_j {
             bindings = <&kp J>;
-            key-positions = <58 42>;
+            key-positions = <57 41>;
         };
 
         hbdr_v {
@@ -808,11 +808,6 @@
             key-positions = <50 52>;
         };
 
-        t2hl_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <32 65>;
-        };
-
         t1bl_1 {
             bindings = <&kp NUMBER_1>;
             key-positions = <66 48>;
@@ -885,7 +880,7 @@
 
         t4hl_lbrace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <30>;
+            key-positions = <30 67>;
         };
 
         t4bl_rbrace {
@@ -906,6 +901,26 @@
         t4tl_greater {
             bindings = <&kp GREATER_THAN>;
             key-positions = <18 67>;
+        };
+
+        t2hl_left {
+            bindings = <&kp LEFT>;
+            key-positions = <29 65>;
+        };
+
+        t2hl_down {
+            bindings = <&kp DOWN>;
+            key-positions = <30 65>;
+        };
+
+        t2hl_up {
+            bindings = <&kp UP>;
+            key-positions = <31 65>;
+        };
+
+        t2hl_right {
+            bindings = <&kp RIGHT>;
+            key-positions = <32 65>;
         };
     };
 
