@@ -630,122 +630,122 @@
 
         hbdl_y {
             bindings = <&kp Y>;
-            key-positions = <30 49>;
+            key-positions = <49 31>;
         };
 
         hbdl_b {
             bindings = <&kp B>;
-            key-positions = <48 31>;
+            key-positions = <30 48>;
         };
 
         hbdl_x {
             bindings = <&kp X>;
-            key-positions = <30 50>;
+            key-positions = <50 32>;
         };
 
         hbdl_j {
             bindings = <&kp J>;
-            key-positions = <48 32>;
+            key-positions = <31 17>;
         };
 
         hbdl_v {
             bindings = <&kp V>;
-            key-positions = <31 50>;
+            key-positions = <32 18>;
         };
 
         hbdl_k {
             bindings = <&kp K>;
-            key-positions = <49 32>;
+            key-positions = <16 30>;
         };
 
         hbdr_y {
             bindings = <&kp Y>;
-            key-positions = <56 43>;
+            key-positions = <56 42>;
         };
 
         hbdr_b {
             bindings = <&kp B>;
-            key-positions = <57 42>;
+            key-positions = <57 43>;
         };
 
         hbdr_x {
             bindings = <&kp X>;
-            key-positions = <43 55>;
+            key-positions = <55 41>;
         };
 
         hbdr_j {
             bindings = <&kp J>;
-            key-positions = <57 41>;
+            key-positions = <24 42>;
         };
 
         hbdr_v {
             bindings = <&kp V>;
-            key-positions = <42 55>;
+            key-positions = <23 41>;
         };
 
         hbdr_k {
             bindings = <&kp K>;
-            key-positions = <56 41>;
+            key-positions = <25 43>;
         };
 
         hudl_bslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <16 31>;
+            key-positions = <49 48 31 30>;
         };
 
         hudl_slash {
             bindings = <&kp SLASH>;
-            key-positions = <30 17>;
+            key-positions = <32 30 48 50>;
         };
 
         hudl_q {
             bindings = <&kp Q>;
-            key-positions = <16 32>;
+            key-positions = <32 31 49 50>;
         };
 
         hudl_z {
             bindings = <&kp Z>;
-            key-positions = <30 18>;
+            key-positions = <18 32 31 17>;
         };
 
         hudl_amps {
             bindings = <&kp AMPS>;
-            key-positions = <17 32>;
+            key-positions = <17 31 30 16>;
         };
 
         hudl_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <31 18>;
+            key-positions = <18 32 16 30>;
         };
 
         hudr_bslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <25 42>;
+            key-positions = <43 42 56 57>;
         };
 
         hudr_slash {
             bindings = <&kp SLASH>;
-            key-positions = <43 24>;
+            key-positions = <43 41 55 57>;
         };
 
         hudr_q {
             bindings = <&kp Q>;
-            key-positions = <25 41>;
+            key-positions = <41 42 55 56>;
         };
 
         hudr_z {
             bindings = <&kp Z>;
-            key-positions = <43 23>;
+            key-positions = <24 23 41 42>;
         };
 
         hudr_amps {
             bindings = <&kp AMPS>;
-            key-positions = <24 41>;
+            key-positions = <42 43 25 24>;
         };
 
         hudr_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <23 42>;
+            key-positions = <23 41 43 25>;
         };
 
         hl_esc {
@@ -921,6 +921,26 @@
         t2hl_right {
             bindings = <&kp RIGHT>;
             key-positions = <32 65>;
+        };
+
+        tl_ret {
+            bindings = <&kp RET>;
+            key-positions = <16 17 18>;
+        };
+
+        tr_ret {
+            bindings = <&kp RET>;
+            key-positions = <23 24 25>;
+        };
+
+        bl_tab {
+            bindings = <&lt 7 TAB>;
+            key-positions = <48 49 50>;
+        };
+
+        br_tab {
+            bindings = <&lt 7 TAB>;
+            key-positions = <55 56 57>;
         };
     };
 
