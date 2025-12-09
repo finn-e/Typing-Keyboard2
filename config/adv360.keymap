@@ -616,7 +616,7 @@
 
     combos {
         compatible = "zmk,combos";
-        #include "combos.dtsi";
+        #include "combos.dtsi"
     };
 
     keymap {
