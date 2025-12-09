@@ -67,6 +67,7 @@ OCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS) \
 TCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS)
 
 //** COMBOS **//
+// Most combos use only Ring, Middle and Index fingers. Pinky is reserved for necessary places (like left, 0 or shift)
 LTCOMBO(sk_shift, &as N0, &kp LEFT, &as F10, HLP)
 RTCOMBO(sk_shift, &as N0, &kp RIGHT, &as F10, HRP)
 //| | | | |
@@ -133,12 +134,13 @@ RTCOMBO(S, &as N3, &kp LEFT, &as F3, BRI)
 //| | | | |
 //| | | |x|
 
-FCOMBO(RALT, &sk_ralt_lock, &as GT, &as LT, &bt BT_SEL 0, TLP HLP, TRP HRP)
+FCOMBO(RALT,  &sk_ralt_lock, &as GT, &as LT, &bt BT_SEL 0, TLP HLP, TRP HRP)
 //| | | | |
 //|x| | | |
 //|x| | | |
 
-FCOMBO(LALT, &sk_lalt_lock, &as RBRC, &as LBRC, &bt BT_SEL 1, HLP BLP, HRP BRP)
+// FIXED per diagram (home+bottom pinky, both hands)
+FCOMBO(LALT,  &sk_lalt_lock, &as RBRC, &as LBRC, &bt BT_SEL 1, HLP BLP, HRP BRP)
 //| | | | |
 //|x| | | |
 //|x| | | |
