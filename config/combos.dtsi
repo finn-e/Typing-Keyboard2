@@ -236,7 +236,7 @@ FCOMBO(Q, &as q, &kp minus, &kp under, &as F16, HLM HLI BLM BLI, HRM HRI BRM BRI
 //| | |x|x|
 //| | |x|x|
 
-FCOMBO(Amps, &kp LSFT(7), &kp under, &kp tilde, HLR HLM BLR BLM, HRR HRM BRR BRM)
+FCOMBO(Amps, &kp LSFT(7), &kp under, &kp tilde, &kp F17, HLR HLM BLR BLM, HRR HRM BRR BRM)
 //| |x|x| |
 //| |x|x| |
 //| | | | |
