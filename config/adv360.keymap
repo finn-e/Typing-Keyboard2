@@ -934,13 +934,43 @@
         };
 
         bl_tab {
-            bindings = <&lt 7 TAB>;
+            bindings = <&kp TAB>;
             key-positions = <48 49 50>;
         };
 
         br_tab {
-            bindings = <&lt 7 TAB>;
+            bindings = <&kp TAB>;
             key-positions = <55 56 57>;
+        };
+
+        vpl_lalt {
+            bindings = <&sk LALT>;
+            key-positions = <47 29>;
+        };
+
+        vpl_ralt {
+            bindings = <&sk RALT>;
+            key-positions = <29 15>;
+        };
+
+        vpr_lalt {
+            bindings = <&sk LALT>;
+            key-positions = <44 58>;
+        };
+
+        vpr_ralt {
+            bindings = <&sk RALT>;
+            key-positions = <44 26>;
+        };
+
+        hl_bt {
+            bindings = <&sl 7>;
+            key-positions = <29 30 31 32>;
+        };
+
+        hr_bt {
+            bindings = <&sl 7>;
+            key-positions = <41 42 43 44>;
         };
     };
 
