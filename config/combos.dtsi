@@ -222,7 +222,7 @@ FCOMBO(V, &as v, &kp dot, &kp excl, &kp colon, HLI BLI, HRI BRI)
 //| | | |x|
 //| | | | |
 
-FCOMBO(Bslash, &as backslash, &kp under, &kp tilde, HLR HLM BLR BLM, HRR HRM BRR BRM)
+FCOMBO(Bslash, &as backslash, &kp minus, &kp under, &kp tilde, HLR HLM BLR BLM, HRR HRM BRR BRM)
 //| | | | |
 //| |x|x| |
 //| |x|x| |
@@ -237,7 +237,7 @@ FCOMBO(Q, &as q, &kp minus, &kp under, &as F16, HLM HLI BLM BLI, HRM HRI BRM BRI
 //| | |x|x|
 //| | |x|x|
 
-FCOMBO(Amps, &kp LSFT(7), &kp under, &kp tilde, HLR HLM BLR BLM, HRR HRM BRR BRM)
+FCOMBO(Amps, &kp LSFT(7), &kp LSFT(7), &kp under, &kp tilde, HLR HLM BLR BLM, HRR HRM BRR BRM)
 //| |x|x| |
 //| |x|x| |
 //| | | | |
