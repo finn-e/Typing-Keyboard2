@@ -141,10 +141,16 @@ FCOMBO(RALT,  &sk_ralt_lock, &as GT, &as LT, &bt BT_SEL 0, TLP HLP, TRP HRP)
 //|x| | | |
 //|x| | | |
 
-FCOMBO(LALT,  &sk_lalt_lock, &as RBRC, &as LBRC, &none, HLP BLP, HRP BRP)
+FCOMBO(LALT,  &sk_lalt_lock, &as RBRC, &as LBRC, &kp at, HLP BLP, HRP BRP)
 //| | | | |
 //|x| | | |
 //|x| | | |
+
+FCOMBO(I, &as i, &kp minus, &kp under, &kp at, HLR HLM, HRR HRM)
+//| | | | |
+//| |x|x| |
+//| | | | |
+
 FCOMBO(L, &as l, &kp tilde, &kp grave, &as F15, HLR HLI, HRR HRI)
 //| | | | |
 //| |x| |x|
