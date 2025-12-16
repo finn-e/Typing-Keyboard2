@@ -146,7 +146,7 @@ FCOMBO(LALT,  &sk_lalt_lock, &as RBRC, &as LBRC, &none, HLP BLP, HRP BRP)
 //|x| | | |
 //|x| | | |
 
-FCOMBO(I, &as i, &kp minus, &kp under, &none, HLR HLM, HRR HRM)
+FCOMBO(I, &as i, &kp minus, LSFT(minus), &none, HLR HLM, HRR HRM)
 //| | | | |
 //| |x|x| |
 //| | | | |
