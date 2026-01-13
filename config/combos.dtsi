@@ -206,17 +206,17 @@ FCOMBO(X, &as x, &kp dot, &kp excl, &kp colon, HLI BLI, HRI BRI)
 //| | | |x|
 //| | | |x|
 
-FCOMBO(K, &as k, &kp apos, &kp dqt, &kp grave, HLR BLR, HRR BRR)
+FCOMBO(K, &as k, &kp apos, &kp dqt, &kp grave, TLR HLR, TRR HRR)
 //| |x| | |
 //| |x| | |
 //| | | | |
 
-FCOMBO(J, &as j, &kp comma, &kp qmark, &kp semi, HLM BLM, HRM BRM)
+FCOMBO(J, &as j, &kp comma, &kp qmark, &kp semi, TLM HLM, TRM HRM)
 //| | |x| |
 //| | |x| |
 //| | | | |
 
-FCOMBO(V, &as v, &kp dot, &kp excl, &kp colon, HLI BLI, HRI BRI)
+FCOMBO(V, &as v, &kp dot, &kp excl, &kp colon, TLI HLI, TRI HRI)
 //| | | |x|
 //| | | |x|
 //| | | | |
@@ -236,17 +236,17 @@ FCOMBO(Q, &as q, &kp minus, &kp under, &as F16, HLM HLI BLM BLI, HRM HRI BRM BRI
 //| | |x|x|
 //| | |x|x|
 
-FCOMBO(Amps, &kp LSFT(7), &kp LSFT(7), &kp under, &kp tilde, HLR HLM BLR BLM, HRR HRM BRR BRM)
+FCOMBO(Amps, &kp LSFT(7), &kp LSFT(7), &kp under, &kp tilde, HLR HLM TLR TLM, HRR HRM TRR TRM)
 //| |x|x| |
 //| |x|x| |
 //| | | | |
 
-FCOMBO(Pipe, &kp LSFT(backslash), &kp tilde, &kp grave, &as F15, HLR HLI BLR BLI, HRR HRI BRR BRI)
+FCOMBO(Pipe, &kp LSFT(backslash), &kp tilde, &kp grave, &as F15, HLR HLI TLR TLI, HRR HRI TRR TRI)
 //| |x| |x|
 //| |x| |x|
 //| | | | |
 
-FCOMBO(Z, &as z, &kp minus, &kp under, &as F16, HLM HLI BLM BLI, HRM HRI BRM BRI)
+FCOMBO(Z, &as z, &kp minus, &kp under, &as F16, HLM HLI TLM TLI, HRM HRI TRM TRI)
 //| | |x|x|
 //| | |x|x|
 //| | | | |
@@ -271,7 +271,7 @@ FCOMBO(Tab, &kp printscreen, &kp minus, &kp under, &as F16, HLR HLM HLI BLR BLM 
 //| |x|x|x|
 //| |x|x|x|
 
-FCOMBO(Insert, &kp insert, &kp minus, &kp under, &as F16, HLR HLM HLI BLR BLM BLI, HRR HRM HRI BRR BRM BRI)
+FCOMBO(Insert, &kp insert, &kp minus, &kp under, &as F16, HLR HLM HLI TLR TLM TLI, HRR HRM HRI TRR TRM TRI)
 //| |x|x|x|
 //| |x|x|x|
 //| | | | |
