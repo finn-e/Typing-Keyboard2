@@ -16,13 +16,13 @@ combo_li_##NAME { \
 combo_lo_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
 	bindings = <OUTER_BINDINGS>; \
-	key-positions = <KEYPOS LOT>; \
+	key-positions = <KEYPOS LIT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
 combo_lb_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
 	bindings = <BOTH_BINDINGS>; \
-	key-positions = <KEYPOS LIT>; \
+	key-positions = <KEYPOS LOT>; \
 	layers = <COMBO_LAYERS>; \
 };
 
@@ -38,19 +38,19 @@ combo_r_##NAME { \
 combo_ri_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
 	bindings = <INNER_BINDINGS>; \
-	key-positions = <KEYPOS RIT>; \
+	key-positions = <KEYPOS RCT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
 combo_ro_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
 	bindings = <OUTER_BINDINGS>; \
-	key-positions = <KEYPOS ROT>; \
+	key-positions = <KEYPOS RIT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
 combo_rb_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
 	bindings = <BOTH_BINDINGS>; \
-	key-positions = <KEYPOS RIT ROT>; \
+	key-positions = <KEYPOS ROT>; \
 	layers = <COMBO_LAYERS>; \
 };
 

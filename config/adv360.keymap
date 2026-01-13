@@ -10,7 +10,7 @@
 /* =========================
  *  BOUGIE KEYS — LEFT HAND
  *  Rows: Top=row 3, Home=row 2, Bottom=row 1
- *  Columns used on left: 1..4  (per your “0,5,6 unused” note)
+ *  Columns used on left: 1..4
  * ========================= */
 #define TLP 15  /* RC(3,1)  top-left pinky   */
 #define TLR 16  /* RC(3,2)  top-left ring    */
@@ -32,20 +32,20 @@
  *  Rows: Top=row 3, Home=row 2, Bottom=row 1
  *  Right side ordered outer→inner: cols 19..16
  * ========================= */
-#define TRP 27  /* RC(3,19) top-right pinky  */
-#define TRR 26  /* RC(3,18) top-right ring   */
-#define TRM 25  /* RC(3,17) top-right middle */
-#define TRI 24  /* RC(3,16) top-right index  */
+#define TRP 26  /* RC(3,19) top-right pinky  */
+#define TRR 25  /* RC(3,18) top-right ring   */
+#define TRM 24  /* RC(3,17) top-right middle */
+#define TRI 23  /* RC(3,16) top-right index  */
 
-#define HRP 45  /* RC(2,19) home-right pinky */
-#define HRR 44  /* RC(2,18) home-right ring  */
-#define HRM 43  /* RC(2,17) home-right middle*/
-#define HRI 42  /* RC(2,16) home-right index */
+#define HRP 44  /* RC(2,19) home-right pinky */
+#define HRR 43  /* RC(2,18) home-right ring  */
+#define HRM 42  /* RC(2,17) home-right middle*/
+#define HRI 41  /* RC(2,16) home-right index */
 
-#define BRP 59  /* RC(1,19) bottom-right pinky */
-#define BRR 58  /* RC(1,18) bottom-right ring  */
-#define BRM 57  /* RC(1,17) bottom-right middle*/
-#define BRI 56  /* RC(1,16) bottom-right index */
+#define BRP 58  /* RC(1,19) bottom-right pinky */
+#define BRR 57  /* RC(1,18) bottom-right ring  */
+#define BRM 56  /* RC(1,17) bottom-right middle*/
+#define BRI 55  /* RC(1,16) bottom-right index */
 
 /* =========================
  *  THUMBS — 3 per hand (inner, outer, center)
@@ -56,9 +56,9 @@
 #define LOT 65  /* RC(0,7)  left outer thumb  */
 #define LCT 66  /* RC(0,8)  left center thumb */
 
-#define RIT 72  /* RC(0,16) right inner thumb */
-#define ROT 71  /* RC(0,15) right outer thumb */
-#define RCT 73  /* RC(0,17) right center thumb */
+#define RIT 68  /* RC(0,16) right inner thumb */
+#define ROT 70  /* RC(0,15) right outer thumb */
+#define RCT 69  /* RC(0,17) right center thumb */
 
 /* =========================
  *  FUTURE THUMBS: T4 / T5 / T6
