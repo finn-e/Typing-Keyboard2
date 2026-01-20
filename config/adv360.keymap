@@ -118,9 +118,9 @@
             display-name = "Base";
             bindings = <
 &tog 1  &none       &none  &none  &none  &bt BT_SEL 0  &bt BT_CLR                                                             &bt BT_CLR       &bt BT_SEL 0  &none  &none  &none  &none      &tog 1
-&none   &sk LCTRL   &kp R  &kp O  &kp D  &bt BT_SEL 1  &sys_reset                                                             &sys_reset       &bt BT_SEL 1  &kp D  &kp O  &kp R  &sk LCTRL  &none
-&none   &sk LSHIFT  &kp N  &kp E  &kp T  &bt BT_SEL 2  &bootloader      &none        &none           &none       &none        &bootloader      &bt BT_SEL 2  &kp T  &kp E  &kp N  &sk LSHFT  &none
-&none   &sk LMETA   &kp H  &kp A  &kp S  &bt BT_SEL 3                                &tl 8 TAB       &tl 8 TAB                                 &bt BT_SEL 3  &kp S  &kp A  &kp H  &sk LMETA  &none
+&none   &sk LCTRL   &as R  &as O  &as D  &bt BT_SEL 1  &sys_reset                                                             &sys_reset       &bt BT_SEL 1  &as D  &as O  &as R  &sk LCTRL  &none
+&none   &sk LSHIFT  &as N  &as E  &as T  &bt BT_SEL 2  &bootloader      &none        &none           &none       &none        &bootloader      &bt BT_SEL 2  &as T  &as E  &as N  &sk LSHFT  &none
+&none   &sk LMETA   &as H  &as A  &as S  &bt BT_SEL 3                                &tl 8 TAB       &tl 8 TAB                                 &bt BT_SEL 3  &as S  &as A  &as H  &sk LMETA  &none
 &tog 2  &none       &none  &none  &none                &tl 3 BACKSPACE  &tl 5 SPACE  &tl 10 RET      &tl 10 RET  &tl 6 SPACE  &tl 4 BACKSPACE                &none  &none  &none  &none      &tog 2
             >;
         };

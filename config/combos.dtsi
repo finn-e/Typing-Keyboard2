@@ -1,3 +1,39 @@
+// Key position constants (left hand)
+#define TLP 15
+#define TLR 16
+#define TLM 17
+#define TLI 18
+#define HLP 29
+#define HLR 30
+#define HLM 31
+#define HLI 32
+#define BLP 47
+#define BLR 48
+#define BLM 49
+#define BLI 50
+
+// Key position constants (right hand)
+#define TRP 26
+#define TRR 25
+#define TRM 24
+#define TRI 23
+#define HRP 44
+#define HRR 43
+#define HRM 42
+#define HRI 41
+#define BRP 58
+#define BRR 57
+#define BRM 56
+#define BRI 55
+
+// Thumb position constants
+#define LIT 67
+#define LOT 65
+#define LCT 66
+#define RIT 68
+#define ROT 70
+#define RCT 69
+
 #define LOCOMBO(NAME, BINDINGS, KEYPOS) \
 combo_l_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
