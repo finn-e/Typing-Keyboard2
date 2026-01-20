@@ -67,3 +67,72 @@ ROCOMBO(##NAME, ##BINDINGS, ##RIGHT_KEYPOS)
 OCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS) \
 TCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS)
 
+
+//** COMBOS **//
+// Most combos use only Ring, Middle and Index fingers. Pinky is reserved for necessary places (like left, 0 or shift)
+LTCOMBO(sk_shift, &as N0, &kp LEFT, &as F10, HLP)
+RTCOMBO(sk_shift, &as N0, &kp RIGHT, &as F10, HRP)
+//| | | | |
+//|x| | | |
+//| | | | |
+
+TCOMBO(N, &as N4, &kp DOWN, &as F4, HLR, HRR)
+//| | | | |
+//| |x| | |
+//| | | | |
+
+TCOMBO(E, &as N5, &kp UP, &as F5, HLM, HRM)
+//| | | | |
+//| | |x| |
+//| | | | |
+
+LTCOMBO(T, &as N6, &kp RIGHT, &as F6, HLI)
+RTCOMBO(T, &as N6, &kp LEFT, &as F6, HRI)
+//| | | | |
+//| | | |x|
+//| | | | |
+
+LTCOMBO(sk_meta, &as N0, &kp HOME, &as F10, TLP)
+RTCOMBO(sk_meta, &as N0, &kp END, &as F10, TRP)
+//|x| | | |
+//| | | | |
+//| | | | |
+
+TCOMBO(R, &as N7, &kp PG_DN, &as F8, TLR, TRR)
+//| |x| | |
+//| | | | |
+//| | | | |
+
+TCOMBO(O, &as N8, &kp PG_UP, &as F8, TLM, TRM)
+//| | |x| |
+//| | | | |
+//| | | | |
+
+LTCOMBO(D, &as N9, &kp END, &as F9, TLI)
+RTCOMBO(D, &as N9, &kp HOME, &as F9, TRI)
+//| | | |x|
+//| | | | |
+//| | | | |
+
+TCOMBO(LCTL, &as N0, &kp LEFT, &as F10, BLM, BRM)
+//| | | | |
+//| | | | |
+//|x| | | |
+
+LTCOMBO(H, &as N1, &kp LEFT, &as F1, BLR)
+RTCOMBO(H, &as N1, &kp RIGHT, &as F1, BRR)
+//| | | | |
+//| | | | |
+//| |x| | |
+
+TCOMBO(A, &as N2, &kp DOWN, &as F2, BLM, BRM)
+//| | | | |
+//| | | | |
+//| | |x| |
+
+LTCOMBO(S, &as N3, &kp RIGHT, &as F3, BLI)
+RTCOMBO(S, &as N3, &kp LEFT, &as F3, BRI)
+//| | | | |
+//| | | | |
+//| | | |x|
+
