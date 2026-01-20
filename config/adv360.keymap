@@ -91,6 +91,75 @@
 #define QUICK_TAP_TIMEOUT 125
 #define HOLD_TAP_TIMEOUT 195
 
+// COMBO MACROS (must be before devicetree block)
+#define LOCOMBO(NAME, BINDINGS, KEYPOS) \
+combo_l_##NAME { \
+	timeout-ms = <COMBO_TIMEOUT>; \
+	bindings = <BINDINGS>; \
+	key-positions = <KEYPOS>; \
+	layers = <COMBO_LAYERS>; \
+}; \
+
+#define LTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
+combo_li_##NAME { \
+	timeout-ms = <COMBO_TIMEOUT>; \
+	bindings = <INNER_BINDINGS>; \
+	key-positions = <KEYPOS LCT>; \
+	layers = <COMBO_LAYERS>; \
+}; \
+combo_lo_##NAME { \
+	timeout-ms = <COMBO_TIMEOUT>; \
+	bindings = <OUTER_BINDINGS>; \
+	key-positions = <KEYPOS LIT>; \
+	layers = <COMBO_LAYERS>; \
+}; \
+combo_lb_##NAME { \
+	timeout-ms = <COMBO_TIMEOUT>; \
+	bindings = <BOTH_BINDINGS>; \
+	key-positions = <KEYPOS LOT>; \
+	layers = <COMBO_LAYERS>; \
+};
+
+#define ROCOMBO(NAME, BINDINGS, KEYPOS) \
+combo_r_##NAME { \
+	timeout-ms = <COMBO_TIMEOUT>; \
+	bindings = <BINDINGS>; \
+	key-positions = <KEYPOS>; \
+	layers = <COMBO_LAYERS>; \
+}; \
+
+#define RTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
+combo_ri_##NAME { \
+	timeout-ms = <COMBO_TIMEOUT>; \
+	bindings = <INNER_BINDINGS>; \
+	key-positions = <KEYPOS RCT>; \
+	layers = <COMBO_LAYERS>; \
+}; \
+combo_ro_##NAME { \
+	timeout-ms = <COMBO_TIMEOUT>; \
+	bindings = <OUTER_BINDINGS>; \
+	key-positions = <KEYPOS RIT>; \
+	layers = <COMBO_LAYERS>; \
+}; \
+combo_rb_##NAME { \
+	timeout-ms = <COMBO_TIMEOUT>; \
+	bindings = <BOTH_BINDINGS>; \
+	key-positions = <KEYPOS ROT>; \
+	layers = <COMBO_LAYERS>; \
+};
+
+#define TCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
+LTCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS) \
+RTCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##RIGHT_KEYPOS)
+
+#define OCOMBO(NAME, BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
+LOCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS) \
+ROCOMBO(##NAME, ##BINDINGS, ##RIGHT_KEYPOS)
+
+#define FCOMBO(NAME, BINDINGS, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
+OCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS) \
+TCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS)
+
 &gresc { keep-mods = <(MOD_LSFT|MOD_RSFT)>; };
 
 / {
