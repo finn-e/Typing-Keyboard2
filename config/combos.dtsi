@@ -67,3 +67,7 @@ ROCOMBO(##NAME, ##BINDINGS, ##RIGHT_KEYPOS)
 OCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS) \
 TCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS)
 
+
+//** COMBOS **//
+// Most combos use only Ring, Middle and Index fingers. Pinky is reserved for necessary places (like left, 0 or shift)
+LTCOMBO(sk_shift, &as N0, &kp LEFT, &as F10, HLP)
