@@ -139,7 +139,7 @@
             bindings = <
 &kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                    &none      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp RET
-&hm LCTRL ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&mt LCTRL ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &tog 2            &kp GRAVE  &kp BSLH  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &tog 2
             >;
@@ -170,7 +170,7 @@
         nav_l {
             bindings = <
 &none  &none              &none               &none                   &none               &none  &none                                     &none   &none  &none                 &none                    &none                   &none              &none
-&none  &hm LEFT_GUI HOME  &hm LEFT_ALT PG_DN  &hm LEFT_CONTROL PG_UP  &hm LEFT_SHIFT END  &none  &none                                     &none   &none  &hm RIGHT_SHIFT HOME  &hm RIGHT_CONTROL PG_UP  &hm LEFT_ALT PAGE_DOWN  &hm RIGHT_GUI END  &none
+&none  &mt LEFT_GUI HOME  &mt LEFT_ALT PG_DN  &mt LEFT_CONTROL PG_UP  &mt LEFT_SHIFT END  &none  &none                                     &none   &none  &mt RIGHT_SHIFT HOME  &mt RIGHT_CONTROL PG_UP  &mt LEFT_ALT PAGE_DOWN  &mt RIGHT_GUI END  &none
 &none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
 &none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none      &none                  &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
 &none  &none              &none               &none                   &none                      &trans  &trans  &none      &none  &trans  &trans         &none                 &none                    &none                   &none              &none
@@ -180,7 +180,7 @@
         nav_r {
             bindings = <
 &none  &none              &none               &none                   &none               &none  &none                                     &none   &none  &none                 &none                    &none                   &none              &none
-&none  &hm LEFT_GUI HOME  &hm LEFT_ALT PG_DN  &hm LEFT_CONTROL PG_UP  &hm LEFT_SHIFT END  &none  &none                                     &none   &none  &hm RIGHT_SHIFT HOME  &hm RIGHT_CONTROL PG_UP  &hm LEFT_ALT PAGE_DOWN  &hm RIGHT_GUI END  &none
+&none  &mt LEFT_GUI HOME  &mt LEFT_ALT PG_DN  &mt LEFT_CONTROL PG_UP  &mt LEFT_SHIFT END  &none  &none                                     &none   &none  &mt RIGHT_SHIFT HOME  &mt RIGHT_CONTROL PG_UP  &mt LEFT_ALT PAGE_DOWN  &mt RIGHT_GUI END  &none
 &none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
 &none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none      &none                  &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
 &none  &none              &none               &none                   &none                      &trans  &trans  &none      &none  &trans  &trans         &none                 &none                    &none                   &none              &none
