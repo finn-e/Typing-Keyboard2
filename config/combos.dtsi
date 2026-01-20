@@ -1,3 +1,35 @@
+// Key position constants - must be defined here for use in macros
+#define TLP 15
+#define TLR 16
+#define TLM 17
+#define TLI 18
+#define HLP 29
+#define HLR 30
+#define HLM 31
+#define HLI 32
+#define BLP 47
+#define BLR 48
+#define BLM 49
+#define BLI 50
+#define TRP 26
+#define TRR 25
+#define TRM 24
+#define TRI 23
+#define HRP 44
+#define HRR 43
+#define HRM 42
+#define HRI 41
+#define BRP 58
+#define BRR 57
+#define BRM 56
+#define BRI 55
+#define LIT 67
+#define LOT 65
+#define LCT 66
+#define RIT 68
+#define ROT 70
+#define RCT 69
+
 //** COMBOS **//
 // Most combos use only Ring, Middle and Index fingers. Pinky is reserved for necessary places (like left, 0 or shift)
 LTCOMBO(sk_shift, &as N0, &kp LEFT, &as F10, HLP)
