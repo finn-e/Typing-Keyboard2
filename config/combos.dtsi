@@ -15,7 +15,7 @@ combo_li_##NAME { \
 }; \
 combo_lo_##NAME { \
         timeout-ms = <COMBO_TIMEOUT>; \
-        bindings = INNER_BINDINGS>; \
+        bindings = <INNER_BINDINGS>; \
         key-positions = <KEYPOS LIT>; \
         layers = <COMBO_LAYERS>; \
 }; \
