@@ -55,7 +55,7 @@ combo_ro_##NAME { \
 };
 
 #define TCOMBO(NAME, CENTER_BINDINGS, INNER_BINDINGS, OUTER_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
-LTCOMBO(NAME, ##CENTER_BINDINGS, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##LEFT_KEYPOS) \
+LTCOMBO(##NAME, ##CENTER_BINDINGS, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##LEFT_KEYPOS) \
 RTCOMBO(##NAME, ##CENTER_BINDINGS, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##RIGHT_KEYPOS)
 
 #define OCOMBO(NAME, BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
@@ -139,7 +139,7 @@ FCOMBO(RALT,  &sk_ralt_lock, &as GT, &as LT, &bt BT_SEL 0, TLP HLP, TRP HRP)
 //|x| | | |
 //| | | | |
 
-FCOMBO(I, &as i, &kp minus, &kp under, &kp tilde, HLR HLM, HRR HRM)
+FCOMBO(I, &as i, &kp minus, &kp LSFT(minus), &kp LSFT(grave), HLR HLM, HRR HRM)
 //| | | | |
 //| |x|x| |
 //| | | | |
