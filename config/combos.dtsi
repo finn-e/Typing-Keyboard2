@@ -223,7 +223,7 @@ FCOMBO(RALT,  &sk_ralt_lock, &as GT, &as LT, &bt BT_SEL 0, TLP HLP, TRP HRP)
 //|x| | | |
 //| | | | |
 
-FCOMBO(I, &kp I, &kp minus, &kp under, &kp tilde, HLR HLM, HRR HRM)
+FCOMBO(I, &kp I, &kp MINUS, &kp UNDERSCORE, &kp TILDE, HLR HLM, HRR HRM)
 //| | | | |
 //| |x|x| |
 //| | | | |
