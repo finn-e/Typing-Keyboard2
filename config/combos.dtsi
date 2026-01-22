@@ -17,18 +17,12 @@ combo_lc_##NAME { \
 combo_li_##NAME { \
     timeout-ms = <COMBO_TIMEOUT>; \
     bindings = <INNER_BINDINGS>; \
-    key-positions = <KEYPOS LCT>; \
+    key-positions = <KEYPOS LIT>; \
     layers = <COMBO_LAYERS>; \
 }; \
 combo_lo_##NAME { \
     timeout-ms = <COMBO_TIMEOUT>; \
     bindings = <OUTER_BINDINGS>; \
-    key-positions = <KEYPOS LIT>; \
-    layers = <COMBO_LAYERS>; \
-}; \
-combo_lb_##NAME { \
-    timeout-ms = <COMBO_TIMEOUT>; \
-    bindings = <BOTH_BINDINGS>; \
     key-positions = <KEYPOS LOT>; \
     layers = <COMBO_LAYERS>; \
 };
