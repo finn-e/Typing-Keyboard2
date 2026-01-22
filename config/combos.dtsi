@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #define LOCOMBO(NAME, BINDINGS, KEYPOS) \
 combo_l_##NAME { \
@@ -5,10 +6,109 @@ combo_l_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <COMBO_LAYERS>; \
+=======
+/* =========================
+ *  BOUGIE KEYS — LEFT HAND
+ *  Rows: Top=row 3, Home=row 2, Bottom=row 1
+ *  Columns used on left: 1..4
+ * ========================= */
+#define TLP 15  /* RC(3,1)  top-left pinky   */
+#define TLR 16  /* RC(3,2)  top-left ring    */
+#define TLM 17  /* RC(3,3)  top-left middle  */
+#define TLI 18  /* RC(3,4)  top-left index   */
+
+#define HLP 29  /* RC(2,1)  home-left pinky  */
+#define HLR 30  /* RC(2,2)  home-left ring   */
+#define HLM 31  /* RC(2,3)  home-left middle */
+#define HLI 32  /* RC(2,4)  home-left index  */
+
+#define BLP 47  /* RC(1,1)  bottom-left pinky */
+#define BLR 48  /* RC(1,2)  bottom-left ring  */
+#define BLM 49  /* RC(1,3)  bottom-left middle*/
+#define BLI 50  /* RC(1,4)  bottom-left index */
+
+/* =========================
+ *  BOUGIE KEYS — RIGHT HAND
+ *  Rows: Top=row 3, Home=row 2, Bottom=row 1
+ *  Right side ordered outer→inner: cols 19..16
+ * ========================= */
+#define TRP 26  /* RC(3,19) top-right pinky  */
+#define TRR 25  /* RC(3,18) top-right ring   */
+#define TRM 24  /* RC(3,17) top-right middle */
+#define TRI 23  /* RC(3,16) top-right index  */
+
+#define HRP 44  /* RC(2,19) home-right pinky */
+#define HRR 43  /* RC(2,18) home-right ring  */
+#define HRM 42  /* RC(2,17) home-right middle*/
+#define HRI 41  /* RC(2,16) home-right index */
+
+#define BRP 58  /* RC(1,19) bottom-right pinky */
+#define BRR 57  /* RC(1,18) bottom-right ring  */
+#define BRM 56  /* RC(1,17) bottom-right middle*/
+#define BRI 55  /* RC(1,16) bottom-right index */
+
+/* =========================
+ *  THUMBS — 3 per hand (inner, outer, center)
+ *  Left:  RC(0,9)=inner, RC(0,7)=outer, RC(0,8)=center
+ *  Right: mirror → RC(0,16)=inner, RC(0,15)=outer, RC(0,17)=center
+ * ========================= */
+#define LIT 67  /* RC(0,9)  left inner thumb  */
+#define LOT 65  /* RC(0,7)  left outer thumb  */
+#define LCT 66  /* RC(0,8)  left center thumb */
+
+#define RIT 68  /* RC(0,16) right inner thumb */
+#define ROT 70  /* RC(0,15) right outer thumb */
+#define RCT 69  /* RC(0,17) right center thumb */
+
+/* =========================
+ *  FUTURE THUMBS: T4 / T5 / T6
+ *  T4: row 1, center  → RC(1,9) / RC(1,10)
+ *  T5: row 2, center  → RC(2,8) / RC(2,11)
+ *  T6: row 2, center  → RC(2,9) / RC(2,10)
+ * ========================= */
+#define L4T 52  /* RC(1,9)  left T4 */
+#define R4T 53  /* RC(1,10) right T4 */
+
+#define L5T 35  /* RC(2,8)  left T5 */
+#define R5T 38  /* RC(2,11) right T5 */
+
+#define L6T 36  /* RC(2,9)  left T6 */
+#define R6T 37  /* RC(2,10) right T6 */
+
+// LAYERS
+#define BOU  0
+#define QWE  1
+#define NAV  2
+#define WIN  3
+#define DESK 4
+#define NUM  5
+#define BT   6
+
+// CONFIG
+#define COMBO_TIMEOUT 70
+#define COMBO_LAYERS BOU NAV WIN DESK NUM BT
+#define STICKY_TIMEOUT 1000
+#define QUICK_TAP_TIMEOUT 125
+#define HOLD_TAP_TIMEOUT 195
+
+#define LOCOMBO(NAME, BINDINGS, KEYPOS) \
+combo_l_##NAME { \
+        timeout-ms = <COMBO_TIMEOUT>; \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <COMBO_LAYERS>; \
+>>>>>>> bad8a56268d156d834e7cac93db2d2181edbe4f6
 }; \
 
-#define LTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
+#define LTCOMBO(NAME, CENTER_BINDINGS, INNER_BINDINGS, OUTER_BINDINGS, KEYPOS) \
+combo_lc_##NAME { \
+        timeout-ms = <COMBO_TIMEOUT>; \
+        bindings = <CENTER_BINDINGS>; \
+        key-positions = <KEYPOS LCT>; \
+        layers = <COMBO_LAYERS>; \
+}; \
 combo_li_##NAME { \
+<<<<<<< HEAD
     timeout-ms = <COMBO_TIMEOUT>; \
     bindings = <INNER_BINDINGS>; \
     key-positions = <KEYPOS LCT>; \
@@ -25,18 +125,44 @@ combo_lb_##NAME { \
     bindings = <BOTH_BINDINGS>; \
     key-positions = <KEYPOS LOT>; \
     layers = <COMBO_LAYERS>; \
+=======
+        timeout-ms = <COMBO_TIMEOUT>; \
+        bindings = <INNER_BINDINGS>; \
+        key-positions = <KEYPOS LIT>; \
+        layers = <COMBO_LAYERS>; \
+}; \
+combo_lo_##NAME { \
+        timeout-ms = <COMBO_TIMEOUT>; \
+        bindings = <OUTER_BINDINGS>; \
+        key-positions = <KEYPOS LOT>; \
+        layers = <COMBO_LAYERS>; \
+>>>>>>> bad8a56268d156d834e7cac93db2d2181edbe4f6
 };
 
 #define ROCOMBO(NAME, BINDINGS, KEYPOS) \
 combo_r_##NAME { \
+<<<<<<< HEAD
     timeout-ms = <COMBO_TIMEOUT>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <COMBO_LAYERS>; \
+=======
+        timeout-ms = <COMBO_TIMEOUT>; \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <COMBO_LAYERS>; \
+>>>>>>> bad8a56268d156d834e7cac93db2d2181edbe4f6
 }; \
 
-#define RTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
+#define RTCOMBO(NAME, CENTER_BINDINGS, INNER_BINDINGS, OUTER_BINDINGS, KEYPOS) \
+combo_rc_##NAME { \
+        timeout-ms = <COMBO_TIMEOUT>; \
+        bindings = <CENTER_BINDINGS>; \
+        key-positions = <KEYPOS RCT>; \
+        layers = <COMBO_LAYERS>; \
+}; \
 combo_ri_##NAME { \
+<<<<<<< HEAD
     timeout-ms = <COMBO_TIMEOUT>; \
     bindings = <INNER_BINDINGS>; \
     key-positions = <KEYPOS RCT>; \
@@ -58,15 +184,38 @@ combo_rb_##NAME { \
 #define TCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
 LTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS) \
 RTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, RIGHT_KEYPOS)
+=======
+        timeout-ms = <COMBO_TIMEOUT>; \
+        bindings = <INNER_BINDINGS>; \
+        key-positions = <KEYPOS RIT>; \
+        layers = <COMBO_LAYERS>; \
+}; \
+combo_ro_##NAME { \
+        timeout-ms = <COMBO_TIMEOUT>; \
+        bindings = <OUTER_BINDINGS>; \
+        key-positions = <KEYPOS ROT>; \
+        layers = <COMBO_LAYERS>; \
+};
+
+#define TCOMBO(NAME, CENTER_BINDINGS, INNER_BINDINGS, OUTER_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
+LTCOMBO(##NAME, ##CENTER_BINDINGS, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##LEFT_KEYPOS) \
+RTCOMBO(##NAME, ##CENTER_BINDINGS, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##RIGHT_KEYPOS)
+>>>>>>> bad8a56268d156d834e7cac93db2d2181edbe4f6
 
 #define OCOMBO(NAME, BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
 LOCOMBO(NAME, BINDINGS, LEFT_KEYPOS) \
 ROCOMBO(NAME, BINDINGS, RIGHT_KEYPOS)
 
+<<<<<<< HEAD
 #define FCOMBO(NAME, BINDINGS, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
 OCOMBO(NAME, BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
 TCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS)
 
+=======
+#define FCOMBO(NAME, BINDINGS, CENTER_BINDINGS, INNER_BINDINGS, OUTER_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
+OCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS) \
+TCOMBO(##NAME, ##CENTER_BINDINGS, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS)
+>>>>>>> bad8a56268d156d834e7cac93db2d2181edbe4f6
 
 //** COMBOS **//
 // Most combos use only Ring, Middle and Index fingers. Pinky is reserved for necessary places (like left, 0 or shift)
@@ -141,7 +290,11 @@ FCOMBO(RALT,  &sk_ralt_lock, &as GT, &as LT, &bt BT_SEL 0, TLP HLP, TRP HRP)
 //|x| | | |
 //| | | | |
 
+<<<<<<< HEAD
 FCOMBO(I, &as I, &kp MINUS, &kp UNDER, &kp TILDE, HLR HLM, HRR HRM)
+=======
+FCOMBO(I, &kp I, &kp MINUS, &kp UNDERSCORE, &kp TILDE, HLR HLM, HRR HRM)
+>>>>>>> bad8a56268d156d834e7cac93db2d2181edbe4f6
 //| | | | |
 //| |x|x| |
 //| | | | |
