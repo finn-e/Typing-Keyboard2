@@ -199,17 +199,17 @@ FCOMBO(X, &as X, &kp DOT, &kp EXCL, &kp COLON, HLI BLI, HRI BRI)
 //| | | |x|
 //| | | |x|
 
-FCOMBO(K, &as K, &kp APOS, &kp DQT, &kp GRAVE, HLR BLR, HRR BRR)
+FCOMBO(K, &as K, &kp APOS, &kp DQT, &kp GRAVE, HLR TLR, HRR TRR)
 //| |x| | |
 //| |x| | |
 //| | | | |
 
-FCOMBO(J, &as J, &kp COMMA, &kp QMARK, &kp SEMI, HLM BLM, HRM BRM)
+FCOMBO(J, &as J, &kp COMMA, &kp QMARK, &kp SEMI, HLM TLM, HRM TRM)
 //| | |x| |
 //| | |x| |
 //| | | | |
 
-FCOMBO(V, &as V, &kp DOT, &kp EXCL, &kp COLON, HLI BLI, HRI BRI)
+FCOMBO(V, &as V, &kp DOT, &kp EXCL, &kp COLON, HLI TLI, HRI TRI)
 //| | | |x|
 //| | | |x|
 //| | | | |
@@ -229,17 +229,17 @@ FCOMBO(Q, &as Q, &kp MINUS, &kp UNDER, &as F16, HLM HLI BLM BLI, HRM HRI BRM BRI
 //| | |x|x|
 //| | |x|x|
 
-FCOMBO(Amps, &kp AMPS, &kp AMPS, &kp UNDER, &kp TILDE, HLR HLM BLR BLM, HRR HRM BRR BRM)
+FCOMBO(Amps, &kp AMPS, &kp AMPS, &kp UNDER, &kp TILDE, HLR HLM TLR TLM, HRR HRM TRR TRM)
 //| |x|x| |
 //| |x|x| |
 //| | | | |
 
-FCOMBO(Pipe, &kp PIPE, &kp TILDE, &kp GRAVE, &as F15, HLR HLI BLR BLI, HRR HRI BRR BRI)
+FCOMBO(Pipe, &kp PIPE, &kp TILDE, &kp GRAVE, &as F15, HLR HLI TLR TLI, HRR HRI TRR TRI)
 //| |x| |x|
 //| |x| |x|
 //| | | | |
 
-FCOMBO(Z, &as Z, &kp MINUS, &kp UNDER, &as F16, HLM HLI BLM BLI, HRM HRI BRM BRI)
+FCOMBO(Z, &as Z, &kp MINUS, &kp UNDER, &as F16, HLM HLI TLM TLI, HRM HRI TRM TRI)
 //| | |x|x|
 //| | |x|x|
 //| | | | |
