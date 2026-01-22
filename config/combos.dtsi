@@ -1,71 +1,71 @@
+
 #define LOCOMBO(NAME, BINDINGS, KEYPOS) \
 combo_l_##NAME { \
-	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <BINDINGS>; \
-	key-positions = <KEYPOS>; \
-	layers = <COMBO_LAYERS>; \
+    timeout-ms = <COMBO_TIMEOUT>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <COMBO_LAYERS>; \
 }; \
 
 #define LTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
 combo_li_##NAME { \
-	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <INNER_BINDINGS>; \
-	key-positions = <KEYPOS LCT>; \
-	layers = <COMBO_LAYERS>; \
+    timeout-ms = <COMBO_TIMEOUT>; \
+    bindings = <INNER_BINDINGS>; \
+    key-positions = <KEYPOS LCT>; \
+    layers = <COMBO_LAYERS>; \
 }; \
 combo_lo_##NAME { \
-	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <OUTER_BINDINGS>; \
-	key-positions = <KEYPOS LIT>; \
-	layers = <COMBO_LAYERS>; \
+    timeout-ms = <COMBO_TIMEOUT>; \
+    bindings = <OUTER_BINDINGS>; \
+    key-positions = <KEYPOS LIT>; \
+    layers = <COMBO_LAYERS>; \
 }; \
 combo_lb_##NAME { \
-	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <BOTH_BINDINGS>; \
-	key-positions = <KEYPOS LOT>; \
-	layers = <COMBO_LAYERS>; \
+    timeout-ms = <COMBO_TIMEOUT>; \
+    bindings = <BOTH_BINDINGS>; \
+    key-positions = <KEYPOS LOT>; \
+    layers = <COMBO_LAYERS>; \
 };
 
 #define ROCOMBO(NAME, BINDINGS, KEYPOS) \
 combo_r_##NAME { \
-	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <BINDINGS>; \
-	key-positions = <KEYPOS>; \
-	layers = <COMBO_LAYERS>; \
+    timeout-ms = <COMBO_TIMEOUT>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <COMBO_LAYERS>; \
 }; \
 
 #define RTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
 combo_ri_##NAME { \
-	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <INNER_BINDINGS>; \
-	key-positions = <KEYPOS RCT>; \
-	layers = <COMBO_LAYERS>; \
+    timeout-ms = <COMBO_TIMEOUT>; \
+    bindings = <INNER_BINDINGS>; \
+    key-positions = <KEYPOS RCT>; \
+    layers = <COMBO_LAYERS>; \
 }; \
 combo_ro_##NAME { \
-	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <OUTER_BINDINGS>; \
-	key-positions = <KEYPOS RIT>; \
-	layers = <COMBO_LAYERS>; \
+    timeout-ms = <COMBO_TIMEOUT>; \
+    bindings = <OUTER_BINDINGS>; \
+    key-positions = <KEYPOS RIT>; \
+    layers = <COMBO_LAYERS>; \
 }; \
 combo_rb_##NAME { \
-	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <BOTH_BINDINGS>; \
-	key-positions = <KEYPOS ROT>; \
-	layers = <COMBO_LAYERS>; \
+    timeout-ms = <COMBO_TIMEOUT>; \
+    bindings = <BOTH_BINDINGS>; \
+    key-positions = <KEYPOS ROT>; \
+    layers = <COMBO_LAYERS>; \
 };
 
-
 #define TCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
-LTCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS) \
-RTCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##RIGHT_KEYPOS)
+LTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS) \
+RTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, RIGHT_KEYPOS)
 
 #define OCOMBO(NAME, BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
-LOCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS) \
-ROCOMBO(##NAME, ##BINDINGS, ##RIGHT_KEYPOS)
+LOCOMBO(NAME, BINDINGS, LEFT_KEYPOS) \
+ROCOMBO(NAME, BINDINGS, RIGHT_KEYPOS)
 
 #define FCOMBO(NAME, BINDINGS, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
-OCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS) \
-TCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS)
+OCOMBO(NAME, BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
+TCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS)
 
 
 //** COMBOS **//
@@ -141,7 +141,131 @@ FCOMBO(RALT,  &sk_ralt_lock, &as GT, &as LT, &bt BT_SEL 0, TLP HLP, TRP HRP)
 //|x| | | |
 //| | | | |
 
-FCOMBO(I, &as i, &kp minus, &kp LSFT(minus), &kp LSFT(grave), HLR HLM, HRR HRM)
+FCOMBO(I, &as I, &kp MINUS, &kp UNDER, &kp TILDE, HLR HLM, HRR HRM)
 //| | | | |
 //| |x|x| |
+//| | | | |
+FCOMBO(L, &as L, &kp TILDE, &kp GRAVE, &as F15, HLR HLI, HRR HRI)
+//| | | | |
+//| |x| |x|
+//| | | | |
+
+FCOMBO(C, &as C, &kp MINUS, &kp UNDER, &as F16, HLR HLM, HRM HRI)
+//| | | | |
+//| | |x|x|
+//| | | | |
+
+FCOMBO(U, &as U, &kp AT, &kp ASTERISK, &as F17, BLR BLM, BRR BRM)
+//| | | | |
+//| | | | |
+//| |x|x| |
+
+FCOMBO(M, &as M, &kp EQUAL, &kp PLUS, &as F18, BLR BLI, BRR BRI)
+//| | | | |
+//| | | | |
+//| |x| |x|
+
+FCOMBO(G, &as G, &kp AMPS, &kp PIPE, &as F19, BLM BLI, BRM BRI)
+//| | | | |
+//| | | | |
+//| | |x|x|
+
+FCOMBO(P, &as P, &kp COMMA, &kp UNDER, &kp TILDE, TLR TLM, TRR TRM)
+//| |x|x| |
+//| | | | |
+//| | | | |
+
+FCOMBO(W, &as W, &kp TILDE, &kp GRAVE, &as F15, TLR TLI, TRR TRI)
+//| |x| |x|
+//| | | | |
+//| | | | |
+
+FCOMBO(F, &as F, &kp MINUS, &kp UNDER, &as F16, TLM TLI, TRM TRI)
+//| | |x|x|
+//| | | | |
+//| | | | |
+
+FCOMBO(B, &as B, &kp APOS, &kp DQT, &kp GRAVE, HLR BLR, HRR BRR)
+//| | | | |
+//| |x| | |
+//| |x| | |
+
+FCOMBO(Y, &as Y, &kp COMMA, &kp QMARK, &kp SEMI, HLM BLM, HRM BRM)
+//| | | | |
+//| | |x| |
+//| | |x| |
+
+FCOMBO(X, &as X, &kp DOT, &kp EXCL, &kp COLON, HLI BLI, HRI BRI)
+//| | | | |
+//| | | |x|
+//| | | |x|
+
+FCOMBO(K, &as K, &kp APOS, &kp DQT, &kp GRAVE, HLR BLR, HRR BRR)
+//| |x| | |
+//| |x| | |
+//| | | | |
+
+FCOMBO(J, &as J, &kp COMMA, &kp QMARK, &kp SEMI, HLM BLM, HRM BRM)
+//| | |x| |
+//| | |x| |
+//| | | | |
+
+FCOMBO(V, &as V, &kp DOT, &kp EXCL, &kp COLON, HLI BLI, HRI BRI)
+//| | | |x|
+//| | | |x|
+//| | | | |
+
+FCOMBO(Bslash, &as BACKSLASH, &kp MINUS, &kp UNDER, &kp TILDE, HLR HLM BLR BLM, HRR HRM BRR BRM)
+//| | | | |
+//| |x|x| |
+//| |x|x| |
+
+FCOMBO(Slash, &as SLASH, &kp TILDE, &kp GRAVE, &as F15, HLR HLI BLR BLI, HRR HRI BRR BRI)
+//| | | | |
+//| |x| |x|
+//| |x| |x|
+
+FCOMBO(Q, &as Q, &kp MINUS, &kp UNDER, &as F16, HLM HLI BLM BLI, HRM HRI BRM BRI)
+//| | | | |
+//| | |x|x|
+//| | |x|x|
+
+FCOMBO(Amps, &kp AMPS, &kp AMPS, &kp UNDER, &kp TILDE, HLR HLM BLR BLM, HRR HRM BRR BRM)
+//| |x|x| |
+//| |x|x| |
+//| | | | |
+
+FCOMBO(Pipe, &kp PIPE, &kp TILDE, &kp GRAVE, &as F15, HLR HLI BLR BLI, HRR HRI BRR BRI)
+//| |x| |x|
+//| |x| |x|
+//| | | | |
+
+FCOMBO(Z, &as Z, &kp MINUS, &kp UNDER, &as F16, HLM HLI BLM BLI, HRM HRI BRM BRI)
+//| | |x|x|
+//| | |x|x|
+//| | | | |
+
+FCOMBO(Gresc, &gresc, &kp MINUS, &kp UNDER, &as F16, TLR TLM TLI, TRR TRM TRI)
+//| |x|x|x|
+//| | | | |
+//| | | | |
+
+FCOMBO(BSPC, &kp BSPC, &kp DEL, &kp DEL, &kp DEL, HLR HLM HLI, HRR HRM HRI)
+//| | | | |
+//| |x|x|x|
+//| | | | |
+
+FCOMBO(RET, &kp RET, &kp RET, &kp RET, &kp RET, BLR BLM BLI, BRR BRM BRI)
+//| | | | |
+//| | | | |
+//| |x|x|x|
+
+FCOMBO(Tab, &kp PRINTSCREEN, &kp MINUS, &kp UNDER, &as F16, HLR HLM HLI BLR BLM BLI, HRR HRM HRI BRR BRM BRI)
+//| | | | |
+//| |x|x|x|
+//| |x|x|x|
+
+FCOMBO(Insert, &kp INSERT, &kp MINUS, &kp UNDER, &as F16, HLR HLM HLI BLR BLM BLI, HRR HRM HRI TRR TRM TRI)
+//| |x|x|x|
+//| |x|x|x|
 //| | | | |
