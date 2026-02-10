@@ -149,7 +149,7 @@ FCOMBO(L, &as L, &kp TILDE, &kp GRAVE, &as F15, HLR HLI, HRR HRI)
 //| |x| |x|
 //| | | | |
 
-FCOMBO(C, &as C, &kp MINUS, &kp UNDER, &as F16, HLR HLM, HRM HRI)
+FCOMBO(C, &as C, &kp MINUS, &kp UNDER, &as F16, HLM HLI, HRM HRI)
 //| | | | |
 //| | |x|x|
 //| | | | |
