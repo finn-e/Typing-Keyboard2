@@ -69,8 +69,8 @@ TCOMBO(##NAME, ##CENTER_BINDINGS, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##LEFT_KEY
 
 //** COMBOS **//
 // Most combos use only Ring, Middle and Index fingers. Pinky is reserved for necessary places (like left, 0 or shift)
-LTCOMBO(sk_shift, &as N0, &kp LEFT, &as F10, HLP)
-RTCOMBO(sk_shift, &as N0, &kp RIGHT, &as F10, HRP)
+LTCOMBO(sk_shift, &as N0, &kp LEFT, &as F11, HLP)
+RTCOMBO(sk_shift, &as N0, &kp RIGHT, &as F11, HRP)
 //| | | | |
 //|x| | | |
 //| | | | |
@@ -113,7 +113,7 @@ RTCOMBO(D, &as N9, &kp HOME, &as F9, TRI)
 //| | | | |
 //| | | | |
 
-TCOMBO(LCTL, &as N0, &kp LEFT, &as F10, BLM, BRM)
+TCOMBO(LCTL, &as N0, &kp LEFT, &as F12, BLM, BRM)
 //| | | | |
 //| | | | |
 //|x| | | |
@@ -135,66 +135,72 @@ RTCOMBO(S, &as N3, &kp LEFT, &as F3, BRI)
 //| | | | |
 //| | | |x|
 
-FCOMBO(RALT,  &sk_ralt_lock, &as GT, &as LT, &bt BT_SEL 0, TLP HLP, TRP HRP)
+FCOMBO(RALT,  &sk_ralt_lock, &kp RPAR, &kp LPAR, &bt BT_SEL 0, TLP HLP, TRP HRP)
 //|x| | | |
 //|x| | | |
 //| | | | |
 
-FCOMBO(I, &kp I, &kp MINUS, &kp UNDERSCORE, &kp TILDE, HLR HLM, HRR HRM)
+FCOMBO(LALT,  &sk_lalt_lock, &kp GT, &kp LT, &bt BT_SEL 1, BLP HLP, BRP HRP)
+//| | | | |
+//|x| | | |
+//|x| | | |
+
+FCOMBO(I, &kp I, &kp COMMA, &kp QMARK, &as F13, HLR HLM, HRR HRM)
 //| | | | |
 //| |x|x| |
 //| | | | |
-FCOMBO(L, &as L, &kp TILDE, &kp GRAVE, &as F15, HLR HLI, HRR HRI)
+
+FCOMBO(L, &as L, &kp MINUS, &kp UNDER, &as F14, HLR HLI, HRR HRI)
 //| | | | |
 //| |x| |x|
 //| | | | |
 
-FCOMBO(C, &as C, &kp MINUS, &kp UNDER, &as F16, HLM HLI, HRM HRI)
+FCOMBO(C, &as C, &kp DOT, &kp EXCL, &as F15, HLM HLI, HRM HRI)
 //| | | | |
 //| | |x|x|
 //| | | | |
 
-FCOMBO(U, &as U, &kp AT, &kp ASTERISK, &as F17, BLR BLM, BRR BRM)
+FCOMBO(U, &as U, &kp AT, &kp ASTERISK, &as F16, BLR BLM, BRR BRM)
 //| | | | |
 //| | | | |
 //| |x|x| |
 
-FCOMBO(M, &as M, &kp EQUAL, &kp PLUS, &as F18, BLR BLI, BRR BRI)
+FCOMBO(M, &as M, &kp EQUAL, &kp PLUS, &as F17, BLR BLI, BRR BRI)
 //| | | | |
 //| | | | |
 //| |x| |x|
 
-FCOMBO(G, &as G, &kp AMPS, &kp PIPE, &as F19, BLM BLI, BRM BRI)
+FCOMBO(G, &as G, &kp AMPS, &kp PIPE, &as F18, BLM BLI, BRM BRI)
 //| | | | |
 //| | | | |
 //| | |x|x|
 
-FCOMBO(P, &as P, &kp COMMA, &kp UNDER, &kp TILDE, TLR TLM, TRR TRM)
+FCOMBO(P, &as P, &kp APOS, &kp DQT, &as F19, TLR TLM, TRR TRM)
 //| |x|x| |
 //| | | | |
 //| | | | |
 
-FCOMBO(W, &as W, &kp TILDE, &kp GRAVE, &as F15, TLR TLI, TRR TRI)
+FCOMBO(W, &as W, &kp TILDE, &kp GRAVE, &as F20, TLR TLI, TRR TRI)
 //| |x| |x|
 //| | | | |
 //| | | | |
 
-FCOMBO(F, &as F, &kp MINUS, &kp UNDER, &as F16, TLM TLI, TRM TRI)
+FCOMBO(F, &as F, &kp MINUS, &kp UNDER, &as F21, TLM TLI, TRM TRI)
 //| | |x|x|
 //| | | | |
 //| | | | |
 
-FCOMBO(B, &as B, &kp APOS, &kp DQT, &kp GRAVE, HLR BLR, HRR BRR)
+FCOMBO(B, &as B, &kp APOS, &kp DQT, &as F22, HLR BLR, HRR BRR)
 //| | | | |
 //| |x| | |
 //| |x| | |
 
-FCOMBO(Y, &as Y, &kp COMMA, &kp QMARK, &kp SEMI, HLM BLM, HRM BRM)
+FCOMBO(Y, &as Y, &kp COMMA, &kp QMARK, &as F23, HLM BLM, HRM BRM)
 //| | | | |
 //| | |x| |
 //| | |x| |
 
-FCOMBO(X, &as X, &kp DOT, &kp EXCL, &kp COLON, HLI BLI, HRI BRI)
+FCOMBO(X, &as X, &kp DOT, &kp EXCL, &as F2, HLI BLI, HRI BRI)
 //| | | | |
 //| | | |x|
 //| | | |x|
