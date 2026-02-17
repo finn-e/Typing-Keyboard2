@@ -174,26 +174,6 @@ OCOMBO(I, &as I, HLI BLI, HRI BRI)
 //| | | |x|
 //| | | |x|
 
-OCOMBO(MINUS, &as MINUS, TLP HLP, TRP HRP)
-//|x| | | |
-//|x| | | |
-//| | | | |
-
-OCOMBO(COMMA, &as COMMA, TLR HLR, TRR HRR)
-//| |x| | |
-//| |x| | |
-//| | | | |
-
-OCOMBO(DOT, &as DOT, TLM HLM, TRM HRM)
-//| | |x| |
-//| | |x| |
-//| | | | |
-
-OCOMBO(U, &as U, TLI HLI, TRI HRI)
-//| | | |x|
-//| | | |x|
-//| | | | |
-
 OCOMBO(J, &as J, TLR TLM, TRR TRM)
 //| |x|x| |
 //| | | | |
