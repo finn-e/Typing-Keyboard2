@@ -153,3 +153,93 @@ OCOMBO(U, &as U, TLI HLI, TRI HRI)
 //| | | |x|
 //| | | |x|
 //| | | | |
+
+OCOMBO(APOS, &as APOSTROPHE, HLP BLP, HRP BRP)
+//| | | | |
+//|x| | | |
+//|x| | | |
+
+OCOMBO(F, &as F, HLR BLR, HRR BRR)
+//| | | | |
+//| |x| | |
+//| |x| | |
+
+OCOMBO(L, &as L, HLM BLM, HRM BRM)
+//| | | | |
+//| | |x| |
+//| | |x| |
+
+OCOMBO(I, &as I, HLI BLI, HRI BRI)
+//| | | | |
+//| | | |x|
+//| | | |x|
+
+OCOMBO(MINUS, &as MINUS, TLP HLP, TRP HRP)
+//|x| | | |
+//|x| | | |
+//| | | | |
+
+OCOMBO(COMMA, &as COMMA, TLR HLR, TRR HRR)
+//| |x| | |
+//| |x| | |
+//| | | | |
+
+OCOMBO(DOT, &as DOT, TLM HLM, TRM HRM)
+//| | |x| |
+//| | |x| |
+//| | | | |
+
+OCOMBO(U, &as U, TLI HLI, TRI HRI)
+//| | | |x|
+//| | | |x|
+//| | | | |
+
+OCOMBO(J, &as J, TLR TLM, TRR TRM)
+//| |x|x| |
+//| | | | |
+//| | | | |
+
+OCOMBO(X, &as X, TLR TLI, TRR TRI)
+//| |x| |x|
+//| | | | |
+//| | | | |
+
+OCOMBO(Q, &as Q, TLM TLI, TRM TRI)
+//| | |x|x|
+//| | | | |
+//| | | | |
+
+OCOMBO(P, &as P, HLR HLM, HRR HRM)
+//| | | | |
+//| |x|x| |
+//| | | | |
+
+OCOMBO(W, &as W, HLR HLI, HRR HRI)
+//| | | | |
+//| |x| |x|
+//| | | | |
+
+OCOMBO(Y, &as Y, HLM HLI, HRM HRI)
+//| | | | |
+//| | |x|x|
+//| | | | |
+
+OCOMBO(B, &as B, BLR BLM, BRR BRM)
+//| | | | |
+//| | | | |
+//| |x|x| |
+
+OCOMBO(V, &as V, BLR BLI, BRR BRI)
+//| | | | |
+//| | | | |
+//| |x| |x|
+
+OCOMBO(K, &as K, HLM BLI, HRM BRI)
+//| | | | |
+//| | | | |
+//| | |x|x|
+
+OCOMBO(Z, &as Z, TLR TLM TLI, TRR TRM TRI)
+//| |x|x|x|
+//| | | | |
+//| | | | |
