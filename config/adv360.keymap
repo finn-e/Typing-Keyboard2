@@ -78,12 +78,11 @@
 // LAYERS
 #define BOU  0
 #define JKB  1
-#define QWE  2
+#define TYP  2
 #define NAV  3
-#define WIN  4
-#define DESK 5
-#define NUM  6
-#define BT   7
+#define NUM  4
+#define SYM  5
+#define FUN  6
 
 // CONFIG
 #define COMBO_TIMEOUT 70
@@ -116,11 +115,11 @@
         bougie {
             display-name = "BOUGIE";
             bindings = <
-&tog 1  &none       &none  &none  &none  &bt BT_SEL 0  &bt BT_CLR                                                             &bt BT_CLR       &bt BT_SEL 0  &none  &none  &none  &none      &tog 1
-&none   &sk LCTRL   &as R  &as O  &as D  &bt BT_SEL 1  &sys_reset                                                             &sys_reset       &bt BT_SEL 1  &as D  &as O  &as R  &sk LCTRL  &none
-&none   &sk LSHIFT  &as N  &as E  &as T  &bt BT_SEL 2  &bootloader      &none        &none           &none       &none        &bootloader      &bt BT_SEL 2  &as T  &as E  &as N  &sk LSHFT  &none
-&none   &sk LMETA   &as H  &as A  &as S  &bt BT_SEL 3                                &lt 8 TAB       &lt 8 TAB                                 &bt BT_SEL 3  &as S  &as A  &as H  &sk LMETA  &none
-&tog 2  &none       &none  &none  &none                &lt 3 BACKSPACE  &lt 5 SPACE  &lt 10 RET      &lt 10 RET  &lt 6 SPACE  &lt 4 BACKSPACE                &none  &none  &none  &none      &tog 2
+&tog 1  &as MINUS   &as COMMA   &as DOT     &as U       &bt BT_SEL 0  &bt BT_CLR                                                             &bt BT_CLR       &bt BT_SEL 0  &as U       &as DOT     &as COMMA   &as MINUS   &tog 1
+&none   &as G       &as M       &as R       &as O       &bt BT_SEL 1  &sys_reset                                                             &sys_reset       &bt BT_SEL 1  &as O       &as R       &as M       &as G       &none
+&none   &as S       &as T       &as H       &as E       &bt BT_SEL 2  &bootloader      &none        &none           &none       &none        &bootloader      &bt BT_SEL 2  &as E       &as H       &as T       &as S       &none
+&none   &mt LALT C  &mt LGUI D  &mt LCTL N  &mt LSFT A  &bt BT_SEL 3                                &lt 8 TAB       &lt 8 TAB                                 &bt BT_SEL 3  &mt LSFT A  &mt LCTL N  &mt LGUI D  &mt LALT C  &none
+&tog 2  &as APOS    &as F       &as L       &as I                     &mt LSFT SPACE  &lt 5 SPACE  &lt 10 RET      &lt 10 RET  &lt 6 SPACE  &lt 4 BACKSPACE                &as I       &as L       &as F       &as APOS    &tog 2
             >;
         };
 
@@ -146,8 +145,8 @@
             >;
         };
 
-        num_l {
-            display-name = "num_l";
+        num {
+            display-name = "num";
             bindings = <
 &none  &none                 &none   &none   &none   &none  &none                                     &none   &none  &none         &none   &none   &none                  &none
 &none  &mt LEFT_SHIFT MINUS  &kp N7  &kp N8  &kp N9  &none  &none                                     &none   &none  &kp N7        &kp N8  &kp N9  &mt RIGHT_SHIFT EQUAL  &none
@@ -157,77 +156,13 @@
             >;
         };
 
-        num_r {
-            display-name = "num_r";
-            bindings = <
-&none  &none             &none   &none   &none   &none  &none                                     &none   &none  &none         &none   &none   &none             &none
-&none  &mt LSHIFT MINUS  &kp N7  &kp N8  &kp N9  &none  &none                                     &none   &none  &kp N7        &kp N8  &kp N9  &mt RSHIFT EQUAL  &none
-&none  &kp N0            &kp N4  &kp N5  &kp N6  &none  &none   &none   &none      &none  &none   &none   &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0            &none
-&none  &none             &kp N1  &kp N2  &kp N3  &none                  &none      &none                  &none  &kp NUMBER_1  &kp N2  &kp N3  &none             &none
-&none  &none             &none   &none   &none          &trans  &trans  &none      &none  &trans  &trans         &none         &none   &none   &none             &none
-            >;
-        };
-
-        nav_l {
+        nav {
             bindings = <
 &none  &none              &none               &none                   &none               &none  &none                                     &none   &none  &none                 &none                    &none                   &none              &none
 &none  &mt LEFT_GUI HOME  &mt LEFT_ALT PG_DN  &mt LEFT_CONTROL PG_UP  &mt LEFT_SHIFT END  &none  &none                                     &none   &none  &mt RIGHT_SHIFT HOME  &mt RIGHT_CONTROL PG_UP  &mt LEFT_ALT PAGE_DOWN  &mt RIGHT_GUI END  &none
 &none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
 &none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none      &none                  &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
 &none  &none              &none               &none                   &none                      &trans  &trans  &none      &none  &trans  &trans         &none                 &none                    &none                   &none              &none
-            >;
-        };
-
-        nav_r {
-            bindings = <
-&none  &none              &none               &none                   &none               &none  &none                                     &none   &none  &none                 &none                    &none                   &none              &none
-&none  &mt LEFT_GUI HOME  &mt LEFT_ALT PG_DN  &mt LEFT_CONTROL PG_UP  &mt LEFT_SHIFT END  &none  &none                                     &none   &none  &mt RIGHT_SHIFT HOME  &mt RIGHT_CONTROL PG_UP  &mt LEFT_ALT PAGE_DOWN  &mt RIGHT_GUI END  &none
-&none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
-&none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none      &none                  &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
-&none  &none              &none               &none                   &none                      &trans  &trans  &none      &none  &trans  &trans         &none                 &none                    &none                   &none              &none
-            >;
-        };
-
-        bt {
-            bindings = <
-&none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
-&none  &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none  &none                                     &none   &none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none
-&none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-&none  &none         &kp C_VOL_DN  &kp K_MUTE    &kp C_VOL_UP  &none                  &none      &none                  &none  &kp C_VOL_UP  &kp K_MUTE    &kp C_VOL_DN  &none         &none
-&none  &none         &none         &none         &none                &trans  &trans  &none      &none  &trans  &trans         &none         &none         &none         &none         &none
-            >;
-        };
-
-        func1 {
-            display-name = "func1";
-            bindings = <
-&none  &none             &none        &none         &none          &none  &none                                  &none  &none  &none          &none         &none        &none          &none
-&none  &mt LEFT_GUI F22  &mt LALT F7  &mt LCTRL F8  &mt LSHIFT F9  &none  &none                                  &none  &none  &mt RSHIFT F7  &mt RCTRL F8  &mt LALT F9  &mt RMETA F22  &none
-&none  &kp F10           &kp F4       &kp F5        &kp F6         &none  &none  &none  &none      &none  &none  &none  &none  &kp F4         &kp F5        &kp F6       &kp F10        &none
-&none  &none             &kp F1       &kp F2        &kp F3         &none                &none      &none                &none  &kp F1         &kp F2        &kp F3       &none          &none
-&none  &none             &none        &none         &none                 &mo 9  &mo 9  &none      &none  &mo 9  &mo 9         &none          &none         &none        &none          &none
-            >;
-        };
-
-        func2 {
-            display-name = "func2";
-            bindings = <
-&none  &none       &none    &none    &none    &none  &none                                     &none   &none  &none    &none    &none    &none       &none
-&none  &caps_word  &kp F17  &kp F18  &kp F19  &none  &none                                     &none   &none  &kp F17  &kp F18  &kp F19  &caps_word  &none
-&none  &kp F20     &kp F14  &kp F15  &kp F16  &none  &none   &none   &none      &none  &none   &none   &none  &kp F14  &kp F15  &kp F16  &kp F20     &none
-&none  &none       &kp F11  &kp F12  &kp F13  &none                  &none      &none                  &none  &kp F11  &kp F12  &kp F13  &none       &none
-&none  &none       &none    &none    &none           &trans  &trans  &none      &none  &trans  &trans         &none    &none    &none    &none       &none
-            >;
-        };
-
-        btplus {
-            display-name = "bt+";
-            bindings = <
-&none  &none          &none          &none           &none          &none  &none                                     &none   &none  &none         &none           &none          &none         &none
-&none  &soft_off      &out OUT_TOG   &sys_reset      &bootloader    &none  &none                                     &none   &none  &bootloader   &sys_reset      &out OUT_TOG   &soft_off     &none
-&none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3   &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3  &none
-&none  &none          &studio_unlock &bt BT_CLR_ALL  &bt BT_CLR     &none                  &none      &none                  &none  &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock &none         &none
-&none  &none          &none          &none           &none                 &trans  &trans  &none      &none  &trans  &trans         &none         &none           &none          &none         &none
             >;
         };
 
@@ -242,13 +177,14 @@
             >;
         };
 
-        misc {
+        func {
+            display-name = "func";
             bindings = <
-&none  &none       &none              &none  &none           &none  &none                                                  &none        &none  &none           &none  &none              &none       &none
-&none  &soft_off   &out OUT_TOG       &none  &studio_unlock  &none  &none                                                  &none        &none  &studio_unlock  &none  &out OUT_TOG       &soft_off   &none
-&none  &sys_reset  &ext_power EP_TOG  &none  &bootloader     &none  &none        &none       &none      &none  &none       &none        &none  &bootloader     &none  &ext_power EP_TOG  &sys_reset  &none
-&none  &none       &bt BT_CLR_ALL     &none  &bl BL_CYCLE    &none                           &none      &none                           &none  &bl BL_CYCLE    &none  &bt BT_CLR_ALL     &none       &none
-&none  &none       &none              &none  &none                  &bootloader  &sys_reset  &none      &none  &sys_reset  &bootloader         &none           &none  &none              &none       &none
+&none  &none             &none        &none         &none          &none  &none                                  &none  &none  &none          &none         &none        &none          &none
+&none  &mt LEFT_GUI F22  &mt LALT F7  &mt LCTRL F8  &mt LSHIFT F9  &none  &none                                  &none  &none  &mt RSHIFT F7  &mt RCTRL F8  &mt LALT F9  &mt RMETA F22  &none
+&none  &kp F10           &kp F4       &kp F5        &kp F6         &none  &none  &none  &none      &none  &none  &none  &none  &kp F4         &kp F5        &kp F6       &kp F10        &none
+&none  &none             &kp F1       &kp F2        &kp F3         &none                &none      &none                &none  &kp F1         &kp F2        &kp F3       &none          &none
+&none  &none             &none        &none         &none                 &mo 9  &mo 9  &none      &none  &mo 9  &mo 9         &none          &none         &none        &none          &none
             >;
         };
     };
