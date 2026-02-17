@@ -134,3 +134,7 @@ RTCOMBO(A, &as N3, &kp LEFT, &as F3, BRI)
 //| | | | |
 //| | | |x|
 
+OCOMBO(MINUS, &as MINUS, TLP HLP, TRP HRP)
+//|x| | | |
+//|x| | | |
+//| | | | |
