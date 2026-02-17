@@ -234,7 +234,7 @@ OCOMBO(V, &as V, BLR BLI, BRR BRI)
 //| | | | |
 //| |x| |x|
 
-OCOMBO(K, &as K, HLM BLI, HRM BRI)
+OCOMBO(K, &as K, BLM BLI, BRM BRI)
 //| | | | |
 //| | | | |
 //| | |x|x|
