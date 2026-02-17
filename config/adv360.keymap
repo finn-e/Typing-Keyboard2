@@ -62,9 +62,9 @@
 
 /* =========================
  *  FUTURE THUMBS: T4 / T5 / T6
- *  T4: row 1, center  → RC(1,9) / RC(1,10)
- *  T5: row 2, center  → RC(2,8) / RC(2,11)
- *  T6: row 2, center  → RC(2,9) / RC(2,10)
+ *  T4: row 1, outer  → RC(1,9) / RC(1,10)
+ *  T5: row 2, outer  → RC(2,8) / RC(2,11)
+ *  T6: row 2, inner  → RC(2,9) / RC(2,10)
  * ========================= */
 #define L4T 52  /* RC(1,9)  left T4 */
 #define R4T 53  /* RC(1,10) right T4 */
@@ -115,11 +115,11 @@
         bougie {
             display-name = "BOUGIE";
             bindings = <
-&tog 1  &as MINUS   &as COMMA   &as DOT     &as U       &bt BT_SEL 0  &bt BT_CLR                                                             &bt BT_CLR       &bt BT_SEL 0  &as U       &as DOT     &as COMMA   &as MINUS   &tog 1
-&none   &as G       &as M       &as R       &as O       &bt BT_SEL 1  &sys_reset                                                             &sys_reset       &bt BT_SEL 1  &as O       &as R       &as M       &as G       &none
-&none   &as S       &as T       &as H       &as E       &bt BT_SEL 2  &bootloader      &none        &none           &none       &none        &bootloader      &bt BT_SEL 2  &as E       &as H       &as T       &as S       &none
-&none   &mt LALT C  &mt LGUI D  &mt LCTL N  &mt LSFT A  &bt BT_SEL 3                                &lt 8 TAB       &lt 8 TAB                                 &bt BT_SEL 3  &mt LSFT A  &mt LCTL N  &mt LGUI D  &mt LALT C  &none
-&tog 2  &as APOS    &as F       &as L       &as I                     &mt LSFT SPACE  &lt 5 SPACE  &lt 10 RET      &lt 10 RET  &lt 6 SPACE  &lt 4 BACKSPACE                &as I       &as L       &as F       &as APOS    &tog 2
+&tog 1  &as MINUS   &as COMMA   &as DOT     &as U       &bt BT_SEL 0  &bt BT_CLR                                                                                    &bt BT_CLR       &bt BT_SEL 0  &as U       &as DOT     &as COMMA   &as MINUS   &tog 1
+&none   &as G       &as M       &as R       &as O       &bt BT_SEL 1  &sys_reset                                                                                    &sys_reset       &bt BT_SEL 1  &as O       &as R       &as M       &as G       &none
+&none   &as S       &as T       &as H       &as E       &bt BT_SEL 2  &bootloader     &none              &lt FUN ESCAPE          &lt FUN ESCAPE  &none              &bootloader      &bt BT_SEL 2  &as E       &as H       &as T       &as S       &none
+&none   &mt LALT C  &mt LGUI D  &mt LCTL N  &mt LSFT A  &bt BT_SEL 3                                     &lt SYM TAB             &lt SYM TAB                                         &bt BT_SEL 3  &mt LSFT A  &mt LCTL N  &mt LGUI D  &mt LALT C  &none
+&tog 2  &as APOS    &as F       &as L       &as I                     &mt LSFT SPACE  &lt NAV BACKSPACE  &lt NUM RETURN          &lt NUM RETURN  &lt NAV BACKSPACE  &mt LSFT SPACE                 &as I       &as L       &as F       &as APOS    &tog 2
             >;
         };
 
@@ -134,14 +134,14 @@
             >;
         };
 
-        qwerty {
-            display-name = "QWERTY";
+        typing {
+            display-name = "TYPE";
             bindings = <
-&kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                    &none      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp RET
-&mt LCTRL ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&tog 2            &kp GRAVE  &kp BSLH  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &tog 2
+&tog 1  &kp MINUS   &kp COMMA   &kp DOT     &kp U       &bt BT_SEL 0  &bt BT_CLR                                                                                    &bt BT_CLR       &bt BT_SEL 0  &kp U       &kp DOT     &kp COMMA   &kp MINUS   &tog 1
+&none   &kp G       &kp M       &kp R       &kp O       &bt BT_SEL 1  &sys_reset                                                                                    &sys_reset       &bt BT_SEL 1  &kp O       &kp R       &kp M       &kp G       &none
+&none   &kp S       &kp T       &kp H       &kp E       &bt BT_SEL 2  &bootloader     &none              &lt FUN ESCAPE          &lt FUN ESCAPE  &none              &bootloader      &bt BT_SEL 2  &kp E       &kp H       &kp T       &kp S       &none
+&none   &kp C       &kp D       &kp N       &kp A       &bt BT_SEL 3                                     &lt SYM TAB             &lt SYM TAB                                         &bt BT_SEL 3  &kp A       &kp N       &kp D       &kp C       &none
+&tog 2  &kp APOS    &kp F       &kp L       &kp I                     &mt LSFT SPACE  &lt NAV BACKSPACE  &lt NUM RETURN          &lt NUM RETURN  &lt NAV BACKSPACE  &mt LSFT SPACE                 &kp I       &kp L       &kp F       &kp APOS    &tog 2
             >;
         };
 
@@ -184,27 +184,8 @@
 &none  &mt LEFT_GUI F22  &mt LALT F7  &mt LCTRL F8  &mt LSHIFT F9  &none  &none                                  &none  &none  &mt RSHIFT F7  &mt RCTRL F8  &mt LALT F9  &mt RMETA F22  &none
 &none  &kp F10           &kp F4       &kp F5        &kp F6         &none  &none  &none  &none      &none  &none  &none  &none  &kp F4         &kp F5        &kp F6       &kp F10        &none
 &none  &none             &kp F1       &kp F2        &kp F3         &none                &none      &none                &none  &kp F1         &kp F2        &kp F3       &none          &none
-&none  &none             &none        &none         &none                 &mo 9  &mo 9  &none      &none  &mo 9  &mo 9         &none          &none         &none        &none          &none
+&none  &none             &none        &none         &none                 &none  &none  &none      &none  &none  &none         &none          &none         &none        &none          &none
             >;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        lr_num {
-            if-layers = <3 4>;
-            then-layer = <11>;
-        };
-
-        leftThumbs {
-            if-layers = <5 3>;
-            then-layer = <9>;
-        };
-
-        rightThumbs {
-            if-layers = <6 4>;
-            then-layer = <8>;
         };
     };
 };
