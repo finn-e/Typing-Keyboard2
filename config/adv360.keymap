@@ -86,7 +86,7 @@
 
 // CONFIG
 #define COMBO_TIMEOUT 70
-#define COMBO_LAYERS BOU NAV WIN DESK NUM BT
+#define COMBO_LAYERS BOU
 #define STICKY_TIMEOUT 1000
 #define QUICK_TAP_TIMEOUT 125
 #define HOLD_TAP_TIMEOUT 195
@@ -145,6 +145,16 @@
             >;
         };
 
+        nav {
+            bindings = <
+&none  &none              &none               &none                   &none               &none  &none                                     &none   &none  &none                 &none                    &none                   &none              &none
+&none  &mt LEFT_GUI HOME  &mt LEFT_ALT PG_DN  &mt LEFT_CONTROL PG_UP  &mt LEFT_SHIFT END  &none  &none                                     &none   &none  &mt RIGHT_SHIFT HOME  &mt RIGHT_CONTROL PG_UP  &mt LEFT_ALT PAGE_DOWN  &mt RIGHT_GUI END  &none
+&none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
+&none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none      &none                  &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
+&none  &none              &none               &none                   &none                      &trans  &trans  &none      &none  &trans  &trans         &none                 &none                    &none                   &none              &none
+            >;
+        };
+        
         num {
             display-name = "num";
             bindings = <
@@ -153,16 +163,6 @@
 &none  &kp N0                &kp N4  &kp N5  &kp N6  &none  &none   &none   &none      &none  &none   &none   &none  &kp NUMBER_4  &kp N5  &kp N6  &kp N0                 &none
 &none  &none                 &kp N1  &kp N2  &kp N3  &none                  &none      &none                  &none  &kp NUMBER_1  &kp N2  &kp N3  &none                  &none
 &none  &none                 &none   &none   &none          &trans  &trans  &none      &none  &trans  &trans         &none         &none   &none   &none                  &none
-            >;
-        };
-
-        nav {
-            bindings = <
-&none  &none              &none               &none                   &none               &none  &none                                     &none   &none  &none                 &none                    &none                   &none              &none
-&none  &mt LEFT_GUI HOME  &mt LEFT_ALT PG_DN  &mt LEFT_CONTROL PG_UP  &mt LEFT_SHIFT END  &none  &none                                     &none   &none  &mt RIGHT_SHIFT HOME  &mt RIGHT_CONTROL PG_UP  &mt LEFT_ALT PAGE_DOWN  &mt RIGHT_GUI END  &none
-&none  &kp LEFT           &kp DOWN            &kp UP                  &kp RIGHT           &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT              &kp UP                   &kp DOWN                &kp RIGHT          &none
-&none  &none              &kp LEFT            &kp DOWN                &kp RIGHT           &none                  &none      &none                  &none  &kp LEFT              &kp DOWN                 &kp RIGHT               &none              &none
-&none  &none              &none               &none                   &none                      &trans  &trans  &none      &none  &trans  &trans         &none                 &none                    &none                   &none              &none
             >;
         };
 
