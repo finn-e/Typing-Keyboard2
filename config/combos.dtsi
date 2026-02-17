@@ -68,6 +68,26 @@ OCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS) \
 TCOMBO(##NAME, ##CENTER_BINDINGS, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS)
 
 //** COMBOS **//
+FCOMBO(MINUS, &as MINUS, &as N0, &kp LEFT, &as F0, TLP HLP, TRP HRP)
+//|x| | | |
+//|x| | | |
+//| | | | |
+
+FCOMBO(COMMA, &as COMMA, &as N0, &kp LEFT, &as F0, TLR HLR, TRR HRR)
+//| |x| | |
+//| |x| | |
+//| | | | |
+
+FCOMBO(DOT, &as DOT, &as N0, &kp LEFT, &as F0, TLM HLM, TRM HRM)
+//| | |x| |
+//| | |x| |
+//| | | | |
+
+FCOMBO(U, &as U, &as N0, &kp LEFT, &as F0, TLI HLI, TRI HRI)
+//| | | |x|
+//| | | |x|
+//| | | | |
+
 LTCOMBO(G, &as N0, &kp HOME, &as F10, TLP)
 RTCOMBO(G, &as N0, &kp END, &as F10, TRP)
 //|x| | | |
@@ -134,3 +154,22 @@ RTCOMBO(A, &as N3, &kp LEFT, &as F3, BRI)
 //| | | | |
 //| | | |x|
 
+FCOMBO(APOS, &as APOS, &as N0, &kp LEFT, &as F0, HLP BLP, HRP BRP)
+//| | | | |
+//|x| | | |
+//|x| | | |
+
+FCOMBO(F, &as F, &as N0, &kp LEFT, &as F0, HLR BLR, HRR BRR)
+//| | | | |
+//| |x| | |
+//| |x| | |
+
+FCOMBO(L, &as L, &as N0, &kp LEFT, &as F0, HLM BLM, HRM BRM)
+//| | | | |
+//| | |x| |
+//| | |x| |
+
+FCOMBO(I, &as I, &as N0, &kp LEFT, &as F0, HLI BLI, HRI BRI)
+//| | | | |
+//| | | |x|
+//| | | |x|
