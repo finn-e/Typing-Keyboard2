@@ -264,7 +264,7 @@ OCOMBO(PIPE, &as PIPE, BLP BLM, BRP BRM)
 //| | | | |
 //|X| |X| |
 
-OCOMBO(EXCLAIM, &as EXCLAIM, BLP BLI, BRP BRI)
+OCOMBO(EXCL, &as EXCL, BLP BLI, BRP BRI)
 //| | | | |
 //| | | | |
 //|X| | |X|
