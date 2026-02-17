@@ -223,3 +223,49 @@ OCOMBO(Z, &as Z, TLR TLM TLI, TRR TRM TRI)
 //| |x|x|x|
 //| | | | |
 //| | | | |
+
+OCOMBO(BKSL, &as BACKSLASH, TLP TLR, TRP TRR)
+//|x|x| | |
+//| | | | |
+//| | | | |
+
+OCOMBO(EQUAL, &as EQUAL, TLP TLM, TRP TRM)
+//|x| |x| |
+//| | | | |
+//| | | | |
+
+OCOMBO(SEMI, &as SEMICOLON, TLP TLI, TRP TRI)
+//|x| | |x|
+//| | | | |
+//| | | | |
+
+OCOMBO(SLASH, &as SLASH, TLP TLR, TRP TRR)
+//| | | | |
+//|x|x| | |
+//| | | | |
+
+OCOMBO(TILDE, &as GRAVE, HLP HLM, HRP HRM)
+//| | | | |
+//|x| |x| |
+//| | | | |
+
+OCOMBO(AT, &as AT, HLP HLI, HRP HRI)
+//| | | | |
+//|x| | |x|
+//| | | | |
+
+OCOMBO(AMPS, &as AMPERSAND, BLP BLR, BRP BRR)
+//| | | | |
+//| | | | |
+//|X|X| | |
+
+OCOMBO(PIPE, &as PIPE, BLP BLM, BRP BRM)
+//| | | | |
+//| | | | |
+//|X| |X| |
+
+OCOMBO(EXCLAIM, &as EXCLAIM, BLP BLI, BRP BRI)
+//| | | | |
+//| | | | |
+//|X| | |X|
+
